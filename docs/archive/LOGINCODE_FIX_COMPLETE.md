@@ -16,9 +16,9 @@ The column `User.loginCode` does not exist in the current database.
 ## Root Cause
 
 The Dockerfile was using `DATABASE_URL` as the environment variable name, but the Prisma schema expects:
-- `jacxi_DATABASE_URL`
-- `jacxi_POSTGRES_URL`  
-- `jacxi_PRISMA_DATABASE_URL` (optional)
+- `amprator_DATABASE_URL`
+- `amprator_POSTGRES_URL`  
+- `amprator_PRISMA_DATABASE_URL` (optional)
 
 This mismatch caused `npx prisma migrate deploy` to fail silently on container startup, preventing the `loginCode` column from being added to the database.
 
@@ -58,9 +58,9 @@ This mismatch caused `npx prisma migrate deploy` to fail silently on container s
 
 1. Create `.env` file with your actual database credentials:
 ```env
-jacxi_DATABASE_URL=postgres://user:password@host:5432/database
-jacxi_POSTGRES_URL=postgres://user:password@host:5432/database
-jacxi_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_KEY
+amprator_DATABASE_URL=postgres://user:password@host:5432/database
+amprator_POSTGRES_URL=postgres://user:password@host:5432/database
+amprator_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_KEY
 NEXTAUTH_SECRET=your-secret
 NEXTAUTH_URL=https://your-domain.com
 ```
@@ -76,9 +76,9 @@ The migration will run automatically! ✅
 
 ```bash
 docker run -d \
-  -e jacxi_DATABASE_URL="..." \
-  -e jacxi_POSTGRES_URL="..." \
-  -e jacxi_PRISMA_DATABASE_URL="..." \
+  -e amprator_DATABASE_URL="..." \
+  -e amprator_POSTGRES_URL="..." \
+  -e amprator_PRISMA_DATABASE_URL="..." \
   -e NEXTAUTH_SECRET="..." \
   -e NEXTAUTH_URL="..." \
   -p 3000:3000 \
@@ -88,8 +88,8 @@ docker run -d \
 ### Option 3: Manual Migration
 
 ```bash
-export jacxi_DATABASE_URL="..."
-export jacxi_POSTGRES_URL="..."
+export amprator_DATABASE_URL="..."
+export amprator_POSTGRES_URL="..."
 npx prisma migrate deploy
 ```
 
@@ -128,7 +128,7 @@ npx prisma migrate status
 The database credentials you provided were exposed in commit history. **You must rotate these credentials immediately**:
 
 1. **Prisma Database Password**: `sk_KA40cpqs9GjzvE-JQOFeN`
-2. **Prisma Accelerate API Key**: The JWT token in `jacxi_PRISMA_DATABASE_URL`
+2. **Prisma Accelerate API Key**: The JWT token in `amprator_PRISMA_DATABASE_URL`
 
 To rotate:
 1. Log into your Prisma account

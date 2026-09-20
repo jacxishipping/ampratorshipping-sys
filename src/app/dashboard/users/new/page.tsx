@@ -144,12 +144,12 @@ export default function CreateUserPage() {
 			if (response.ok) {
 				if (data?.user) {
 					try {
-						sessionStorage.setItem('jacxi.createdUser', JSON.stringify(data.user));
+						sessionStorage.setItem('amprator.createdUser', JSON.stringify(data.user));
 					} catch {}
 
 					if (typeof BroadcastChannel !== 'undefined') {
 						try {
-							const bc = new BroadcastChannel('jacxi-users');
+							const bc = new BroadcastChannel('amprator-users');
 							bc.postMessage({ action: 'created', user: data.user });
 							bc.close();
 						} catch {}

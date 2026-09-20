@@ -520,7 +520,7 @@ const InvoiceTemplate: React.FC<InvoiceTemplateProps> = ({ invoice }) => {
         <View style={styles.footer}>
           <View style={styles.footerLine} />
           <Text style={styles.footerText}>
-            Thank you for your business with JACXI Shipping
+            Thank you for your business with Amprator Shipping
           </Text>
           <Text style={styles.footerConfidential}>
             This invoice is confidential and intended solely for the addressee.

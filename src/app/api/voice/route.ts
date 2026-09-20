@@ -57,7 +57,7 @@ function renderCodePrompt(request: NextRequest, message?: string) {
   const introUrl = buildVoiceStepUrl(request, 'intro');
   const prompt =
     message ||
-    'Welcome to Jacxi Shipping. Please enter or say your 8 digit access code now. If your code contains letters, use the matching phone keypad number for each letter.';
+    'Welcome to Amprator Shipping. Please enter or say your 8 digit access code now. If your code contains letters, use the matching phone keypad number for each letter.';
 
   return twimlResponse(
     gather(
@@ -218,7 +218,7 @@ async function handleMenu(request: NextRequest) {
   }
 
   if (selection === '9') {
-    return twimlResponse(say('Thank you for calling Jacxi Shipping. Goodbye.') + hangup());
+    return twimlResponse(say('Thank you for calling Amprator Shipping. Goodbye.') + hangup());
   }
 
   return renderMainMenu(request, user.id, user.name, 'That was not a valid menu option.');

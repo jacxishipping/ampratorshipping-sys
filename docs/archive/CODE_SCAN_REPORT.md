@@ -1,12 +1,12 @@
 # Complete Codebase Scan Report
 
 **Scan Date:** January 30, 2026
-**Repository:** jacxi-shipping/Jacxi_Shipping
+**Repository:** amprator-shipping/Amprator_Shipping
 **Branch:** copilot/scan-complete-code
 
 ## Executive Summary
 
-This report provides a comprehensive analysis of the Jacxi Shipping Platform codebase, including security vulnerabilities, dependency issues, build status, and code quality findings.
+This report provides a comprehensive analysis of the Amprator Shipping Platform codebase, including security vulnerabilities, dependency issues, build status, and code quality findings.
 
 ## 1. Build Status ✅
 
@@ -271,7 +271,7 @@ export default defineConfig([
 
 ## Conclusion
 
-The Jacxi Shipping Platform is a well-structured Next.js application with a comprehensive feature set. The codebase is clean and follows modern React/Next.js best practices with TypeScript. However, **CRITICAL security vulnerabilities have been identified that require immediate attention**.
+The Amprator Shipping Platform is a well-structured Next.js application with a comprehensive feature set. The codebase is clean and follows modern React/Next.js best practices with TypeScript. However, **CRITICAL security vulnerabilities have been identified that require immediate attention**.
 
 **⚠️ URGENT ACTION REQUIRED:**
 The current Next.js version (15.1.6) contains a **Remote Code Execution (RCE) vulnerability** in the React Flight Protocol. This is a critical security issue that must be addressed immediately before any production deployment.

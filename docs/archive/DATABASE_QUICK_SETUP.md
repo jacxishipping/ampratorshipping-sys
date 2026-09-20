@@ -13,18 +13,18 @@ The `.env.local` file has been created with secure secrets. Now you need to set 
 
 ### Step 2: Create Database
 ```sql
-CREATE DATABASE jacxi_shipping;
+CREATE DATABASE amprator_shipping;
 ```
 
 ### Step 3: Update `.env.local`
 Open `.env.local` and update the `DATABASE_URL`:
 ```env
-DATABASE_URL="postgresql://postgres:your_password@localhost:5432/jacxi_shipping"
+DATABASE_URL="postgresql://postgres:your_password@localhost:5432/amprator_shipping"
 ```
 Replace:
 - `postgres` with your PostgreSQL username
 - `your_password` with your PostgreSQL password
-- `jacxi_shipping` with your database name
+- `amprator_shipping` with your database name
 
 ## 🌐 Option 2: Cloud PostgreSQL (Recommended for Production)
 
@@ -57,16 +57,16 @@ Simply paste the connection string from your cloud provider into `DATABASE_URL`.
 If you have Docker installed:
 
 ```bash
-docker run --name jacxi-postgres \
+docker run --name amprator-postgres \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=jacxi_shipping \
+  -e POSTGRES_DB=amprator_shipping \
   -p 5432:5432 \
   -d postgres:15
 ```
 
 Then update `.env.local`:
 ```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/jacxi_shipping"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/amprator_shipping"
 ```
 
 ## 🚀 After Setting Up Database

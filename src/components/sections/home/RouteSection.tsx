@@ -34,7 +34,7 @@ export default function RouteSection() {
             <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-[var(--accent-gold)]">The Route</p>
             <h2 className="text-4xl font-bold text-[var(--text-primary)] sm:text-5xl">From the USA and Canada to Afghanistan, through the right route.</h2>
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              Customers do not need separate providers for export, customs handoff, and destination transit. JACXI keeps the route connected so each milestone reflects what is actually happening to the shipment.
+              Customers do not need separate providers for export, customs handoff, and destination transit. Amprator keeps the route connected so each milestone reflects what is actually happening to the shipment.
             </p>
 
             <div className="mt-10 space-y-5">

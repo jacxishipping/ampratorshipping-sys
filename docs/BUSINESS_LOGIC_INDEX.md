@@ -1,13 +1,13 @@
 # Business Logic Analysis - Master Index
 
 **Created:** January 31, 2026  
-**Topic:** Comprehensive analysis of Jacxi Shipping business logic vs industry standards
+**Topic:** Comprehensive analysis of Amprator Shipping business logic vs industry standards
 
 ---
 
 ## 📚 Documentation Overview
 
-This analysis examines the current business logic implementation in the Jacxi Shipping Platform and compares it against industry leaders like Flexport, Freightos, CargoWise, and ShipBob.
+This analysis examines the current business logic implementation in the Amprator Shipping Platform and compares it against industry leaders like Flexport, Freightos, CargoWise, and ShipBob.
 
 **Quick Answer:** We're at ⭐⭐⭐⭐ (4/5 stars) - solid foundation with clear path to excellence
 
@@ -209,7 +209,7 @@ This analysis examines the current business logic implementation in the Jacxi Sh
 
 ## 📊 Feature Comparison Table
 
-| Feature | Jacxi | Flexport | Freightos | Standard | Priority |
+| Feature | Amprator | Flexport | Freightos | Standard | Priority |
 |---------|-------|----------|-----------|----------|----------|
 | Container Management | ✅ 5/5 | ✅ 5/5 | ⚠️ 3/5 | ✅ 5/5 | Done |
 | Invoice Automation | ✅ 5/5 | ✅ 5/5 | ✅ 5/5 | ✅ 5/5 | Done |

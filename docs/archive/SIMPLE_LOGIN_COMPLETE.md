@@ -187,7 +187,7 @@ DELETE /api/users/login-code?userId=clxxx...
 
 ### 1. Run Database Migration
 ```bash
-cd /home/runner/work/Jacxi_Shipping/Jacxi_Shipping
+cd /home/runner/work/Amprator_Shipping/Amprator_Shipping
 npx prisma migrate dev --name add-login-codes
 npx prisma generate
 ```
@@ -230,13 +230,13 @@ for (const customer of customers) {
 Create physical cards for customers:
 ```
 ┌─────────────────────────────┐
-│   JACXI SHIPPING            │
+│   Amprator SHIPPING            │
 │   Customer: Ahmad Khan      │
 │                             │
 │   Your Login Code:          │
 │      SHIP 2024              │
 │                             │
-│   Website: jacxi.com        │
+│   Website: amprator.com        │
 │   Click: Customer Login     │
 └─────────────────────────────┘
 ```

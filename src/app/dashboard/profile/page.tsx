@@ -577,7 +577,7 @@ export default function ProfilePage() {
 							{profile.role === 'user' && (
 								<DashboardPanel
 									title="Support Notifications"
-									description="Send a realtime message to the Jacxi team"
+									description="Send a realtime message to the Amprator team"
 								>
 									<NotificationComposer mode="customer-to-support" />
 								</DashboardPanel>

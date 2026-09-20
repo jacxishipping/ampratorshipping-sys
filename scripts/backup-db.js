@@ -7,10 +7,10 @@ async function backupDatabase() {
 
   const prisma = new PrismaClient({
     datasourceUrl:
-      process.env.jacxi_DATABASE_URL ||
+      process.env.amprator_DATABASE_URL ||
       process.env.DATABASE_URL ||
-      process.env.jacxi_PRISMA_DATABASE_URL ||
-      process.env.jacxi_POSTGRES_URL,
+      process.env.amprator_PRISMA_DATABASE_URL ||
+      process.env.amprator_POSTGRES_URL,
   });
 
   console.log('💾 Starting database backup...');
@@ -21,7 +21,7 @@ async function backupDatabase() {
 
     await fs.mkdir(backupDir, { recursive: true });
 
-    const backupFile = path.join(backupDir, `jacxi-backup-${timestamp}.json`);
+    const backupFile = path.join(backupDir, `amprator-backup-${timestamp}.json`);
 
     // Backup all data
     const backupData = {
@@ -89,7 +89,7 @@ async function backupDatabase() {
 
     // Clean up old backups (keep last 14)
     const files = (await fs.readdir(backupDir))
-      .filter(file => file.startsWith('jacxi-backup-') && file.endsWith('.json'))
+      .filter(file => file.startsWith('amprator-backup-') && file.endsWith('.json'))
       .sort()
       .reverse();
 

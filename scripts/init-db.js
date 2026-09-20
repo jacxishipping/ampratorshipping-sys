@@ -8,21 +8,21 @@ async function main() {
 
   const bcrypt = bcryptModule.default ?? bcryptModule;
   prisma = new PrismaClient({
-    datasourceUrl: process.env.jacxi_DATABASE_URL
+    datasourceUrl: process.env.amprator_DATABASE_URL
   });
 
-  console.log('🌱 Seeding JACXI Shipping database...');
+  console.log('🌱 Seeding Amprator Shipping database...');
 
   try {
     // Create admin user
     const hashedPassword = await bcrypt.hash('admin123', 12);
     
     const admin = await prisma.user.upsert({
-      where: { email: 'admin@jacxi.com' },
+      where: { email: 'admin@amprator.com' },
       update: {},
       create: {
-        name: 'JACXI Admin',
-        email: 'admin@jacxi.com',
+        name: 'Amprator Admin',
+        email: 'admin@amprator.com',
         passwordHash: hashedPassword,
         role: 'admin',
         phone: '+1 (555) 123-4567',
@@ -233,7 +233,7 @@ async function main() {
         slug: 'complete-guide-vehicle-shipping-usa-afghanistan',
         content: 'Shipping a vehicle from the USA to Afghanistan requires careful planning and understanding of international shipping regulations...',
         excerpt: 'Learn everything you need to know about shipping your vehicle from the USA to Afghanistan safely and efficiently.',
-        author: 'JACXI Team',
+        author: 'Amprator Team',
         published: true,
         publishedAt: new Date('2024-10-01'),
         tags: ['shipping', 'guide', 'afghanistan', 'vehicle'],
@@ -244,7 +244,7 @@ async function main() {
         slug: 'top-10-tips-preparing-vehicle-international-shipping',
         content: 'Proper preparation is crucial for successful vehicle shipping. Here are our top 10 tips to ensure your vehicle arrives safely...',
         excerpt: 'Essential tips to prepare your vehicle for international shipping and avoid common mistakes.',
-        author: 'JACXI Team',
+        author: 'Amprator Team',
         published: true,
         publishedAt: new Date('2024-09-15'),
         tags: ['preparation', 'tips', 'shipping', 'vehicle'],
@@ -255,7 +255,7 @@ async function main() {
         slug: 'understanding-vehicle-shipping-insurance',
         content: 'Vehicle shipping insurance is essential for protecting your investment during international transport...',
         excerpt: 'Everything you need to know about vehicle shipping insurance and how to choose the right coverage.',
-        author: 'JACXI Team',
+        author: 'Amprator Team',
         published: true,
         publishedAt: new Date('2024-09-01'),
         tags: ['insurance', 'shipping', 'protection', 'vehicle'],

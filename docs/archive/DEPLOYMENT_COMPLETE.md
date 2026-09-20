@@ -383,7 +383,7 @@ Use a service like cron-job.org or EasyCron:
 
 All 9 features are now fully functional and ready for production use. The database migration has been applied, all code is active, and the application has been successfully built and deployed to GitHub.
 
-🎊 **Congratulations! Your Jacxi Shipping platform now has enterprise-level features!** 🎊
+🎊 **Congratulations! Your Amprator Shipping platform now has enterprise-level features!** 🎊
 
 ---
 

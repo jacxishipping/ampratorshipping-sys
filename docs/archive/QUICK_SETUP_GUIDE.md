@@ -153,7 +153,7 @@ Generate an invoice and check the expense line items. You should see:
 
 ## 🎯 You're Done!
 
-Your Jacxi Shipping platform now has:
+Your Amprator Shipping platform now has:
 - ✅ Automated email notifications
 - ✅ Smart payment reminders
 - ✅ Fair expense allocation

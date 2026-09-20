@@ -1,10 +1,10 @@
 /**
- * JACXI Shipping Design System Tokens
+ * Amprator Shipping Design System Tokens
  * Premium, enterprise-grade design tokens for luxury vehicle shipping
  */
 
 // =============================================================================
-// COLORS - JACXI BRAND PALETTE
+// COLORS - Amprator BRAND PALETTE
 // =============================================================================
 
 export const colors = {
@@ -122,7 +122,7 @@ export const colors = {
 } as const;
 
 // =============================================================================
-// TYPOGRAPHY - JACXI BRAND HIERARCHY
+// TYPOGRAPHY - Amprator BRAND HIERARCHY
 // =============================================================================
 
 export const typography = {
@@ -130,7 +130,7 @@ export const typography = {
     primary: ['Inter', 'system-ui', 'sans-serif'],
     heading: ['Inter', 'system-ui', 'sans-serif'],
     mono: ['JetBrains Mono', 'monospace'],
-    // Future: Add custom JACXI font when available
+    // Future: Add custom Amprator font when available
   },
 
   fontSize: {
@@ -186,7 +186,7 @@ export const typography = {
 } as const;
 
 // =============================================================================
-// SPACING - JACXI SYSTEMATIC SCALE
+// SPACING - Amprator SYSTEMATIC SCALE
 // =============================================================================
 
 export const spacing = {
@@ -226,7 +226,7 @@ export const spacing = {
 } as const;
 
 // =============================================================================
-// BORDER RADIUS - JACXI REFINED CURVES
+// BORDER RADIUS - Amprator REFINED CURVES
 // =============================================================================
 
 export const borderRadius = {
@@ -242,7 +242,7 @@ export const borderRadius = {
 } as const;
 
 // =============================================================================
-// SHADOWS - JACXI DEPTH & ELEVATION
+// SHADOWS - Amprator DEPTH & ELEVATION
 // =============================================================================
 
 export const shadows = {
@@ -254,7 +254,7 @@ export const shadows = {
   xl: '0 20px 25px -5px rgb(var(--text-primary-rgb) / 0.1), 0 8px 10px -6px rgb(var(--text-primary-rgb) / 0.1)',
   '2xl': '0 25px 50px -12px rgb(var(--text-primary-rgb) / 0.25)',
 
-  // Brand-colored shadows - JACXI signature
+  // Brand-colored shadows - Amprator signature
   brand: {
     cyan: '0 4px 14px 0 rgb(var(--accent-gold-rgb) / 0.25)',
     cyanSoft: '0 2px 8px 0 rgb(var(--accent-gold-rgb) / 0.15)',
@@ -279,7 +279,7 @@ export const shadows = {
 } as const;
 
 // =============================================================================
-// GLASS MORPHISM - JACXI MODERN EFFECTS
+// GLASS MORPHISM - Amprator MODERN EFFECTS
 // =============================================================================
 
 export const glass = {
@@ -288,7 +288,7 @@ export const glass = {
   strong: 'backdrop-blur-lg bg-white/20 border border-white/30',
   premium: 'backdrop-blur-xl bg-white/30 border border-white/40',
 
-  // Dark variants - JACXI dark mode
+  // Dark variants - Amprator dark mode
   'dark-subtle': 'backdrop-blur-sm bg-black/5 border border-white/5',
   'dark-medium': 'backdrop-blur-md bg-black/10 border border-white/10',
   'dark-strong': 'backdrop-blur-lg bg-black/20 border border-white/20',
@@ -301,7 +301,7 @@ export const glass = {
 } as const;
 
 // =============================================================================
-// ANIMATIONS - JACXI SMOOTH MOTIONS
+// ANIMATIONS - Amprator SMOOTH MOTIONS
 // =============================================================================
 
 export const animations = {
@@ -367,7 +367,7 @@ export const animations = {
 } as const;
 
 // =============================================================================
-// BREAKPOINTS - JACXI RESPONSIVE DESIGN
+// BREAKPOINTS - Amprator RESPONSIVE DESIGN
 // =============================================================================
 
 export const breakpoints = {
@@ -380,7 +380,7 @@ export const breakpoints = {
 } as const;
 
 // =============================================================================
-// Z-INDEX SCALE - JACXI LAYER MANAGEMENT
+// Z-INDEX SCALE - Amprator LAYER MANAGEMENT
 // =============================================================================
 
 export const zIndex = {
@@ -397,7 +397,7 @@ export const zIndex = {
 } as const;
 
 // =============================================================================
-// COMPONENT SIZES - JACXI CONSISTENT DIMENSIONS
+// COMPONENT SIZES - Amprator CONSISTENT DIMENSIONS
 // =============================================================================
 
 export const componentSizes = {
@@ -430,7 +430,7 @@ export const componentSizes = {
     },
   },
 
-  // JACXI-specific component sizes
+  // Amprator-specific component sizes
   shipmentCard: {
     height: 'h-auto min-h-[200px]',
     borderRadius: 'rounded-xl',
@@ -447,7 +447,7 @@ export const componentSizes = {
 } as const;
 
 // =============================================================================
-// STATUS COLORS - JACXI SHIPMENT STATUS SYSTEM
+// STATUS COLORS - Amprator SHIPMENT STATUS SYSTEM
 // =============================================================================
 
 export const statusColors = {
@@ -492,7 +492,7 @@ export const brandUtils = {
     luxury: 'space-y-12 lg:space-y-16',
   },
 
-  // JACXI-specific animations
+  // Amprator-specific animations
   animations: {
     entrance: 'animate-fade-in-up',
     luxuryEntrance: 'animate-slide-in-up',

@@ -60,7 +60,7 @@ export async function createTokenRouterChatCompletion(
     if (appUrl) {
       authHeaders['HTTP-Referer'] = appUrl;
     }
-    authHeaders['X-Title'] = 'Jacxi Shipping';
+    authHeaders['X-Title'] = 'Amprator Shipping';
   }
 
   const response = await fetch(endpoint, {

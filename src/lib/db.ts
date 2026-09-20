@@ -7,9 +7,9 @@ import { PrismaClient } from '@prisma/client';
 // direct Postgres URL, then fall back to any Accelerate URL, then legacy order.
 const candidateUrls = [
   process.env.DATABASE_URL,
-  process.env.jacxi_DATABASE_URL,
-  process.env.jacxi_POSTGRES_URL,
-  process.env.jacxi_PRISMA_DATABASE_URL,
+  process.env.amprator_DATABASE_URL,
+  process.env.amprator_POSTGRES_URL,
+  process.env.amprator_PRISMA_DATABASE_URL,
 ];
 
 const isPostgresUrl = (url: string | undefined): url is string =>
@@ -22,9 +22,9 @@ const databaseUrl =
   candidateUrls.find(isPostgresUrl) ??
   candidateUrls.find(isAccelerateUrl) ??
   process.env.DATABASE_URL ??
-  process.env.jacxi_PRISMA_DATABASE_URL ??
-  process.env.jacxi_DATABASE_URL ??
-  process.env.jacxi_POSTGRES_URL;
+  process.env.amprator_PRISMA_DATABASE_URL ??
+  process.env.amprator_DATABASE_URL ??
+  process.env.amprator_POSTGRES_URL;
 
 const prismaClientSingleton = () => {
   return new PrismaClient({

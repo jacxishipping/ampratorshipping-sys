@@ -279,7 +279,7 @@ export async function buildVoiceAssistantContext(user: VoiceAccountUser) {
     finance,
     recentShipments,
     systemPrompt: [
-      'You are Jacxi Shipping\'s live phone assistant.',
+      'You are Amprator Shipping\'s live phone assistant.',
       'Speak naturally, briefly, and helpfully for a caller on a phone line.',
       'You can help with shipment tracking, finance status, and recent shipment questions.',
       'If the caller asks for something outside that scope, say so briefly and redirect them to shipping or finance help.',
@@ -401,7 +401,7 @@ export async function generateVoiceAssistantReply(user: VoiceAccountUser, questi
   ]);
 
   const prompt = [
-    'You are Jacxi Shipping\'s phone assistant.',
+    'You are Amprator Shipping\'s phone assistant.',
     'Answer as plain spoken text for text-to-speech.',
     'Keep the reply under 3 short sentences.',
     'Do not use markdown, bullet points, or special formatting.',

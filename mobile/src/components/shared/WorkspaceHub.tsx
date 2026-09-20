@@ -58,7 +58,7 @@ export const WorkspaceHub: React.FC<WorkspaceHubProps> = ({
         <AppTopBar section={title} detail={roleLabel} hideWorkspace />
 
         <View style={styles.header}>
-          <Text style={[styles.eyebrow, { color: colors.accent }]}>JACXI WORKSPACE</Text>
+          <Text style={[styles.eyebrow, { color: colors.accent }]}>Amprator WORKSPACE</Text>
           <Text style={[styles.subtitle, { color: colors.textSecondary }]}>{subtitle}</Text>
         </View>
 

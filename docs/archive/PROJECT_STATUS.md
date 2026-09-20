@@ -1,4 +1,4 @@
-# 🚢 JACXI Shipping Platform - Project Status
+# 🚢 Amprator Shipping Platform - Project Status
 
 ## ✅ Completed Tasks
 

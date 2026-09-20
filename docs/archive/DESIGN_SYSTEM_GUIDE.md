@@ -1,4 +1,4 @@
-# Jacxi Dashboard Design System
+# Amprator Dashboard Design System
 
 ## Overview
 This design system provides a consistent, professional UI across all dashboard pages, based on the existing dashboard, shipments, and signin page designs.

@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
     }
 
     const payload = sendNotificationSchema.parse(await req.json());
-    const senderName = session.user.name || session.user.email || 'Jacxi user';
+    const senderName = session.user.name || session.user.email || 'Amprator user';
     const canManageCustomers = hasPermission(session.user.role, 'customers:view');
 
     if (canManageCustomers) {

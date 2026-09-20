@@ -66,10 +66,10 @@ function ask(rl, question, hidden) {
 async function main() {
   const prisma = new PrismaClient({
     datasourceUrl:
-      process.env.jacxi_DATABASE_URL ||
+      process.env.amprator_DATABASE_URL ||
       process.env.DATABASE_URL ||
-      process.env.jacxi_PRISMA_DATABASE_URL ||
-      process.env.jacxi_POSTGRES_URL,
+      process.env.amprator_PRISMA_DATABASE_URL ||
+      process.env.amprator_POSTGRES_URL,
   });
 
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });

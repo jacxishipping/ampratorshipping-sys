@@ -1,4 +1,4 @@
-# Business Logic Analysis - Jacxi Shipping Platform
+# Business Logic Analysis - Amprator Shipping Platform
 
 **Date:** January 31, 2026  
 **Purpose:** Comprehensive analysis of current business logic vs industry standards
@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-The Jacxi Shipping Platform implements a **container-first architecture** for vehicle shipping with integrated financial management. This analysis compares the current implementation against industry leaders like **Flexport**, **Freightos**, **ShipBob**, and traditional freight forwarders.
+The Amprator Shipping Platform implements a **container-first architecture** for vehicle shipping with integrated financial management. This analysis compares the current implementation against industry leaders like **Flexport**, **Freightos**, **ShipBob**, and traditional freight forwarders.
 
 **Overall Assessment:** ⭐⭐⭐⭐ (4/5) - Strong foundation with opportunities for enhancement
 
@@ -771,7 +771,7 @@ QualityCheck Model Exists:
 
 ## Comparison Summary Table
 
-| Feature | Jacxi Shipping | Flexport | Freightos | Industry Standard | Priority |
+| Feature | Amprator Shipping | Flexport | Freightos | Industry Standard | Priority |
 |---------|----------------|----------|-----------|-------------------|----------|
 | **Core Tracking** | ⚠️ Manual | ✅ Real-time | ✅ Real-time | ✅ Real-time | 🔴 Critical |
 | **Payment Processing** | ❌ Manual | ✅ Integrated | ✅ Integrated | ✅ Integrated | 🔴 Critical |
@@ -852,7 +852,7 @@ QualityCheck Model Exists:
 2. **Predictability** - Real-time tracking + notifications
 3. **Process** - Enforce quality checkpoints
 
-These three areas will bring Jacxi Shipping from **good** (current state) to **excellent** (industry-leading) in the vehicle shipping space.
+These three areas will bring Amprator Shipping from **good** (current state) to **excellent** (industry-leading) in the vehicle shipping space.
 
 ---
 

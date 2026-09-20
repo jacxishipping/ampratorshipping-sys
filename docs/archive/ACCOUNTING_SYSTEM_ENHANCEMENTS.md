@@ -161,7 +161,7 @@ model AuditLog {
   },
   "shipments": [
     {
-      "trackingNumber": "JACXI123",
+      "trackingNumber": "Amprator123",
       "revenue": 2000,
       "totalExpenses": 450,
       "profit": 1550,
@@ -500,4 +500,4 @@ The accounting & finance system now has every feature you requested, plus enhanc
 
 **Date**: December 5, 2025  
 **Version**: 2.0.0 (Enhanced)  
-**Developer**: JACXI Development Team
+**Developer**: Amprator Development Team

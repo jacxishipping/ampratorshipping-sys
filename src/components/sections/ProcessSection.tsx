@@ -40,7 +40,7 @@ export default function ProcessSection() {
 				<Fade in={show} timeout={800}>
 					<Box className="text-center mb-16">
 						<h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-							The <span className="text-[rgb(var(--jacxi-blue))]">Journey</span>
+							The <span className="text-[rgb(var(--amprator-blue))]">Journey</span>
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							From the USA or Canada through either Mersin or UAE to Afghanistan - here is what happens after you book
@@ -50,7 +50,7 @@ export default function ProcessSection() {
 
 				<div className="relative">
 					{/* Timeline Line */}
-					<div className="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-[rgb(var(--jacxi-blue))]/20 via-[rgb(var(--jacxi-blue))] to-[rgb(var(--jacxi-blue))]/20" />
+					<div className="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-[rgb(var(--amprator-blue))]/20 via-[rgb(var(--amprator-blue))] to-[rgb(var(--amprator-blue))]/20" />
 
 					{/* Steps */}
 					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -71,7 +71,7 @@ export default function ProcessSection() {
 											{/* Icon Circle */}
 											<Fade in={show} timeout={800} style={{ transitionDelay: `${index * 100 + 200}ms` }}>
 												<div className="relative mb-6">
-													<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[rgb(var(--jacxi-blue))] to-[rgb(var(--jacxi-blue))]/80 flex items-center justify-center text-white shadow-xl shadow-[rgb(var(--jacxi-blue))]/30 group-hover:scale-110 transition-all duration-300 relative z-10">
+													<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[rgb(var(--amprator-blue))] to-[rgb(var(--amprator-blue))]/80 flex items-center justify-center text-white shadow-xl shadow-[rgb(var(--amprator-blue))]/30 group-hover:scale-110 transition-all duration-300 relative z-10">
 														<Icon className="w-10 h-10" />
 													</div>
 													{/* Step Number */}
@@ -79,7 +79,7 @@ export default function ProcessSection() {
 														{index + 1}
 													</div>
 													{/* Glow Effect */}
-													<div className="absolute inset-0 bg-[rgb(var(--jacxi-blue))]/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+													<div className="absolute inset-0 bg-[rgb(var(--amprator-blue))]/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 												</div>
 											</Fade>
 

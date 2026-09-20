@@ -5,9 +5,9 @@
 
 ---
 
-## What Does Jacxi Shipping Do? (In Simple Terms)
+## What Does Amprator Shipping Do? (In Simple Terms)
 
-Think of Jacxi Shipping as **Uber for Car Shipping**:
+Think of Amprator Shipping as **Uber for Car Shipping**:
 
 1. Customer has a car to ship (e.g., from auction in California to buyer in Ethiopia)
 2. Admin creates a **Shipment** record for the vehicle
@@ -23,7 +23,7 @@ Think of Jacxi Shipping as **Uber for Car Shipping**:
 
 ### Good News ✅ - We're Competitive In:
 
-| Feature | Jacxi Shipping | Flexport/Freightos |
+| Feature | Amprator Shipping | Flexport/Freightos |
 |---------|----------------|-------------------|
 | **Container Management** | ⭐⭐⭐⭐⭐ Excellent | ⭐⭐⭐⭐⭐ Excellent |
 | **Invoice Automation** | ⭐⭐⭐⭐⭐ Excellent | ⭐⭐⭐⭐⭐ Excellent |
@@ -32,7 +32,7 @@ Think of Jacxi Shipping as **Uber for Car Shipping**:
 
 ### Areas to Improve 🔧:
 
-| Feature | Jacxi Shipping | Flexport/Freightos | Priority |
+| Feature | Amprator Shipping | Flexport/Freightos | Priority |
 |---------|----------------|-------------------|----------|
 | **Email Notifications** | ❌ Not implemented | ✅ Automated | 🔴 CRITICAL |
 | **Online Payments** | ❌ Manual only | ✅ Credit cards | 🔴 CRITICAL |

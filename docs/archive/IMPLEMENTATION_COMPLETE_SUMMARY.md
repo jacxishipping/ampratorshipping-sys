@@ -658,7 +658,7 @@ npm run dev
 
 ## 🙏 CONCLUSION
 
-**22 significant UI/UX enhancements have been successfully implemented (55% complete)**, transforming the JACXI Shipping Platform into a more professional, user-friendly, and modern application. 
+**22 significant UI/UX enhancements have been successfully implemented (55% complete)**, transforming the Amprator Shipping Platform into a more professional, user-friendly, and modern application. 
 
 ### Key Achievements:
 - ✨ Professional toast notifications system

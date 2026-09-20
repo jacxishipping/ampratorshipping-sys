@@ -28,10 +28,10 @@ const bcrypt = require('bcryptjs');
 async function main() {
   const prisma = new PrismaClient({
     datasourceUrl:
-      process.env.jacxi_DATABASE_URL ||
+      process.env.amprator_DATABASE_URL ||
       process.env.DATABASE_URL ||
-      process.env.jacxi_POSTGRES_URL ||
-      process.env.jacxi_PRISMA_DATABASE_URL,
+      process.env.amprator_POSTGRES_URL ||
+      process.env.amprator_PRISMA_DATABASE_URL,
   });
 
   try {
@@ -40,18 +40,18 @@ async function main() {
     const totalShipments = await prisma.shipment.count();
     console.log(`Target DB — users: ${totalUsers}, shipments: ${totalShipments}`);
 
-    const adminEmail = 'admin@jacxi.com';
+    const adminEmail = 'admin@amprator.com';
     const hashed = await bcrypt.hash('admin123', 12);
 
     const admin = await prisma.user.upsert({
       where: { email: adminEmail },
       update: {
-        name: 'JACXI Admin',
+        name: 'Amprator Admin',
         role: 'admin',
         passwordHash: hashed,
       },
       create: {
-        name: 'JACXI Admin',
+        name: 'Amprator Admin',
         email: adminEmail,
         passwordHash: hashed,
         role: 'admin',

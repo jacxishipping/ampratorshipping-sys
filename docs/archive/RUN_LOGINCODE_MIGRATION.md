@@ -12,9 +12,9 @@ If you're deploying with Docker, the migration will run automatically on contain
 
 ```bash
 docker run -d \
-  -e jacxi_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require" \
-  -e jacxi_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require" \
-  -e jacxi_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE" \
+  -e amprator_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require" \
+  -e amprator_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require" \
+  -e amprator_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE" \
   -e NEXTAUTH_SECRET="your-secret-here" \
   -e NEXTAUTH_URL="https://your-domain.com" \
   -p 3000:3000 \
@@ -31,9 +31,9 @@ The Dockerfile already includes `npx prisma migrate deploy` in the startup comma
 
 **Create `.env` file:**
 ```env
-jacxi_DATABASE_URL=postgres://user:password@host:5432/database?sslmode=require
-jacxi_POSTGRES_URL=postgres://user:password@host:5432/database?sslmode=require
-jacxi_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE
+amprator_DATABASE_URL=postgres://user:password@host:5432/database?sslmode=require
+amprator_POSTGRES_URL=postgres://user:password@host:5432/database?sslmode=require
+amprator_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE
 NEXTAUTH_SECRET=your-secret-here-change-in-production
 NEXTAUTH_URL=http://localhost:3000
 ```
@@ -51,8 +51,8 @@ If you have direct access to a server where the database is reachable:
 
 1. **Set environment variables:**
 ```bash
-export jacxi_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require"
-export jacxi_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require"
+export amprator_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require"
+export amprator_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require"
 ```
 
 2. **Install dependencies:**
@@ -78,9 +78,9 @@ If deploying to Vercel:
    - Go to your project settings
    - Navigate to Environment Variables
    - Add:
-     - `jacxi_DATABASE_URL`
-     - `jacxi_POSTGRES_URL`
-     - `jacxi_PRISMA_DATABASE_URL`
+     - `amprator_DATABASE_URL`
+     - `amprator_POSTGRES_URL`
+     - `amprator_PRISMA_DATABASE_URL`
      - `NEXTAUTH_SECRET`
      - `NEXTAUTH_URL`
 
@@ -135,7 +135,7 @@ Database schema is up to date!
 
 ### "Environment variable not found"
 - Make sure you've set all required environment variables
-- Use the exact names: `jacxi_DATABASE_URL` and `jacxi_POSTGRES_URL`
+- Use the exact names: `amprator_DATABASE_URL` and `amprator_POSTGRES_URL`
 - Don't use quotes around values in shell exports
 
 ## Security Note

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Jacxi Shipping dashboard now includes a comprehensive **Smart Search and Filter System** that provides powerful, real-time search capabilities across all major entities (Shipments, Items/Containers, Users) with advanced filtering options.
+The Amprator Shipping dashboard now includes a comprehensive **Smart Search and Filter System** that provides powerful, real-time search capabilities across all major entities (Shipments, Items/Containers, Users) with advanced filtering options.
 
 ---
 
@@ -654,5 +654,5 @@ For issues or feature requests:
 
 **Last Updated**: November 18, 2025  
 **Version**: 1.0.0  
-**Author**: Jacxi Shipping Development Team
+**Author**: Amprator Shipping Development Team
 

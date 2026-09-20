@@ -8,7 +8,7 @@
 
 ## Overview
 
-This migration adds support for two distinct service types in the Jacxi Shipping platform:
+This migration adds support for two distinct service types in the Amprator Shipping platform:
 1. **Purchase + Shipping** - Company buys vehicles for customers and ships them
 2. **Shipping Only** - Customer already owns vehicle, company only provides shipping
 
@@ -111,7 +111,7 @@ If you need to apply manually:
 
 ```bash
 # Connect to your PostgreSQL database
-psql -U your_user -d jacxi_shipping
+psql -U your_user -d amprator_shipping
 
 # Run the migration file
 \i prisma/migrations/20260131183000_add_service_types_and_purchase_fields/migration.sql

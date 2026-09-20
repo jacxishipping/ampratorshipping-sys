@@ -1,4 +1,4 @@
-# Business Flow Diagrams - Jacxi Shipping
+# Business Flow Diagrams - Amprator Shipping
 
 **Visual Reference Guide**  
 **Date:** January 31, 2026
@@ -9,7 +9,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    JACXI SHIPPING WORKFLOW                       │
+│                    Amprator SHIPPING WORKFLOW                       │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌──────────────┐

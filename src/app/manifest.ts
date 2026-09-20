@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'JACXI Shipping',
-    short_name: 'JACXI',
+    name: 'Amprator Shipping',
+    short_name: 'Amprator',
     description:
       'Vehicle shipping from the USA and Canada to Afghanistan through either Mersin or UAE with tracking, invoicing, and delivery operations.',
     start_url: '/',

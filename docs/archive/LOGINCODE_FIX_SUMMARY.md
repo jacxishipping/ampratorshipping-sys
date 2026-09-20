@@ -14,7 +14,7 @@ Code: 'P2022'
 
 1. **Schema vs Database Mismatch**: The Prisma schema defines a `loginCode` field on the User model
 2. **Migration Exists But Not Applied**: A migration file exists to add the column, but it wasn't being run
-3. **Environment Variable Confusion**: The schema uses `jacxi_DATABASE_URL` but this wasn't documented
+3. **Environment Variable Confusion**: The schema uses `amprator_DATABASE_URL` but this wasn't documented
 4. **Build Process Gap**: Migrations weren't running automatically during deployment
 
 ## Solution Implemented
@@ -24,8 +24,8 @@ Code: 'P2022'
 
 Added clear documentation that the following environment variables are required:
 ```env
-jacxi_DATABASE_URL="postgresql://..."
-jacxi_POSTGRES_URL="postgresql://..."
+amprator_DATABASE_URL="postgresql://..."
+amprator_POSTGRES_URL="postgresql://..."
 ```
 
 ### 2. Automated Migration Deployment

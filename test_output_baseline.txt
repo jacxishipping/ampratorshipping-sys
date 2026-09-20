@@ -1,5 +1,5 @@
 
-> jacxi-shipping@0.1.0 test
+> amprator-shipping@0.1.0 test
 > node --experimental-strip-types --test 'src/**/*.test.ts'
 
 TAP version 13

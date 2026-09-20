@@ -6,7 +6,7 @@ import { checkRateLimit } from '@/lib/rate-limit';
 
 type HeaderBag = Headers | Record<string, string | string[] | undefined> | null | undefined;
 
-const MOBILE_AUTH_TOKEN_PREFIX = 'jacxi-mobile';
+const MOBILE_AUTH_TOKEN_PREFIX = 'amprator-mobile';
 const MOBILE_AUTH_TTL_SECONDS = 30 * 24 * 60 * 60;
 
 const mobileAuthUserSelect = {

@@ -2,14 +2,14 @@
 
 **Date:** January 31, 2026  
 **Reviewer:** AI Code Analysis  
-**System:** Jacxi Shipping Platform  
+**System:** Amprator Shipping Platform  
 **Overall Rating:** ⭐⭐⭐⭐½ (4.5/5 stars)
 
 ---
 
 ## Executive Summary
 
-The Jacxi Shipping platform features a **professional-grade financial system** built on double-entry accounting principles with a container-first architecture. The system successfully manages dual business models (Purchase+Shipping and Shipping-Only), automates invoice generation, tracks customer balances through a ledger system, and provides comprehensive financial reporting.
+The Amprator Shipping platform features a **professional-grade financial system** built on double-entry accounting principles with a container-first architecture. The system successfully manages dual business models (Purchase+Shipping and Shipping-Only), automates invoice generation, tracks customer balances through a ledger system, and provides comprehensive financial reporting.
 
 **Status:** ✅ **Production-Ready**  
 **Complexity Level:** Professional/Enterprise  

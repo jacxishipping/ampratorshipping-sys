@@ -2,8 +2,8 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Which route does JACXI use for Afghanistan vehicle shipping?',
-    answer: 'JACXI coordinates vehicle shipping from across the USA and Canada to Afghanistan using one of two route options: through Mersin, Turkey or through UAE. The team then supports final customs and delivery inside Afghanistan.',
+    question: 'Which route does Amprator use for Afghanistan vehicle shipping?',
+    answer: 'Amprator coordinates vehicle shipping from across the USA and Canada to Afghanistan using one of two route options: through Mersin, Turkey or through UAE. The team then supports final customs and delivery inside Afghanistan.',
   },
   {
     question: 'Can you deliver outside Herat or Kabul?',
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'Does the quote form change any shipment or dashboard data?',
-    answer: 'No. The public quote form only sends your request to the JACXI team. It does not create a dashboard account, shipment record, or database workflow by itself.',
+    answer: 'No. The public quote form only sends your request to the Amprator team. It does not create a dashboard account, shipment record, or database workflow by itself.',
   },
   {
     question: 'Can I track a shipment after it is active?',

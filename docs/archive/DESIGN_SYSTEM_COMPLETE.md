@@ -1,6 +1,6 @@
 # 🎉 COMPLETE DESIGN SYSTEM - FINAL SUMMARY
 
-**Project**: Jacxi Shipping Dashboard Design System  
+**Project**: Amprator Shipping Dashboard Design System  
 **Completion Date**: December 7, 2025  
 **Status**: ✅ **PRODUCTION READY**
 

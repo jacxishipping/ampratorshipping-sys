@@ -191,7 +191,7 @@ When a shipment has `status = 'IN_TRANSIT'`:
 **Production Database:**
 - Host: `database-1.cda8cem8oi5h.us-east-2.rds.amazonaws.com`
 - Port: `5432`
-- Database: `jacxi`
+- Database: `amprator`
 - User: `postgres`
 - Connection string stored in `.env.local`
 

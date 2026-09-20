@@ -1,13 +1,13 @@
-# Jacxi Shipping Mobile App Store Copy
+# Amprator Shipping Mobile App Store Copy
 
 ## App Name
-Jacxi Shipping
+Amprator Shipping
 
 ## Promotional Text (iOS)
-Track shipments, manage containers, monitor invoices, and stay updated with real-time logistics alerts from Jacxi Shipping anywhere.
+Track shipments, manage containers, monitor invoices, and stay updated with real-time logistics alerts from Amprator Shipping anywhere.
 
 ## Description (Long)
-Jacxi Shipping helps logistics teams, operations staff, and customers manage vehicle and container shipping from one powerful mobile app.
+Amprator Shipping helps logistics teams, operations staff, and customers manage vehicle and container shipping from one powerful mobile app.
 
 Get instant visibility into shipments, container status, invoice progress, and account activity whether you are in the office, at the port, or on the move.
 
@@ -20,20 +20,20 @@ Key features:
 - Secure login with email/password and 8-character login code
 - Smooth, mobile-first experience built for daily operations
 
-Jacxi Shipping is designed to reduce manual follow-up, improve response time, and keep your team aligned across every stage of the shipping process.
+Amprator Shipping is designed to reduce manual follow-up, improve response time, and keep your team aligned across every stage of the shipping process.
 
 ## Short Description (Google Play)
-Track shipments, containers, and invoices in real time with Jacxi Shipping.
+Track shipments, containers, and invoices in real time with Amprator Shipping.
 
 ## Keywords (App Store)
 shipping,logistics,tracking,containers,invoices,dispatch,freight,vehicle,deliveries,operations
 
 ## Copyright Text Options
 Option 1:
-Copyright 2026 Jacxi Shipping. All rights reserved.
+Copyright 2026 Amprator Shipping. All rights reserved.
 
 Option 2:
-Copyright 2026 Jacxi Shipping Platform. All rights reserved.
+Copyright 2026 Amprator Shipping Platform. All rights reserved.
 
 Option 3:
-Copyright 2026 Jacxi Shipping LLC. All rights reserved.
+Copyright 2026 Amprator Shipping LLC. All rights reserved.

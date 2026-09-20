@@ -61,7 +61,7 @@ export const AuthScreenShell: React.FC<AuthScreenShellProps> = ({
             <View style={[styles.heroBadge, { backgroundColor: colors.accentSoft, borderColor: `${colors.accent}35` }]}> 
               <AppIcon name={icon} size={26} color={colors.accent} />
             </View>
-            <Text style={[styles.eyebrow, { color: colors.accent }]}>JACXI ACCESS</Text>
+            <Text style={[styles.eyebrow, { color: colors.accent }]}>Amprator ACCESS</Text>
             <Text style={[styles.title, { color: colors.textPrimary }]}>{title}</Text>
             <Text style={[styles.description, { color: colors.textSecondary }]}>{description}</Text>
           </Card>

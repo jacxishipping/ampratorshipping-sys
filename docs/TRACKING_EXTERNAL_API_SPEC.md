@@ -26,7 +26,7 @@ Consumers should treat this server response as the contract and should not depen
 Production example:
 
 ```text
-https://www.jacxishipping.com
+https://www.ampratorshipping.com
 ```
 
 ## Endpoint 1: Website Tracking API
@@ -170,14 +170,14 @@ PUBLIC_TRACKING_API_KEYS="key-one,key-two,key-three"
 ### GET Example
 
 ```bash
-curl -X GET "https://www.jacxishipping.com/api/public/tracking?trackNumber=UETU6059142" \
+curl -X GET "https://www.ampratorshipping.com/api/public/tracking?trackNumber=UETU6059142" \
   -H "Authorization: Bearer YOUR_PUBLIC_TRACKING_API_KEY"
 ```
 
 ### POST Example
 
 ```bash
-curl -X POST "https://www.jacxishipping.com/api/public/tracking" \
+curl -X POST "https://www.ampratorshipping.com/api/public/tracking" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: YOUR_PUBLIC_TRACKING_API_KEY" \
   -d '{"trackNumber":"UETU6059142"}'

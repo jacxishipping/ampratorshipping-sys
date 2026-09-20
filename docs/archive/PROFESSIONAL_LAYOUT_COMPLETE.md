@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-Successfully redesigned the JACXI Shipping Dashboard with a **professional enterprise layout** featuring:
+Successfully redesigned the Amprator Shipping Dashboard with a **professional enterprise layout** featuring:
 - ✅ Fixed header at the top
 - ✅ Sidebar navigation on the left
 - ✅ Content area on the right
@@ -16,7 +16,7 @@ Successfully redesigned the JACXI Shipping Dashboard with a **professional enter
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    HEADER (64px)                        │
-│  Logo | JACXI Shipping        [Notifications] [Avatar] │
+│  Logo | Amprator Shipping        [Notifications] [Avatar] │
 ├─────────────┬───────────────────────────────────────────┤
 │             │                                           │
 │   SIDEBAR   │           MAIN CONTENT AREA              │
@@ -43,7 +43,7 @@ Successfully redesigned the JACXI Shipping Dashboard with a **professional enter
 
 **Features:**
 - ✅ **Fixed Position**: Sticky at top (64px height)
-- ✅ **Logo**: JACXI branding with gradient badge
+- ✅ **Logo**: Amprator branding with gradient badge
 - ✅ **Navigation**: Mobile menu toggle (hamburger icon)
 - ✅ **Actions**:
   - Notifications badge (with count indicator)
@@ -440,7 +440,7 @@ const myNavigation: NavigationItem[] = [
 
 ## 🎊 Summary
 
-The JACXI Shipping Dashboard now features a **professional, enterprise-grade layout** with:
+The Amprator Shipping Dashboard now features a **professional, enterprise-grade layout** with:
 
 - ✅ **Fixed header** (64px) with logo, notifications, and user menu
 - ✅ **Sidebar navigation** (260px) with organized menu groups

@@ -14,20 +14,20 @@ if [ ! -f .env.local ] && [ ! -f .env ]; then
     echo ""
     echo "✅ Created .env.local"
     echo "⚠️  IMPORTANT: Edit .env.local and set your database URLs:"
-    echo "   - jacxi_DATABASE_URL"
-    echo "   - jacxi_POSTGRES_URL"
+    echo "   - amprator_DATABASE_URL"
+    echo "   - amprator_POSTGRES_URL"
     echo "   - NEXTAUTH_SECRET"
     echo ""
     read -p "Press Enter after you've updated .env.local with your database credentials..."
 fi
 
 # Check if database URL is set
-if ! grep -q "jacxi_DATABASE_URL" .env.local 2>/dev/null && ! grep -q "jacxi_DATABASE_URL" .env 2>/dev/null; then
-    echo "⚠️  jacxi_DATABASE_URL not found in environment file!"
+if ! grep -q "amprator_DATABASE_URL" .env.local 2>/dev/null && ! grep -q "amprator_DATABASE_URL" .env 2>/dev/null; then
+    echo "⚠️  amprator_DATABASE_URL not found in environment file!"
     echo "Please add the following to your .env.local:"
     echo ""
-    echo "jacxi_DATABASE_URL=\"postgresql://username:password@localhost:5432/jacxi_shipping\""
-    echo "jacxi_POSTGRES_URL=\"postgresql://username:password@localhost:5432/jacxi_shipping\""
+    echo "amprator_DATABASE_URL=\"postgresql://username:password@localhost:5432/amprator_shipping\""
+    echo "amprator_POSTGRES_URL=\"postgresql://username:password@localhost:5432/amprator_shipping\""
     echo ""
     exit 1
 fi

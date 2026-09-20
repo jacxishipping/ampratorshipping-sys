@@ -1,7 +1,7 @@
-# 🗄️ JACXI Shipping Database Setup Guide
+# 🗄️ Amprator Shipping Database Setup Guide
 
 ## Overview
-This guide provides comprehensive instructions for setting up the Prisma database schema, migrations, and data seeding for the JACXI Shipping platform.
+This guide provides comprehensive instructions for setting up the Prisma database schema, migrations, and data seeding for the Amprator Shipping platform.
 
 ## 🚀 Quick Start
 
@@ -10,7 +10,7 @@ Create a `.env.local` file with your database configuration:
 
 ```env
 # Database Configuration
-DATABASE_URL="postgresql://username:password@localhost:5432/jacxi_shipping"
+DATABASE_URL="postgresql://username:password@localhost:5432/amprator_shipping"
 
 # NextAuth Configuration
 NEXTAUTH_URL="http://localhost:3000"
@@ -110,7 +110,7 @@ npm run db:setup
 ## 📈 Sample Data
 
 ### Users
-- **Admin User**: `admin@jacxi.com` / `admin123`
+- **Admin User**: `admin@amprator.com` / `admin123`
 - **Demo Customer**: `customer@example.com` / `customer123`
 
 ### Shipments
@@ -126,7 +126,7 @@ npm run db:setup
 
 ## 🎉 Success!
 
-Your JACXI Shipping database is now fully configured with:
+Your Amprator Shipping database is now fully configured with:
 - ✅ Complete schema with all models
 - ✅ Sample data for testing
 - ✅ Database utilities and services

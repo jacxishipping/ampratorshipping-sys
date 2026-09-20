@@ -34,7 +34,7 @@ Then:
 ## Test Login
 
 ### With Email/Password:
-- Email: `admin@jacxi.com`
+- Email: `admin@amprator.com`
 - Password: `password123`
 
 ### With Login Code:

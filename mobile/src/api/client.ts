@@ -10,8 +10,8 @@ function resolveApiUrl() {
   const normalizedConfiguredUrl = (() => {
     try {
       const parsedUrl = new URL(configuredUrl);
-      if (parsedUrl.hostname === 'jacxishipping.com') {
-        parsedUrl.hostname = 'www.jacxishipping.com';
+      if (parsedUrl.hostname === 'ampratorshipping.com') {
+        parsedUrl.hostname = 'www.ampratorshipping.com';
       }
       return parsedUrl.toString().replace(/\/$/, '');
     } catch {

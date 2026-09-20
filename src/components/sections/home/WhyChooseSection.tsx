@@ -28,7 +28,7 @@ export default function WhyChooseSection() {
     <section className="bg-[var(--panel)] py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-[var(--accent-gold)]">Why JACXI</p>
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-[var(--accent-gold)]">Why Amprator</p>
           <h2 className="text-4xl font-bold text-[var(--text-primary)] sm:text-5xl">Built around the actual route, not a template.</h2>
           <p className="mt-5 text-lg leading-relaxed text-[var(--text-secondary)]">
             The service model is designed for Afghan vehicle imports that need coordinated pickup in the USA or Canada, route choice through Mersin or UAE, and dependable final-mile planning after transit assignment.

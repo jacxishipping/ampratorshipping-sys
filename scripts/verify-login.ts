@@ -11,7 +11,7 @@ async function main() {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded', Cookie: csrfCookie },
     body: new URLSearchParams({
       csrfToken,
-      email: 'admin@jacxi.com',
+      email: 'admin@amprator.com',
       password: 'afghan123',
       json: 'true',
     }),

@@ -13,9 +13,9 @@ import { LenisWrapperProvider } from "@/components/providers/LenisWrapperProvide
 const fontVariables = '';
 
 export const metadata: Metadata = {
-  title: "JACXI Shipping - Vehicle Shipping from USA & Canada to Afghanistan",
+  title: "Amprator Shipping - Vehicle Shipping from USA & Canada to Afghanistan",
   description: "Professional vehicle shipping from anywhere in the USA and Canada to Afghanistan through either the Mersin route or the UAE route. Complete service with customs clearance, insurance, and tracking for all Afghan provinces.",
-  keywords: "vehicle shipping USA to Afghanistan, car shipping Canada to Afghanistan, USA Canada car shipping Afghanistan, Mersin route car shipping, UAE route car shipping, vehicle transport Kabul, Jacxi Shipping, Afghanistan car import",
+  keywords: "vehicle shipping USA to Afghanistan, car shipping Canada to Afghanistan, USA Canada car shipping Afghanistan, Mersin route car shipping, UAE route car shipping, vehicle transport Kabul, Amprator Shipping, Afghanistan car import",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "JACXI",
+    title: "Amprator",
   },
   robots: {
     index: true,

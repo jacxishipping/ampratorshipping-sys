@@ -115,13 +115,13 @@ export async function POST(request: NextRequest) {
     const result = payload.channel === 'email'
       ? await sendConfiguredEmail({
           to: payload.to,
-          subject: 'Jacxi communication test',
-          html: '<p>Your Jacxi email provider settings are working.</p>',
-          text: 'Your Jacxi email provider settings are working.',
+          subject: 'Amprator communication test',
+          html: '<p>Your Amprator email provider settings are working.</p>',
+          text: 'Your Amprator email provider settings are working.',
         })
       : await sendConfiguredSms({
           to: payload.to,
-          body: 'Jacxi SMS provider settings are working.',
+          body: 'Amprator SMS provider settings are working.',
         });
 
     if (!result.success) {

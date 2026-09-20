@@ -118,7 +118,7 @@ export default function ContactSection({ isAuthenticated = false }: ContactSecti
                   <Mail className="mt-1 h-5 w-5 text-[#D4AF37]" />
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <a href="mailto:info@jacxi.com" className="mt-1 block text-sm font-semibold text-gray-900 hover:text-[#D4AF37]">info@jacxi.com</a>
+                    <a href="mailto:info@amprator.com" className="mt-1 block text-sm font-semibold text-gray-900 hover:text-[#D4AF37]">info@amprator.com</a>
                   </div>
                 </div>
               </div>

@@ -42,8 +42,8 @@ export default function TrustSection() {
 								transition={{ delay: index * 0.1 }}
 								className="flex flex-col items-center text-center group"
 							>
-								<div className="w-16 h-16 rounded-full bg-gradient-to-br from-[rgb(var(--jacxi-blue))]/10 to-[rgb(var(--uae-gold))]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-									<Icon className="w-8 h-8 text-[rgb(var(--jacxi-blue))]" />
+								<div className="w-16 h-16 rounded-full bg-gradient-to-br from-[rgb(var(--amprator-blue))]/10 to-[rgb(var(--uae-gold))]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+									<Icon className="w-8 h-8 text-[rgb(var(--amprator-blue))]" />
 								</div>
 								<h3 className="font-bold text-gray-900 mb-1">{badge.title}</h3>
 								<p className="text-sm text-gray-600">{badge.description}</p>

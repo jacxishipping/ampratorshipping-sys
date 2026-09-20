@@ -7,7 +7,7 @@ const DEV_SEEDED_TRANSIT_COMPANY = {
   name: 'Khyber Inland Transit Co.',
   code: 'KIT-DEV',
   phone: '+93 70 000 1122',
-  email: 'ops+transit-dev@jacxi.local',
+  email: 'ops+transit-dev@amprator.local',
 };
 
 const DEV_SEEDED_TRANSIT_EVENTS = [

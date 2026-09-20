@@ -1,7 +1,7 @@
 # 🎨 Dashboard UI Enhancements - Premium Edition
 
 ## ✨ Overview
-Successfully enhanced the JACXI Shipping Dashboard with premium design elements, smooth animations, and modern UI patterns to create a sophisticated, polished user experience.
+Successfully enhanced the Amprator Shipping Dashboard with premium design elements, smooth animations, and modern UI patterns to create a sophisticated, polished user experience.
 
 ---
 

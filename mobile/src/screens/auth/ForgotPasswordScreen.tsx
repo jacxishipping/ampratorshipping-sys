@@ -87,7 +87,7 @@ const ForgotPasswordScreen: React.FC<ForgotPasswordScreenProps> = ({ navigation 
           )}
         />
 
-        <Text style={[styles.helper, { color: colors.textSecondary }]}>The reset link is sent to the email connected to your Jacxi account.</Text>
+        <Text style={[styles.helper, { color: colors.textSecondary }]}>The reset link is sent to the email connected to your Amprator account.</Text>
 
         <Button
           title="Send Reset Link"

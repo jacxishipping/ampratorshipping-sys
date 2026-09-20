@@ -70,12 +70,12 @@ POST /api/users/login-code
 **Print on a card:**
 ```
 ┌─────────────────────────────┐
-│   JACXI SHIPPING            │
+│   Amprator SHIPPING            │
 │   Your Login Code:          │
 │                             │
 │      SHIP 2024              │
 │                             │
-│   Visit: jacxi.com          │
+│   Visit: amprator.com          │
 │   Page: Simple Login        │
 └─────────────────────────────┘
 ```

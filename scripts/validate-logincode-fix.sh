@@ -52,17 +52,17 @@ fi
 
 # Check 4: Verify .env.example has correct database URLs
 echo "✓ Checking environment configuration..."
-if grep -q "jacxi_DATABASE_URL" ".env.example"; then
-    echo "  ✅ .env.example includes jacxi_DATABASE_URL"
+if grep -q "amprator_DATABASE_URL" ".env.example"; then
+    echo "  ✅ .env.example includes amprator_DATABASE_URL"
 else
-    echo "  ❌ .env.example missing jacxi_DATABASE_URL"
+    echo "  ❌ .env.example missing amprator_DATABASE_URL"
     ERRORS=$((ERRORS + 1))
 fi
 
-if grep -q "jacxi_POSTGRES_URL" ".env.example"; then
-    echo "  ✅ .env.example includes jacxi_POSTGRES_URL"
+if grep -q "amprator_POSTGRES_URL" ".env.example"; then
+    echo "  ✅ .env.example includes amprator_POSTGRES_URL"
 else
-    echo "  ❌ .env.example missing jacxi_POSTGRES_URL"
+    echo "  ❌ .env.example missing amprator_POSTGRES_URL"
     ERRORS=$((ERRORS + 1))
 fi
 
@@ -106,7 +106,7 @@ if [ $ERRORS -eq 0 ]; then
     echo "The loginCode configuration is correct."
     echo ""
     echo "Next steps:"
-    echo "1. Set up your .env.local with jacxi_DATABASE_URL and jacxi_POSTGRES_URL"
+    echo "1. Set up your .env.local with amprator_DATABASE_URL and amprator_POSTGRES_URL"
     echo "2. Run: npm run db:generate"
     echo "3. Run: npx prisma migrate deploy"
     echo "4. Run: npm run dev"

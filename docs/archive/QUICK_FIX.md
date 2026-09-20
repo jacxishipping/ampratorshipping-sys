@@ -63,7 +63,7 @@ npm run db:migrate:status
 ## Troubleshooting
 
 **Can't connect to database?**
-→ Check `.env` has `jacxi_DATABASE_URL`
+→ Check `.env` has `amprator_DATABASE_URL`
 
 **Permission denied?**
 → Run: `chmod +x scripts/resolve-failed-migration.sh`

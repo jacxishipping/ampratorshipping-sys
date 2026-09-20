@@ -1,6 +1,6 @@
 # Public Website Removal Summary
 
-This document lists all components and pages removed from the JACXI Shipping project to convert it from a public website with dashboard to a dashboard-only application.
+This document lists all components and pages removed from the Amprator Shipping project to convert it from a public website with dashboard to a dashboard-only application.
 
 ## Removed Pages
 
@@ -48,7 +48,7 @@ Public-facing layout components removed:
 Removed public-facing UI components:
 - `WhatsAppButton.tsx` - WhatsApp floating button
 - `LanguageSwitcher.tsx` - Public site language switcher
-- `JACXIDesignShowcase.tsx` - Design system showcase
+- `AmpratorDesignShowcase.tsx` - Design system showcase
 
 ### Public Assets (`public/`)
 Removed public website assets:
@@ -71,7 +71,7 @@ export default function Home() {
 
 ### `src/app/layout.tsx`
 Updated metadata to reflect dashboard-only application:
-- Changed title to "JACXI Shipping - Management Dashboard"
+- Changed title to "Amprator Shipping - Management Dashboard"
 - Simplified description
 - Set robots to noindex/nofollow
 - Removed OpenGraph, Twitter cards, and other public SEO metadata

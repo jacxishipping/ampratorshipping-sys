@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Jacxi Shipping dashboard now includes a **professional-grade photo viewer** with advanced features for viewing, zooming, and downloading shipment photos (container and arrival photos).
+The Amprator Shipping dashboard now includes a **professional-grade photo viewer** with advanced features for viewing, zooming, and downloading shipment photos (container and arrival photos).
 
 ---
 
@@ -402,5 +402,5 @@ For issues or feature requests:
 
 **Last Updated**: November 18, 2025  
 **Version**: 1.0.0  
-**Author**: Jacxi Shipping Development Team
+**Author**: Amprator Shipping Development Team
 

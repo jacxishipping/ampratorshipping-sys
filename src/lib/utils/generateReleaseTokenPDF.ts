@@ -46,9 +46,9 @@ const COLORS = {
 };
 
 const COMPANY = {
-  name: 'JACXI Shipping',
+  name: 'Amprator Shipping',
   addressLine: 'Dubai, UAE',
-  contactLine: 'support@jacxi.com | +971-XX-XXXXXXX',
+  contactLine: 'support@amprator.com | +971-XX-XXXXXXX',
 };
 
 const formatDate = (value: string | null) => {

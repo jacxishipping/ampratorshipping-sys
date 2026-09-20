@@ -1,4 +1,4 @@
-# Jacxi Shipping Mobile App - Implementation Summary
+# Amprator Shipping Mobile App - Implementation Summary
 
 ## ✅ Complete Implementation
 

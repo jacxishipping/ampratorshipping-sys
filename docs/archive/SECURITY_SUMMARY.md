@@ -7,7 +7,7 @@ This PR addresses a database schema mismatch error where the `User.loginCode` co
 
 ### Changes Made
 1. **Environment Configuration** (`.env.example`)
-   - Added documentation for `jacxi_DATABASE_URL` and `jacxi_POSTGRES_URL`
+   - Added documentation for `amprator_DATABASE_URL` and `amprator_POSTGRES_URL`
    - No security vulnerabilities introduced
    - Changes are documentation-only
 

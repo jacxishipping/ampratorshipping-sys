@@ -19,7 +19,7 @@
       "env": {
         "APP_ENV": "development",
         "EXPO_PUBLIC_APP_ENV": "development",
-        "EXPO_PUBLIC_API_URL": "https://www.jacxishipping.com"
+        "EXPO_PUBLIC_API_URL": "https://www.ampratorshipping.com"
       }
     },
     "preview": {
@@ -34,7 +34,7 @@
       "env": {
         "APP_ENV": "staging",
         "EXPO_PUBLIC_APP_ENV": "staging",
-        "EXPO_PUBLIC_API_URL": "https://www.jacxishipping.com"
+        "EXPO_PUBLIC_API_URL": "https://www.ampratorshipping.com"
       }
     },
     "production": {
@@ -50,7 +50,7 @@
       "env": {
         "APP_ENV": "production",
         "EXPO_PUBLIC_APP_ENV": "production",
-        "EXPO_PUBLIC_API_URL": "https://www.jacxishipping.com"
+        "EXPO_PUBLIC_API_URL": "https://www.ampratorshipping.com"
       }
     }
   },

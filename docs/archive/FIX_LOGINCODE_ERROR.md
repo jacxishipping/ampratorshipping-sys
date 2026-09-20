@@ -19,11 +19,11 @@ Make sure your `.env.local` or `.env` file has the correct database URL variable
 ```env
 # Database - REQUIRED: Use these exact variable names
 # Direct PostgreSQL connections (for migrations and direct queries)
-jacxi_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require"
-jacxi_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require"
+amprator_DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require"
+amprator_POSTGRES_URL="postgres://user:password@host:5432/database?sslmode=require"
 
 # Prisma Accelerate URL (optional, for optimized connection pooling)
-jacxi_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE"
+amprator_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY_HERE"
 
 # Legacy (for backward compatibility with some scripts)
 DATABASE_URL="postgres://user:password@host:5432/database?sslmode=require"
@@ -33,7 +33,7 @@ NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="your-super-secret-key-generate-with-openssl-rand-base64-32"
 ```
 
-**Important:** The schema.prisma file specifically uses `jacxi_DATABASE_URL` and `jacxi_POSTGRES_URL`, so make sure these are set with your actual database credentials!
+**Important:** The schema.prisma file specifically uses `amprator_DATABASE_URL` and `amprator_POSTGRES_URL`, so make sure these are set with your actual database credentials!
 
 ### Step 2: Apply Database Migrations
 
@@ -100,7 +100,7 @@ CREATE UNIQUE INDEX "User_loginCode_key" ON "User"("loginCode");
 ## Troubleshooting
 
 ### Issue: "Environment variable not found"
-- Make sure you're using `jacxi_DATABASE_URL` and `jacxi_POSTGRES_URL` (not just `DATABASE_URL`)
+- Make sure you're using `amprator_DATABASE_URL` and `amprator_POSTGRES_URL` (not just `DATABASE_URL`)
 - Check that your `.env.local` or `.env` file is in the project root
 - The variables should NOT have quotes around the values in the actual .env file
 
@@ -129,18 +129,18 @@ When deploying to production (e.g., Vercel, AWS, Docker):
 
 ### Environment Variables
 Set the environment variables in your hosting platform:
-- `jacxi_DATABASE_URL` - Direct PostgreSQL connection URL
-- `jacxi_POSTGRES_URL` - Direct PostgreSQL connection URL (usually same as DATABASE_URL)
-- `jacxi_PRISMA_DATABASE_URL` - (Optional) Prisma Accelerate URL for connection pooling
+- `amprator_DATABASE_URL` - Direct PostgreSQL connection URL
+- `amprator_POSTGRES_URL` - Direct PostgreSQL connection URL (usually same as DATABASE_URL)
+- `amprator_PRISMA_DATABASE_URL` - (Optional) Prisma Accelerate URL for connection pooling
 - `NEXTAUTH_SECRET` - NextAuth secret key
 - `NEXTAUTH_URL` - Your application URL
 
 **Example for Docker:**
 ```bash
 docker run -d \
-  -e jacxi_DATABASE_URL="postgres://user:password@host:5432/database" \
-  -e jacxi_POSTGRES_URL="postgres://user:password@host:5432/database" \
-  -e jacxi_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY" \
+  -e amprator_DATABASE_URL="postgres://user:password@host:5432/database" \
+  -e amprator_POSTGRES_URL="postgres://user:password@host:5432/database" \
+  -e amprator_PRISMA_DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY" \
   -e NEXTAUTH_SECRET="your-secret" \
   -e NEXTAUTH_URL="https://yourdomain.com" \
   -p 3000:3000 \
@@ -154,9 +154,9 @@ services:
   app:
     image: your-image-name
     environment:
-      - jacxi_DATABASE_URL=postgres://user:password@host:5432/database
-      - jacxi_POSTGRES_URL=postgres://user:password@host:5432/database
-      - jacxi_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY
+      - amprator_DATABASE_URL=postgres://user:password@host:5432/database
+      - amprator_POSTGRES_URL=postgres://user:password@host:5432/database
+      - amprator_PRISMA_DATABASE_URL=prisma+postgres://accelerate.prisma-data.net/?api_key=YOUR_API_KEY
       - NEXTAUTH_SECRET=your-secret
       - NEXTAUTH_URL=https://yourdomain.com
     ports:

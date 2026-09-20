@@ -16,25 +16,25 @@ Your application can now send automated emails for:
 - Automatically sent when invoices are generated
 - Includes invoice details and PDF download link
 - Professional HTML formatting
-- Sender: `invoices@jacxishipping.com`
+- Sender: `invoices@ampratorshipping.com`
 
 ### 2. **Status Update Emails**
 - Container status change notifications
 - Shipment tracking updates
 - Real-time customer communication
-- Sender: `tracking@jacxishipping.com`
+- Sender: `tracking@ampratorshipping.com`
 
 ### 3. **Payment Reminder Emails**
 - Automated overdue payment notifications
 - Three urgency levels (normal, high, urgent)
 - Sent at 3, 7, 14, and 30 days overdue
 - Color-coded urgency indicators
-- Sender: `invoices@jacxishipping.com`
+- Sender: `invoices@ampratorshipping.com`
 
 ### 4. **Shipment Created Emails**
 - Welcome emails when new shipments are created
 - Vehicle details and tracking information
-- Sender: `notifications@jacxishipping.com`
+- Sender: `notifications@ampratorshipping.com`
 
 ## 🚀 How to Use
 
@@ -80,7 +80,7 @@ The cron job at `/api/cron/send-payment-reminders` runs automatically:
 
 2. **Add Your Domain:**
    - Click "Add Domain"
-   - Enter your domain (e.g., `jacxishipping.com`)
+   - Enter your domain (e.g., `ampratorshipping.com`)
    - Follow DNS verification steps
 
 3. **Verify DNS Records:**
@@ -91,11 +91,11 @@ The cron job at `/api/cron/send-payment-reminders` runs automatically:
 
 4. **Update Email Addresses:**
    Once verified, your emails will send from:
-   - `invoices@jacxishipping.com`
-   - `tracking@jacxishipping.com`
-   - `notifications@jacxishipping.com`
-   - `billing@jacxishipping.com`
-   - `support@jacxishipping.com`
+   - `invoices@ampratorshipping.com`
+   - `tracking@ampratorshipping.com`
+   - `notifications@ampratorshipping.com`
+   - `billing@ampratorshipping.com`
+   - `support@ampratorshipping.com`
 
 ## 📝 Configuration Details
 

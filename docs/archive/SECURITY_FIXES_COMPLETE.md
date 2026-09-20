@@ -210,7 +210,7 @@ npm run build
 ✅ **Zero vulnerabilities in dependency tree**  
 ✅ **Application ready for production deployment**
 
-The Jacxi Shipping Platform is now secure and ready for deployment. All critical RCE and file inclusion vulnerabilities have been patched, and the application builds successfully with Next.js 16.1.6.
+The Amprator Shipping Platform is now secure and ready for deployment. All critical RCE and file inclusion vulnerabilities have been patched, and the application builds successfully with Next.js 16.1.6.
 
 ---
 

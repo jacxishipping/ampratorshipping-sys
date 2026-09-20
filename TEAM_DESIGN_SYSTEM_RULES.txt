@@ -1,4 +1,4 @@
-JACXI SHIPPING TEAM DESIGN RULES
+Amprator SHIPPING TEAM DESIGN RULES
 
 Use this file as the short working guide for designers and developers. These are the rules to follow when creating or updating UI.
 

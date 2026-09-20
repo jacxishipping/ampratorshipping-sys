@@ -29,7 +29,7 @@ const testimonials = [
 		name: 'Zahra A.',
 		location: 'Mazar-i-Sharif',
 		rating: 5,
-		text: 'My family sent a car from California. Took about 7 weeks total. Driver was nice and brought it right to our house. Thank you Jacxi!',
+		text: 'My family sent a car from California. Took about 7 weeks total. Driver was nice and brought it right to our house. Thank you Amprator!',
 		vehicle: '2017 Lexus RX',
 	},
 ];
@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
 					className="text-center mb-16"
 				>
 					<h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-						What People <span className="text-[rgb(var(--jacxi-blue))]">Say</span>
+						What People <span className="text-[rgb(var(--amprator-blue))]">Say</span>
 					</h2>
 					<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 						Real reviews from customers who shipped their cars with us
@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
 						>
 							<div className="h-full p-8 rounded-2xl backdrop-blur-md bg-gradient-to-br from-white/80 to-gray-50/80 border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
 								{/* Quote Icon */}
-								<Quote className="w-10 h-10 text-[rgb(var(--jacxi-blue))]/20 mb-4" />
+								<Quote className="w-10 h-10 text-[rgb(var(--amprator-blue))]/20 mb-4" />
 
 								{/* Rating */}
 								<div className="flex gap-1 mb-4">
@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
 								<div className="pt-4 border-t border-gray-200">
 									<div className="font-semibold text-gray-900">{testimonial.name}</div>
 									<div className="text-sm text-gray-600">{testimonial.location}</div>
-									<div className="text-xs text-[rgb(var(--jacxi-blue))] mt-1">{testimonial.vehicle}</div>
+									<div className="text-xs text-[rgb(var(--amprator-blue))] mt-1">{testimonial.vehicle}</div>
 								</div>
 							</div>
 						</motion.div>

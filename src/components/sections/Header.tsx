@@ -57,7 +57,7 @@ export default function Header({ isAuthenticated = false }: { isAuthenticated?: 
                   <SiteMark className="relative z-10 h-6 w-6 text-gray-900 group-hover:text-gray-900 transition-colors duration-500" />
                 </div>
                 <span className="text-xl font-bold tracking-tight text-gray-900 hidden sm:block">
-                  JACXI
+                  Amprator
                 </span>
               </Link>
             </Magnetic>

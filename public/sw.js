@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jacxi-pwa-v3';
+const CACHE_NAME = 'amprator-pwa-v3';
 const STATIC_ASSETS = ['/', '/offline'];
 const DISABLE_PWA = ['localhost', '127.0.0.1', '::1'].includes(self.location.hostname);
 

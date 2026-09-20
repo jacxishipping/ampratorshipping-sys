@@ -68,7 +68,7 @@ export function SiteMark({ size = 40, className, priority = false }: SiteMarkPro
   return (
     <Image
       src={siteBrandAssets.favicon}
-      alt="Jacxi Shipping icon"
+      alt="Amprator Shipping icon"
       width={size}
       height={size}
       priority={priority}
@@ -91,7 +91,7 @@ export default function SiteLogo({ variant = 'header', theme = 'light', classNam
       <div className={cn('flex items-center gap-3', className)}>
         <SiteMarkFallback size={markSize} />
         <div className="min-w-0">
-          <div className={cn(config.labelClassName, fallbackTextClassName)}>JACXI SHIPPING</div>
+          <div className={cn(config.labelClassName, fallbackTextClassName)}>Amprator SHIPPING</div>
           {config.caption ? <div className={cn('text-sm', fallbackSubtextClassName)}>{config.caption}</div> : null}
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function SiteLogo({ variant = 'header', theme = 'light', classNam
   return (
     <Image
       src={config.src}
-      alt="Jacxi Shipping logo"
+      alt="Amprator Shipping logo"
       width={config.width}
       height={config.height}
       priority={priority}

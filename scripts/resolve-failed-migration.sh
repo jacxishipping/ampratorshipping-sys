@@ -21,12 +21,12 @@ if [ ! -f .env ] && [ ! -f .env.local ]; then
     echo -e "${RED}Error: No .env or .env.local file found${NC}"
     echo "Please create a .env file with your database connection string"
     echo "Example:"
-    echo "  jacxi_DATABASE_URL=\"postgresql://user:password@host:5432/database\""
+    echo "  amprator_DATABASE_URL=\"postgresql://user:password@host:5432/database\""
     exit 1
 fi
 
 # Check if database URL is set
-if [ -z "$jacxi_DATABASE_URL" ] && [ -z "$DATABASE_URL" ]; then
+if [ -z "$amprator_DATABASE_URL" ] && [ -z "$DATABASE_URL" ]; then
     echo -e "${YELLOW}Warning: Database URL not found in environment${NC}"
     echo "Make sure your .env file is loaded"
     echo ""

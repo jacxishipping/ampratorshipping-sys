@@ -52,7 +52,7 @@ const formatDisplayDate = (value?: string) => {
 	});
 };
 
-const RECENT_TRACKING_KEY = 'jacxi.recentTrackingNumbers';
+const RECENT_TRACKING_KEY = 'amprator.recentTrackingNumbers';
 
 function getStoredTrackingNumbers() {
 	if (typeof window === 'undefined') return [];

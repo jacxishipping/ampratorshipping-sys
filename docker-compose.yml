@@ -7,16 +7,16 @@ services:
       dockerfile: Dockerfile
       args:
         # Override these with your actual database URLs
-        - jacxi_DATABASE_URL=${jacxi_DATABASE_URL}
-        - jacxi_POSTGRES_URL=${jacxi_POSTGRES_URL}
-        - jacxi_PRISMA_DATABASE_URL=${jacxi_PRISMA_DATABASE_URL}
+        - amprator_DATABASE_URL=${amprator_DATABASE_URL}
+        - amprator_POSTGRES_URL=${amprator_POSTGRES_URL}
+        - amprator_PRISMA_DATABASE_URL=${amprator_PRISMA_DATABASE_URL}
     ports:
       - "3000:3000"
     environment:
       # Database connection (runtime) - REQUIRED: Set these in your .env file
-      - jacxi_DATABASE_URL=${jacxi_DATABASE_URL}
-      - jacxi_POSTGRES_URL=${jacxi_POSTGRES_URL}
-      - jacxi_PRISMA_DATABASE_URL=${jacxi_PRISMA_DATABASE_URL}
+      - amprator_DATABASE_URL=${amprator_DATABASE_URL}
+      - amprator_POSTGRES_URL=${amprator_POSTGRES_URL}
+      - amprator_PRISMA_DATABASE_URL=${amprator_PRISMA_DATABASE_URL}
       
       # NextAuth configuration - REQUIRED: Set these in your .env file
       - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}

@@ -1,6 +1,6 @@
 # UI/UX Improvement Suggestions
 
-Based on a thorough review of the current design system, component libraries, and global styles, the following suggestions are proposed to enhance the user experience and interface consistency of the Jacxi Shipping Platform.
+Based on a thorough review of the current design system, component libraries, and global styles, the following suggestions are proposed to enhance the user experience and interface consistency of the Amprator Shipping Platform.
 
 ## 1. 🧹 Component Library Consolidation
 

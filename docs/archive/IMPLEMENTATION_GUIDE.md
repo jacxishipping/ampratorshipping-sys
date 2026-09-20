@@ -84,12 +84,12 @@ export async function sendInvoiceEmail({
 }) {
   try {
     await resend.emails.send({
-      from: 'invoices@jacxishipping.com',
+      from: 'invoices@ampratorshipping.com',
       to,
       subject: `Invoice ${invoiceNumber} - $${amount.toFixed(2)}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h1 style="color: #2563eb;">New Invoice from Jacxi Shipping</h1>
+          <h1 style="color: #2563eb;">New Invoice from Amprator Shipping</h1>
           <p>Hello,</p>
           <p>Your invoice is ready.</p>
           <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -113,7 +113,7 @@ export async function sendInvoiceEmail({
             </a>
           </p>
           <p style="color: #666; font-size: 14px; margin-top: 30px;">
-            Questions? Reply to this email or contact us at support@jacxishipping.com
+            Questions? Reply to this email or contact us at support@ampratorshipping.com
           </p>
         </div>
       `,
@@ -138,7 +138,7 @@ export async function sendStatusUpdateEmail({
 }) {
   try {
     await resend.emails.send({
-      from: 'tracking@jacxishipping.com',
+      from: 'tracking@ampratorshipping.com',
       to,
       subject: `Container ${containerNumber} - ${status}`,
       html: `
@@ -150,7 +150,7 @@ export async function sendStatusUpdateEmail({
             <p style="margin: 10px 0 0 0; color: #6b7280;">${message}</p>
           </div>
           <p>
-            <a href="https://app.jacxishipping.com/tracking/${containerNumber}" 
+            <a href="https://app.ampratorshipping.com/tracking/${containerNumber}" 
                style="background-color: #2563eb; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">
               Track Your Shipment
             </a>
@@ -195,7 +195,7 @@ if (user?.email) {
 
 ```bash
 RESEND_API_KEY=re_xxxxxxxxxxxxx
-NEXT_PUBLIC_APP_URL=https://app.jacxishipping.com
+NEXT_PUBLIC_APP_URL=https://app.ampratorshipping.com
 ```
 
 **Estimated Time:** 4-6 hours  
@@ -846,7 +846,7 @@ SEARATES_API_KEY=xxxxx
 CRON_SECRET=your-random-secret
 
 # App
-NEXT_PUBLIC_APP_URL=https://app.jacxishipping.com
+NEXT_PUBLIC_APP_URL=https://app.ampratorshipping.com
 ```
 
 ### Success Metrics

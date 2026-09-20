@@ -427,8 +427,8 @@ body {
 }
 
 :root {
-  /* Premium Light Theme - Jacxi Shipping */
-  --jacxi-blue: var(--accent-gold-rgb);
+  /* Premium Light Theme - Amprator Shipping */
+  --amprator-blue: var(--accent-gold-rgb);
   --uae-gold: var(--accent-gold-rgb);
   --soft-white: var(--background-rgb);
   --frosted-glass: var(--panel-rgb);
@@ -446,7 +446,7 @@ body {
   --metallic-silver: 0 0% 88%;
   --glow-gold: 45 63% 52%;
 
-  /* System Colors - Jacxi Palette */
+  /* System Colors - Amprator Palette */
 }
 
 /* ===================================
@@ -1011,7 +1011,7 @@ html {
 }
 
 /* =============================================================================
-   JACXI DESIGN SYSTEM UTILITIES
+   Amprator DESIGN SYSTEM UTILITIES
    ============================================================================= */
 
 /* Typography Utilities */

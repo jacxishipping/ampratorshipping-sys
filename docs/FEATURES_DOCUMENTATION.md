@@ -1,6 +1,6 @@
 # New Features Documentation
 
-This document describes the three major features that have been added to the Jacxi Shipping platform. These features require database migration to be fully operational.
+This document describes the three major features that have been added to the Amprator Shipping platform. These features require database migration to be fully operational.
 
 ## Overview
 

@@ -100,6 +100,6 @@ export function buildFallbackShipmentDraft(
 
   return {
     subject: subjectByIntent[request.intent],
-    message: `${opening}\n\n${core.join(' ')}\n\nThank you,\nJacxi Shipping`,
+    message: `${opening}\n\n${core.join(' ')}\n\nThank you,\nAmprator Shipping`,
   };
 }

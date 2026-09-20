@@ -1,4 +1,4 @@
-# UI/UX Enhancement Suggestions for JACXI Shipping Platform
+# UI/UX Enhancement Suggestions for Amprator Shipping Platform
 
 ## Executive Summary
 Based on comprehensive analysis of your shipping management platform, I've identified 35+ actionable UI/UX improvements across 8 key categories. These enhancements will improve user experience, accessibility, performance, and overall platform usability.

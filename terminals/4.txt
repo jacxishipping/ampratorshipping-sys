@@ -1,6 +1,6 @@
 ---
 pid: 16484
-cwd: "C:\Users\hardyyyg\Desktop\Jacxi_Shipping"
+cwd: "C:\Users\hardyyyg\Desktop\Amprator_Shipping"
 command: "npm run build > build-output.log 2>&1 & echo EXIT:%ERRORLEVEL% >> build-output.log"
 started_at: 2026-06-25T03:14:03.766Z
 running_for_ms: 180000   

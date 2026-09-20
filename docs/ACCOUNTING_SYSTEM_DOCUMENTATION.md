@@ -431,4 +431,4 @@ For issues or questions about the Accounting & Finance system:
 
 **Version**: 1.0.0  
 **Last Updated**: December 2025  
-**Author**: JACXI Development Team
+**Author**: Amprator Development Team

@@ -1,4 +1,4 @@
-# Jacxi Shipping Platform
+# Amprator Shipping Platform
 
 Vehicle shipping operations platform for importing vehicles from the USA/Canada to
 Afghanistan (Mersin and UAE routes): auction sourcing (Copart/IAAI), containerization,
@@ -50,8 +50,8 @@ Production: `npm run build && npm run start` (or the Dockerfile / Vercel).
 
 See `.env.example` for the full list. Critical ones:
 
-- DB (runtime, via Prisma Accelerate): `jacxi_PRISMA_DATABASE_URL`
-- DB (migrations/CLI): `jacxi_POSTGRES_URL` / `jacxi_DATABASE_URL` / `DATABASE_URL` (legacy aliases — keep in sync)
+- DB (runtime, via Prisma Accelerate): `amprator_PRISMA_DATABASE_URL`
+- DB (migrations/CLI): `amprator_POSTGRES_URL` / `amprator_DATABASE_URL` / `DATABASE_URL` (legacy aliases — keep in sync)
 - `NEXTAUTH_SECRET`, `NEXTAUTH_URL`, `NEXT_PUBLIC_APP_URL`
 - `BLOB_READ_WRITE_TOKEN` (shipment photo uploads)
 - `RESEND_API_KEY` (invoice/notification emails)

@@ -163,7 +163,7 @@ function renderEmailLayout({
                           </div>
                         </td>
                         <td align="right" style="vertical-align:top; width:88px; padding-left:12px;">
-                          <img src="${escapeHtml(logoUrl)}" alt="Jacxi Shipping" width="78" height="78" style="display:block; width:78px; height:78px; border-radius:12px; object-fit:cover; border:1px solid rgba(255,255,255,0.35); background:#FFFFFF;" />
+                          <img src="${escapeHtml(logoUrl)}" alt="Amprator Shipping" width="78" height="78" style="display:block; width:78px; height:78px; border-radius:12px; object-fit:cover; border:1px solid rgba(255,255,255,0.35); background:#FFFFFF;" />
                         </td>
                       </tr>
                     </table>
@@ -187,8 +187,8 @@ function renderEmailLayout({
                 </tr>
                 <tr>
                   <td style="padding:16px 24px 22px; border-top:1px solid ${EMAIL_THEME.border}; color:${EMAIL_THEME.textSecondary}; font-size:12px; line-height:1.5;">
-                    <div>${escapeHtml(footerNote || 'Questions? Contact support@jacxishipping.com.')}</div>
-                    <div style="margin-top:4px;">Jacxi Shipping • Premium Logistics Workspace</div>
+                    <div>${escapeHtml(footerNote || 'Questions? Contact support@ampratorshipping.com.')}</div>
+                    <div style="margin-top:4px;">Amprator Shipping • Premium Logistics Workspace</div>
                   </td>
                 </tr>
               </table>
@@ -205,7 +205,7 @@ export const emailTemplates = {
     subject: `Invoice ${invoice.invoiceNumber} - Payment Due`,
     html: renderEmailLayout({
       preheader: `Invoice ${invoice.invoiceNumber} is ready. Amount due ${formatCurrency(invoice.total)}.`,
-      eyebrow: 'JACXI BILLING',
+      eyebrow: 'Amprator BILLING',
       title: `Invoice ${invoice.invoiceNumber}`,
       intro: `Dear ${invoice.user.name || 'Valued Customer'}, your invoice for container ${invoice.container.containerNumber} is ready.`,
       contentHtml: `
@@ -240,7 +240,7 @@ export const emailTemplates = {
       `,
       ctaLabel: 'View Invoice',
       ctaUrl: toInvoiceViewUrl(invoice.invoiceNumber),
-      footerNote: 'For invoice support, contact billing@jacxishipping.com.',
+      footerNote: 'For invoice support, contact billing@ampratorshipping.com.',
       tone: 'info',
     }),
     text: `
@@ -269,7 +269,7 @@ Thank you for your business!
     subject: `Reminder: Invoice ${invoice.invoiceNumber} Due ${daysUntilDue > 0 ? `in ${daysUntilDue} Days` : 'Today'}`,
     html: renderEmailLayout({
       preheader: `Invoice ${invoice.invoiceNumber} payment reminder: ${daysUntilDue > 0 ? `${daysUntilDue} day(s) remaining` : 'due today'}.`,
-      eyebrow: 'JACXI BILLING',
+      eyebrow: 'Amprator BILLING',
       title: 'Payment reminder',
       intro: `Dear ${invoice.user.name || 'Valued Customer'}, this is a reminder that invoice ${invoice.invoiceNumber} is ${daysUntilDue > 0 ? `due in ${daysUntilDue} day(s)` : 'due today'}.`,
       contentHtml: `
@@ -300,7 +300,7 @@ Thank you for your business!
     subject: `Payment Received - Invoice ${invoice.invoiceNumber}`,
     html: renderEmailLayout({
       preheader: `Payment received for invoice ${invoice.invoiceNumber}.`,
-      eyebrow: 'JACXI BILLING',
+      eyebrow: 'Amprator BILLING',
       title: 'Payment received',
       intro: `Dear ${invoice.user.name || 'Valued Customer'}, thank you. We have received your payment.`,
       contentHtml: `
@@ -316,7 +316,7 @@ Thank you for your business!
       `,
       ctaLabel: 'Download Receipt',
       ctaUrl: toInvoiceViewUrl(invoice.invoiceNumber),
-      footerNote: 'Thank you for your business. For support, contact billing@jacxishipping.com.',
+      footerNote: 'Thank you for your business. For support, contact billing@ampratorshipping.com.',
       tone: 'success',
     }),
     text: `Payment received for invoice ${invoice.invoiceNumber}. Amount paid: ${formatCurrency(invoice.total)}.`,

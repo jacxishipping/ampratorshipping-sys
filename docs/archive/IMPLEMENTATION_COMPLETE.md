@@ -452,7 +452,7 @@ This has been an ambitious and highly successful implementation. The application
 - Competitive advantage
 - Future growth
 
-**Here's to the success of Jacxi Shipping!** 🎊
+**Here's to the success of Amprator Shipping!** 🎊
 
 ---
 

@@ -1,6 +1,6 @@
-# Jacxi Shipping Mobile App
+# Amprator Shipping Mobile App
 
-Complete React Native (Expo + TypeScript) mobile app for the Jacxi Shipping platform.
+Complete React Native (Expo + TypeScript) mobile app for the Amprator Shipping platform.
 
 ## Features
 
@@ -208,4 +208,4 @@ eas build --platform android
 
 ## License
 
-Proprietary - Jacxi Shipping Platform
+Proprietary - Amprator Shipping Platform

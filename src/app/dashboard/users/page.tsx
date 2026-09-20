@@ -73,7 +73,7 @@ export default function UsersPage() {
 				let createdJson: string | null = null;
 				let createdUser: UserData | null = null;
 				try {
-					createdJson = sessionStorage.getItem('jacxi.createdUser');
+					createdJson = sessionStorage.getItem('amprator.createdUser');
 					if (createdJson) {
 						createdUser = JSON.parse(createdJson) as UserData;
 						// If not already present in server results, prepend it
@@ -87,7 +87,7 @@ export default function UsersPage() {
 							}
 							data.total = (data.total ?? 0) + 1;
 							// clear the saved created user so we don't reuse it again
-							sessionStorage.removeItem('jacxi.createdUser');
+							sessionStorage.removeItem('amprator.createdUser');
 						}
 					}
 				} catch {
@@ -114,7 +114,7 @@ export default function UsersPage() {
 	// Listen for created users from BroadcastChannel and insert them optimistically
 	useEffect(() => {
 		if (typeof BroadcastChannel === 'undefined') return;
-		const bc = new BroadcastChannel('jacxi-users');
+		const bc = new BroadcastChannel('amprator-users');
 		const handler = (ev: MessageEvent) => {
 			try {
 				const msg = ev.data as { action: string; user?: UserData };

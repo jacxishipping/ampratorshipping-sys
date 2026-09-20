@@ -1,7 +1,7 @@
-# Validation Guide - JACXI Shipping Platform
+# Validation Guide - Amprator Shipping Platform
 
 ## Overview
-The JACXI Shipping platform uses **Zod** for schema validation and **React Hook Form** for form management to ensure robust input validation across all forms.
+The Amprator Shipping platform uses **Zod** for schema validation and **React Hook Form** for form management to ensure robust input validation across all forms.
 
 ## Validation Schemas
 
@@ -263,5 +263,5 @@ quantity: z.string()
 
 ---
 
-**Built for JACXI Shipping** 🚢
+**Built for Amprator Shipping** 🚢
 

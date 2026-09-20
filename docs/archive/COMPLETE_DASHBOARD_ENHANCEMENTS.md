@@ -553,7 +553,7 @@ import { Box, Card, Fade, Zoom } from '@mui/material';
 
 ## 🚀 Deployment Ready
 
-The JACXI Shipping Dashboard is now **production-ready** with:
+The Amprator Shipping Dashboard is now **production-ready** with:
 - ✅ All pages enhanced with premium design
 - ✅ Smooth MUI animations throughout
 - ✅ Consistent design language
@@ -605,7 +605,7 @@ If you want to take it even further:
 
 ## 🙏 Summary
 
-The JACXI Shipping Dashboard has been transformed into a **premium, enterprise-grade application** with:
+The Amprator Shipping Dashboard has been transformed into a **premium, enterprise-grade application** with:
 
 - 🎨 **Sophisticated visual design** with gradients, glass morphism, and glows
 - ✨ **Smooth 60fps animations** using Material-UI transitions

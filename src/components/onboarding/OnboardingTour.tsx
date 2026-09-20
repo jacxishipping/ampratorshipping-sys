@@ -12,7 +12,7 @@ interface OnboardingTourProps {
 }
 
 export default function OnboardingTour({
-  storageKey = 'jacxi_tour_completed',
+  storageKey = 'amprator_tour_completed',
   autoStart = false
 }: OnboardingTourProps) {
   const driverObj = useRef<Driver | null>(null);
@@ -25,7 +25,7 @@ export default function OnboardingTour({
         {
           element: '#dashboard-header',
           popover: {
-            title: 'Welcome to Jacxi Shipping',
+            title: 'Welcome to Amprator Shipping',
             description: 'This is your command center. Get a quick overview of your shipments, revenue, and active containers.',
             side: 'bottom',
             align: 'start',

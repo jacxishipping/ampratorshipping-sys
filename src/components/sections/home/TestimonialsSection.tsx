@@ -6,12 +6,12 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: 'JACXI handled my Toyota Land Cruiser with absolute professionalism. It arrived in Herat in perfect condition, and the customs process was incredibly clear from start to finish.',
+    quote: 'Amprator handled my Toyota Land Cruiser with absolute professionalism. It arrived in Herat in perfect condition, and the customs process was incredibly clear from start to finish.',
     name: 'Ahmed R.',
     role: 'Herat, Afghanistan',
   },
   {
-    quote: 'I was nervous about shipping my car internationally, but the JACXI team kept me updated at every stage. Reliable, responsive, and completely transparent operations.',
+    quote: 'I was nervous about shipping my car internationally, but the Amprator team kept me updated at every stage. Reliable, responsive, and completely transparent operations.',
     name: 'Khalid M.',
     role: 'Kabul, Afghanistan',
   },

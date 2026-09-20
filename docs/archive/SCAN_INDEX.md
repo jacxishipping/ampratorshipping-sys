@@ -1,7 +1,7 @@
 # 🔍 Complete Codebase Scan - Index
 
 **Scan Completed:** January 30, 2026  
-**Repository:** jacxi-shipping/Jacxi_Shipping  
+**Repository:** amprator-shipping/Amprator_Shipping  
 **Scanned by:** GitHub Copilot Coding Agent
 
 ---

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jacxi Shipping App Privacy Policy",
+  title: "Amprator Shipping App Privacy Policy",
   description:
-    "Privacy policy for the Jacxi Shipping mobile application.",
+    "Privacy policy for the Amprator Shipping mobile application.",
   robots: {
     index: false,
     follow: false,
@@ -17,15 +17,15 @@ export default function AppPrivacyPolicyPage() {
     <main className="min-h-screen bg-[var(--background)] px-4 py-24 text-[var(--text-primary)] sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-4xl rounded-2xl border border-black/10 bg-white p-6 shadow-sm sm:p-10">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Jacxi Shipping Mobile App Privacy Policy
+          Amprator Shipping Mobile App Privacy Policy
         </h1>
         <p className="mt-3 text-sm text-black/60">Last updated: {lastUpdated}</p>
 
         <section className="mt-8 space-y-4 text-sm leading-7 text-black/80 sm:text-base">
           <p>
-            Jacxi Shipping ("we", "our", or "us") values your privacy. This Privacy
+            Amprator Shipping ("we", "our", or "us") values your privacy. This Privacy
             Policy explains how we collect, use, store, and protect information when
-            you use the Jacxi Shipping mobile application.
+            you use the Amprator Shipping mobile application.
           </p>
           <p>
             By using the app, you agree to the collection and use of information in
@@ -119,7 +119,7 @@ export default function AppPrivacyPolicyPage() {
         <section className="mt-10 space-y-3">
           <h2 className="text-xl font-semibold">9. Contact</h2>
           <p className="text-sm leading-7 text-black/80 sm:text-base">
-            For privacy-related questions, contact us at support@jacxishipping.com.
+            For privacy-related questions, contact us at support@ampratorshipping.com.
           </p>
         </section>
       </div>

@@ -153,7 +153,7 @@ Use this if:
 ## Troubleshooting
 
 ### Error: "Cannot connect to database"
-**Solution:** Check your `.env` file has correct `jacxi_DATABASE_URL`
+**Solution:** Check your `.env` file has correct `amprator_DATABASE_URL`
 
 ### Error: "Migration already marked as applied"
 **Solution:** The migration is already resolved! Check status with:

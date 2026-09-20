@@ -99,7 +99,7 @@ After Fix:
 
 ### Step 1: Open Terminal
 ```bash
-cd /path/to/Jacxi_Shipping
+cd /path/to/Amprator_Shipping
 ```
 
 ### Step 2: Run The Fix
@@ -176,7 +176,7 @@ npm run db:migrate:resolve
 
 ## 📞 Still Stuck?
 
-1. Check `.env` has `jacxi_DATABASE_URL` set
+1. Check `.env` has `amprator_DATABASE_URL` set
 2. Make sure you're in the project directory
 3. Try: `npm install` first
 4. Read `RESOLVE_MIGRATION.md` for troubleshooting

@@ -2,7 +2,7 @@
 PRISMA FAILED MIGRATION P3009 - RESOLUTION COMPLETE
 ================================================================================
 
-PROJECT: Jacxi Shipping
+PROJECT: Amprator Shipping
 ISSUE: Failed migration blocking new migrations
 ERROR: P3009 - migrate found failed migrations in the target database
 MIGRATION: 20251118110101_add_advanced_features
@@ -218,7 +218,7 @@ TROUBLESHOOTING
 Common Issues & Solutions:
 
 1. "Cannot connect to database"
-   → Check .env has jacxi_DATABASE_URL set correctly
+   → Check .env has amprator_DATABASE_URL set correctly
 
 2. "Permission denied"
    → Run: chmod +x scripts/resolve-failed-migration.sh

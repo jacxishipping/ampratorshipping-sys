@@ -1,15 +1,15 @@
 const appEnv = process.env.EXPO_PUBLIC_APP_ENV || process.env.APP_ENV || 'development';
 const defaultApiUrl = ['production', 'staging'].includes(appEnv)
-  ? 'https://www.jacxishipping.com'
+  ? 'https://www.ampratorshipping.com'
   : 'http://localhost:3000';
 const apiUrl = process.env.EXPO_PUBLIC_API_URL || defaultApiUrl;
 
 module.exports = {
   expo: {
-    name: 'Jacxi Shipping',
-    slug: 'jacxi-shipping',
+    name: 'Amprator Shipping',
+    slug: 'amprator-shipping',
     version: '1.0.0',
-    scheme: 'jacxi',
+    scheme: 'amprator',
     orientation: 'portrait',
     icon: './assets/icon.png',
     userInterfaceStyle: 'automatic',
@@ -29,7 +29,7 @@ module.exports = {
     assetBundlePatterns: ['**/*'],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.jacxi.shipping',
+      bundleIdentifier: 'com.amprator.shipping',
       infoPlist: {
         UIBackgroundModes: ['remote-notification', 'remote-notification'],
         ITSAppUsesNonExemptEncryption: false,
@@ -40,7 +40,7 @@ module.exports = {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#0A0A0A',
       },
-      package: 'com.jacxi.shipping',
+      package: 'com.amprator.shipping',
       permissions: [
         'CAMERA',
         'READ_EXTERNAL_STORAGE',
@@ -65,7 +65,7 @@ module.exports = {
         projectId: 'f9cccaeb-b579-4f07-a757-5244f0ccf045',
       },
     },
-    owner: 'jacxishipping',
+    owner: 'ampratorshipping',
     extra: {
       eas: {
         projectId: 'f9cccaeb-b579-4f07-a757-5244f0ccf045',

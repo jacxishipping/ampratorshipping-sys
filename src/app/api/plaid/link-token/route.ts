@@ -28,7 +28,7 @@ export async function POST() {
   try {
     const client = getPlaidClient();
     const response = await client.linkTokenCreate({
-      client_name: 'Jacxi Banking',
+      client_name: 'Amprator Banking',
       language: 'en',
       country_codes: PLAID_COUNTRY_CODES,
       products: PLAID_PRODUCTS,

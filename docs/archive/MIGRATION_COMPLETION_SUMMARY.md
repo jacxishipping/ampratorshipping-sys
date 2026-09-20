@@ -97,7 +97,7 @@ Application build tested and successful:
 
 **Option 1: Development (Recommended for Testing)**
 ```bash
-cd /home/runner/work/Jacxi_Shipping/Jacxi_Shipping
+cd /home/runner/work/Amprator_Shipping/Amprator_Shipping
 npx prisma migrate dev
 ```
 This will:
@@ -107,7 +107,7 @@ This will:
 
 **Option 2: Production (Deployment)**
 ```bash
-cd /home/runner/work/Jacxi_Shipping/Jacxi_Shipping
+cd /home/runner/work/Amprator_Shipping/Amprator_Shipping
 npx prisma migrate deploy
 ```
 This will:
@@ -117,7 +117,7 @@ This will:
 
 **Option 3: Manual (Database Admin)**
 ```bash
-psql -U your_user -d jacxi_shipping
+psql -U your_user -d amprator_shipping
 \i prisma/migrations/20260131183000_add_service_types_and_purchase_fields/migration.sql
 ```
 

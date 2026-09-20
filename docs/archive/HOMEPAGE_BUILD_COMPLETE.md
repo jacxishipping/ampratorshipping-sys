@@ -1,12 +1,12 @@
-# Jacxi Shipping Homepage - Build Complete ✅
+# Amprator Shipping Homepage - Build Complete ✅
 
 ## Overview
-Built a complete premium B2B logistics homepage for Jacxi Shipping with a modern, professional design using Next.js 15, React, TypeScript, Framer Motion, and Tailwind CSS.
+Built a complete premium B2B logistics homepage for Amprator Shipping with a modern, professional design using Next.js 15, React, TypeScript, Framer Motion, and Tailwind CSS.
 
 ## Design System
 
 ### Color Palette
-- **Jacxi Blue**: `#0056D2` - Primary brand color
+- **Amprator Blue**: `#0056D2` - Primary brand color
 - **UAE Gold**: `#D4AF37` - Accent color highlighting Middle East focus
 - **Soft White**: `#F9FAFB` - Background
 - **Panel White**: `#FFFFFF` - Primary panel and card surface
@@ -30,7 +30,7 @@ Built a complete premium B2B logistics homepage for Jacxi Shipping with a modern
 - **Location**: `src/components/sections/Header.tsx`
 - **Features**:
   - Fixed position with scroll-based backdrop blur
-  - Logo with Jacxi branding
+  - Logo with Amprator branding
   - Navigation: Home, Services, Ship a Vehicle, Tracking, Pricing, About, Contact
   - "Calculate Shipping" CTA button
   - Responsive mobile menu
@@ -138,12 +138,12 @@ Built a complete premium B2B logistics homepage for Jacxi Shipping with a modern
   - Four link columns: Services, Company, Support
   - UAE contact information highlighted with flag 🇦🇪
   - Phone: +971 50 123 4567
-  - Email: info@jacxishipping.com
+  - Email: info@ampratorshipping.com
   - Location: Dubai, UAE
   - "We Serve" section with country flags
   - Social media links: Facebook, Twitter, Instagram, LinkedIn
   - Legal links: Privacy Policy, Terms of Service
-  - Copyright: © 2025 Jacxi Shipping
+  - Copyright: © 2025 Amprator Shipping
   - Dark gradient background
 
 ## Technical Implementation
@@ -170,7 +170,7 @@ Built a complete premium B2B logistics homepage for Jacxi Shipping with a modern
 
 ### File Structure
 ```
-jacxi-shipping/
+amprator-shipping/
 ├── src/
 │   ├── app/
 │   │   ├── globals.css (Updated with premium theme)
@@ -207,7 +207,7 @@ backdrop-blur-md bg-white/80 border border-gray-200/50
 
 ### Premium Shadow Effects
 ```css
-shadow-xl shadow-[rgb(var(--jacxi-blue))]/30
+shadow-xl shadow-[rgb(var(--amprator-blue))]/30
 ```
 
 ### Hover Animations
@@ -216,7 +216,7 @@ hover:-translate-y-2 transition-all duration-500
 ```
 
 ### Color Usage
-- **Primary Actions**: Jacxi Blue (#0056D2)
+- **Primary Actions**: Amprator Blue (#0056D2)
 - **Accent Elements**: UAE Gold (#D4AF37)
 - **Backgrounds**: Soft gradients from white to blue tints
 - **Text**: High contrast for readability
@@ -238,7 +238,7 @@ hover:-translate-y-2 transition-all duration-500
 
 ### Development
 ```bash
-cd jacxi-shipping
+cd amprator-shipping
 npm run dev
 ```
 

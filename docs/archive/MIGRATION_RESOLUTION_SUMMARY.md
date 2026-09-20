@@ -147,7 +147,7 @@ The migration's intended changes already exist in the database schema, just in a
 ## ❓ Troubleshooting
 
 ### "Cannot connect to database"
-**Fix**: Check `.env` file has `jacxi_DATABASE_URL` set correctly
+**Fix**: Check `.env` file has `amprator_DATABASE_URL` set correctly
 
 ### "Permission denied"
 **Fix**: Run `chmod +x scripts/resolve-failed-migration.sh`

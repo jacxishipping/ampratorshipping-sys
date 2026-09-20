@@ -1,8 +1,8 @@
-# 🚀 JACXI Shipping - Quick Start Guide
+# 🚀 Amprator Shipping - Quick Start Guide
 
 ## Welcome!
 
-This guide will help you get the JACXI Shipping platform up and running in minutes.
+This guide will help you get the Amprator Shipping platform up and running in minutes.
 
 ## 📋 Prerequisites
 
@@ -18,13 +18,13 @@ Create a `.env.local` file in the project root:
 
 ```env
 # Database - IMPORTANT: Use these exact variable names
-# The Prisma schema requires jacxi_DATABASE_URL and jacxi_POSTGRES_URL
-jacxi_DATABASE_URL="postgresql://username:password@localhost:5432/jacxi_shipping"
-jacxi_POSTGRES_URL="postgresql://username:password@localhost:5432/jacxi_shipping"
+# The Prisma schema requires amprator_DATABASE_URL and amprator_POSTGRES_URL
+amprator_DATABASE_URL="postgresql://username:password@localhost:5432/amprator_shipping"
+amprator_POSTGRES_URL="postgresql://username:password@localhost:5432/amprator_shipping"
 
-# Optional: Some older scripts may check for DATABASE_URL, but they actually use jacxi_DATABASE_URL
+# Optional: Some older scripts may check for DATABASE_URL, but they actually use amprator_DATABASE_URL
 # You can set this for compatibility, but it's not used by the app
-DATABASE_URL="postgresql://username:password@localhost:5432/jacxi_shipping"
+DATABASE_URL="postgresql://username:password@localhost:5432/amprator_shipping"
 
 # NextAuth
 NEXTAUTH_URL="http://localhost:3000"
@@ -35,7 +35,7 @@ GOOGLE_CLIENT_ID="your-google-client-id"
 GOOGLE_CLIENT_SECRET="your-google-client-secret"
 ```
 
-**⚠️ Important:** The Prisma schema uses `jacxi_DATABASE_URL` and `jacxi_POSTGRES_URL` (not just `DATABASE_URL`). Make sure to include all three!
+**⚠️ Important:** The Prisma schema uses `amprator_DATABASE_URL` and `amprator_POSTGRES_URL` (not just `DATABASE_URL`). Make sure to include all three!
 
 ### Step 2: Install Dependencies
 
@@ -124,7 +124,7 @@ npm run db:reset     # Reset database
 
 After running the seed script, you'll have:
 
-- **Admin**: `admin@jacxi.com` / `admin123`
+- **Admin**: `admin@amprator.com` / `admin123`
 - **Customer**: `customer@example.com` / `customer123`
 
 ## 📱 Test the Platform
@@ -163,7 +163,7 @@ npx prisma migrate deploy
 
 ### Database Connection Issues
 - Verify PostgreSQL is running
-- Check `jacxi_DATABASE_URL` in `.env.local` (not just `DATABASE_URL`)
+- Check `amprator_DATABASE_URL` in `.env.local` (not just `DATABASE_URL`)
 - Ensure database exists
 
 ### Build Errors
@@ -193,7 +193,7 @@ npx prisma migrate deploy
 
 ## 🎉 You're All Set!
 
-Your JACXI Shipping platform is now running. Start customizing it to match your needs!
+Your Amprator Shipping platform is now running. Start customizing it to match your needs!
 
 ---
 
@@ -218,7 +218,7 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
 ## 2. Prepare the App for Production
 
-1. **Create a Dockerfile** (at `jacxi-shipping/Dockerfile`). Example:
+1. **Create a Dockerfile** (at `amprator-shipping/Dockerfile`). Example:
 
    ```dockerfile
    FROM node:18-alpine
@@ -245,7 +245,7 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
    (Stage secrets in AWS, not in git.)
 
-3. **Adjust uploads**: the app currently writes images to `public/uploads`. In production, point uploads to S3 (e.g., bucket `jacxi-uploads`). Update `/api/upload` to use AWS SDK (you can do this later, but local disk isn’t shared across instances).
+3. **Adjust uploads**: the app currently writes images to `public/uploads`. In production, point uploads to S3 (e.g., bucket `amprator-uploads`). Update `/api/upload` to use AWS SDK (you can do this later, but local disk isn’t shared across instances).
 
 ---
 
@@ -253,7 +253,7 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
 1. **PostgreSQL**: Create an RDS instance (e.g., RDS PostgreSQL). Note endpoint, username, password, DB name. Open inbound rules to your app subnets or security groups.
 
-2. **S3 bucket (optional but recommended)**: e.g., `jacxi-uploads-prod`. Grant your ECS/EB role write access.
+2. **S3 bucket (optional but recommended)**: e.g., `amprator-uploads-prod`. Grant your ECS/EB role write access.
 
 3. **IAM role**: For Elastic Beanstalk/ECS, ensure the instance/task role can reach S3 (if using) and RDS (VPC security groups).
 
@@ -270,16 +270,16 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
 2. **Initialize EB**:
    ```bash
-   cd jacxi-shipping
+   cd amprator-shipping
    eb init
    ```
    - Select region
    - Choose Docker platform
-   - Create application (e.g., `jacxi-shipping-prod`)
+   - Create application (e.g., `amprator-shipping-prod`)
 
 3. **Create environment**:
    ```bash
-   eb create jacxi-prod-env --single --timeout 30
+   eb create amprator-prod-env --single --timeout 30
    ```
    Choose load-balanced or single-instance. For production, keep load-balanced.
 
@@ -296,7 +296,7 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
 6. **Run migrations** (once per deployment):
    ```bash
-   eb ssh jacxi-prod-env
+   eb ssh amprator-prod-env
    cd /app
   npx prisma migrate deploy
    exit
@@ -309,10 +309,10 @@ The instructions below assume **Elastic Beanstalk with Docker**, because it bala
 
 1. Build and push Docker image to ECR:
    ```bash
-   aws ecr create-repository --repository-name jacxi-shipping
-   docker build -t jacxi-shipping .
-   docker tag jacxi-shipping:latest <ECR_URL>/jacxi-shipping:latest
-   docker push <ECR_URL>/jacxi-shipping:latest
+   aws ecr create-repository --repository-name amprator-shipping
+   docker build -t amprator-shipping .
+   docker tag amprator-shipping:latest <ECR_URL>/amprator-shipping:latest
+   docker push <ECR_URL>/amprator-shipping:latest
    ```
 
 2. Create ECS cluster (Fargate), task definition referencing the image, service with load balancer.

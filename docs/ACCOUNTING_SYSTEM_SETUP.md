@@ -8,7 +8,7 @@ This guide will help you set up and start using the Accounting & Finance system.
 
 - Node.js and npm installed
 - PostgreSQL database configured
-- Existing JACXI car-shipping application running
+- Existing Amprator car-shipping application running
 
 ## Installation Steps
 

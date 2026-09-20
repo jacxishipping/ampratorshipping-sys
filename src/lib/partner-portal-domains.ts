@@ -33,11 +33,11 @@ export function isValidPortalCustomDomain(value: string) {
 }
 
 export function getPortalCustomDomainVerificationHost(domain: string) {
-  return `_jacxi-portal-verification.${domain}`;
+  return `_amprator-portal-verification.${domain}`;
 }
 
 export function getPortalCustomDomainVerificationValue(token: string) {
-  return `jacxi-portal-verification=${token}`;
+  return `amprator-portal-verification=${token}`;
 }
 
 export function getSystemHosts() {
@@ -79,8 +79,8 @@ export function isSystemHost(host: string | null | undefined) {
   }
 
   // Check if the host is a subdomain of any system host.
-  // Example: portal.jacxishipping.com is a subdomain of jacxishipping.com
-  // (if jacxishipping.com is the main app domain configured on Vercel).
+  // Example: portal.ampratorshipping.com is a subdomain of ampratorshipping.com
+  // (if ampratorshipping.com is the main app domain configured on Vercel).
   for (const systemHost of systemHosts) {
     if (normalizedHost.endsWith(`.${systemHost}`)) {
       return true;

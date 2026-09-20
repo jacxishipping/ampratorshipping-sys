@@ -33,7 +33,7 @@ export type ComparisonPreset = {
   config: ComparisonPresetConfig;
 };
 
-export const COMPARISON_PRESETS_STORAGE_KEY = 'jacxi:company-price-comparison-presets';
+export const COMPARISON_PRESETS_STORAGE_KEY = 'amprator:company-price-comparison-presets';
 export const COMPARISON_PRESETS_MAX = 20;
 
 export function createDefaultComparisonPresetConfig(): ComparisonPresetConfig {

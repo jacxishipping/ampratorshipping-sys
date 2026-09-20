@@ -1,6 +1,6 @@
 # Shipment to Container Discharge Process
 
-This document outlines the complete lifecycle of a shipment within the Jacxi system, detailing the workflow from initial vehicle reception to final container discharge. It incorporates new features such as document management, visual tracking, and the container-centric accounting system.
+This document outlines the complete lifecycle of a shipment within the Amprator system, detailing the workflow from initial vehicle reception to final container discharge. It incorporates new features such as document management, visual tracking, and the container-centric accounting system.
 
 ## 1. Shipment Intake & Creation
 **Goal:** Record the initial receipt of a vehicle or cargo.

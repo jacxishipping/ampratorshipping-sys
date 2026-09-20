@@ -454,7 +454,7 @@ export const generateInvoicePDF = async (invoice: Invoice) => {
       doc.setFontSize(8);
       doc.setTextColor(...COLORS.textSecondary);
       doc.setFont('helvetica', 'normal');
-      doc.text('Thank you for your business with JACXI Shipping', pageWidth / 2, footerY, { align: 'center' });
+      doc.text('Thank you for your business with Amprator Shipping', pageWidth / 2, footerY, { align: 'center' });
       
       // Page number
       doc.setFontSize(7);

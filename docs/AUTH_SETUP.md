@@ -1,7 +1,7 @@
-# 🔐 JACXI Shipping Authentication Setup
+# 🔐 Amprator Shipping Authentication Setup
 
 ## Overview
-This document provides a comprehensive guide for setting up the authentication system for the JACXI Shipping platform using NextAuth.js v5 (beta) with Prisma and PostgreSQL.
+This document provides a comprehensive guide for setting up the authentication system for the Amprator Shipping platform using NextAuth.js v5 (beta) with Prisma and PostgreSQL.
 
 ## 🚀 Quick Start
 
@@ -10,7 +10,7 @@ Create a `.env.local` file in the root directory with the following variables:
 
 ```env
 # Database
-DATABASE_URL="postgresql://username:password@localhost:5432/jacxi_shipping"
+DATABASE_URL="postgresql://username:password@localhost:5432/amprator_shipping"
 
 # NextAuth
 NEXTAUTH_URL="http://localhost:3000"
@@ -203,7 +203,7 @@ NEXTAUTH_DEBUG=true
 
 ## 🎉 Success!
 
-Your JACXI Shipping platform now has a complete authentication system! Users can:
+Your Amprator Shipping platform now has a complete authentication system! Users can:
 - Register new accounts
 - Sign in with email/password or Google
 - Access protected dashboard

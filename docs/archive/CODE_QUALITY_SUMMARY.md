@@ -1,7 +1,7 @@
 # Code Quality & Architecture Summary
 
 **Scan Date:** January 30, 2026  
-**Repository:** jacxi-shipping/Jacxi_Shipping
+**Repository:** amprator-shipping/Amprator_Shipping
 
 ## Overview
 
@@ -270,7 +270,7 @@ npm install --save-dev husky lint-staged
 
 ## Summary
 
-The Jacxi Shipping Platform is a **well-architected, modern Next.js application** with solid foundations. The codebase demonstrates good practices in terms of organization, type safety, and feature completeness. 
+The Amprator Shipping Platform is a **well-architected, modern Next.js application** with solid foundations. The codebase demonstrates good practices in terms of organization, type safety, and feature completeness. 
 
 **Main Gaps:**
 1. Testing infrastructure (most critical gap)

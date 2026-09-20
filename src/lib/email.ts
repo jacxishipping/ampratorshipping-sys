@@ -131,7 +131,7 @@ function renderEmailLayout({
                           </div>
                         </td>
                         <td align="right" style="vertical-align:top; width:88px; padding-left:12px;">
-                          <img src="${escapeHtml(logoUrl)}" alt="Jacxi Shipping" width="78" height="78" style="display:block; width:78px; height:78px; border-radius:12px; object-fit:cover; border:1px solid rgba(255,255,255,0.35); background:#FFFFFF;" />
+                          <img src="${escapeHtml(logoUrl)}" alt="Amprator Shipping" width="78" height="78" style="display:block; width:78px; height:78px; border-radius:12px; object-fit:cover; border:1px solid rgba(255,255,255,0.35); background:#FFFFFF;" />
                         </td>
                       </tr>
                     </table>
@@ -155,8 +155,8 @@ function renderEmailLayout({
                 </tr>
                 <tr>
                   <td style="padding:16px 24px 22px; border-top:1px solid ${EMAIL_THEME.border}; color:${EMAIL_THEME.textSecondary}; font-size:12px; line-height:1.5;">
-                    <div>${escapeHtml(footerNote || 'Questions? Contact support@jacxishipping.com.')}</div>
-                    <div style="margin-top:4px;">Jacxi Shipping • Premium Logistics Workspace</div>
+                    <div>${escapeHtml(footerNote || 'Questions? Contact support@ampratorshipping.com.')}</div>
+                    <div style="margin-top:4px;">Amprator Shipping • Premium Logistics Workspace</div>
                   </td>
                 </tr>
               </table>
@@ -193,12 +193,12 @@ export async function sendInvoiceEmail({
   try {
     const amountLabel = formatCurrency(amount);
     return await sendConfiguredEmail({
-      from: 'invoices@jacxishipping.com',
+      from: 'invoices@ampratorshipping.com',
       to,
       subject: `Invoice ${invoiceNumber} - ${amountLabel}`,
       html: renderEmailLayout({
         preheader: `Invoice ${invoiceNumber} is ready. Amount due ${amountLabel}.`,
-        eyebrow: 'JACXI BILLING',
+        eyebrow: 'Amprator BILLING',
         title: `Invoice ${invoiceNumber} is ready`,
         intro: 'Your billing statement has been generated and is available for review.',
         contentHtml: `
@@ -210,7 +210,7 @@ export async function sendInvoiceEmail({
         `,
         ctaLabel: 'Download Invoice PDF',
         ctaUrl: pdfUrl,
-        footerNote: 'Need help with this invoice? Contact billing@jacxishipping.com.',
+        footerNote: 'Need help with this invoice? Contact billing@ampratorshipping.com.',
         tone: 'info',
       }),
       text: `Invoice ${invoiceNumber} is ready. Amount due: ${amountLabel}. Due date: ${dueDate}. Download: ${pdfUrl}`,
@@ -236,12 +236,12 @@ export async function sendStatusUpdateEmail({
 }) {
   try {
     return await sendConfiguredEmail({
-      from: 'tracking@jacxishipping.com',
+      from: 'tracking@ampratorshipping.com',
       to,
       subject: `Container ${containerNumber} - ${status}`,
       html: renderEmailLayout({
         preheader: `Shipment ${containerNumber} status updated to ${status}.`,
-        eyebrow: 'JACXI TRACKING',
+        eyebrow: 'Amprator TRACKING',
         title: `Container ${containerNumber} update`,
         intro: `Status changed to ${status}.`,
         contentHtml: `
@@ -257,7 +257,7 @@ export async function sendStatusUpdateEmail({
         `,
         ctaLabel: trackingUrl ? 'Track Shipment' : undefined,
         ctaUrl: trackingUrl,
-        footerNote: 'Questions? Contact support@jacxishipping.com.',
+        footerNote: 'Questions? Contact support@ampratorshipping.com.',
         tone: 'info',
       }),
       text: `Shipment update for container ${containerNumber}: ${status}. ${message}${trackingUrl ? ` Track here: ${trackingUrl}` : ''}`,
@@ -290,12 +290,12 @@ export async function sendPaymentReminderEmail({
     const tone: EmailTone = urgencyLevel === 'urgent' ? 'danger' : urgencyLevel === 'high' ? 'warning' : 'default';
     
     return await sendConfiguredEmail({
-      from: 'invoices@jacxishipping.com',
+      from: 'invoices@ampratorshipping.com',
       to,
       subject: `${urgencyLevel === 'urgent' ? 'URGENT: ' : ''}Payment Reminder - Invoice ${invoiceNumber}`,
       html: renderEmailLayout({
         preheader: `Invoice ${invoiceNumber} is ${daysOverdue} days overdue. Amount due ${amountLabel}.`,
-        eyebrow: urgencyLevel === 'urgent' ? 'JACXI BILLING · URGENT' : 'JACXI BILLING',
+        eyebrow: urgencyLevel === 'urgent' ? 'Amprator BILLING · URGENT' : 'Amprator BILLING',
         title: `Payment reminder: Invoice ${invoiceNumber}`,
         intro: `This invoice is ${daysOverdue} day${daysOverdue === 1 ? '' : 's'} overdue. Please arrange payment as soon as possible.`,
         contentHtml: `
@@ -311,7 +311,7 @@ export async function sendPaymentReminderEmail({
         `,
         ctaLabel: 'Download Invoice',
         ctaUrl: pdfUrl,
-        footerNote: 'For payment arrangements, contact billing@jacxishipping.com.',
+        footerNote: 'For payment arrangements, contact billing@ampratorshipping.com.',
         tone,
       }),
       text: `Payment reminder for invoice ${invoiceNumber}. Amount due: ${amountLabel}. Due date: ${dueDate}. Days overdue: ${daysOverdue}. Download: ${pdfUrl}`,
@@ -335,12 +335,12 @@ export async function sendShipmentCreatedEmail({
 }) {
   try {
     return await sendConfiguredEmail({
-      from: 'notifications@jacxishipping.com',
+      from: 'notifications@ampratorshipping.com',
       to,
-      subject: 'Shipment Created - Jacxi Shipping',
+      subject: 'Shipment Created - Amprator Shipping',
       html: renderEmailLayout({
-        preheader: 'Your shipment has been created and is now active in Jacxi Shipping.',
-        eyebrow: 'JACXI OPERATIONS',
+        preheader: 'Your shipment has been created and is now active in Amprator Shipping.',
+        eyebrow: 'Amprator OPERATIONS',
         title: 'Shipment created successfully',
         intro: `Hello ${userName}, your vehicle shipment has been added to our system.`,
         contentHtml: `
@@ -351,7 +351,7 @@ export async function sendShipmentCreatedEmail({
         `,
         ctaLabel: trackingUrl ? 'Track Shipment' : undefined,
         ctaUrl: trackingUrl,
-        footerNote: 'We will keep you updated at every key milestone. Need help? support@jacxishipping.com.',
+        footerNote: 'We will keep you updated at every key milestone. Need help? support@ampratorshipping.com.',
         tone: 'success',
       }),
       text: `Hello ${userName}, your shipment has been created. Vehicle details: ${vehicleInfo}.${trackingUrl ? ` Track shipment: ${trackingUrl}` : ''}`,
@@ -393,12 +393,12 @@ export async function sendLedgerTransactionEmail({
     const tone: EmailTone = direction === 'CREDIT' ? 'success' : 'warning';
 
     return await sendConfiguredEmail({
-      from: 'billing@jacxishipping.com',
+      from: 'billing@ampratorshipping.com',
       to,
       subject: `Account Transaction Notice - ${directionLabel} ${formattedAmount}`,
       html: renderEmailLayout({
         preheader: `A ${directionLabel} transaction of ${sign}${formattedAmount} was posted to your account.`,
-        eyebrow: 'JACXI FINANCE',
+        eyebrow: 'Amprator FINANCE',
         title: 'Account transaction posted',
         intro: `Hello ${effectiveName}, a new transaction has been recorded on your account.`,
         contentHtml: renderSummaryTable([
@@ -409,7 +409,7 @@ export async function sendLedgerTransactionEmail({
           ...(formattedBalance ? [{ label: 'Current Balance', value: formattedBalance, emphasize: true }] : []),
           ...(notes?.trim() ? [{ label: 'Notes', value: notes.trim() }] : []),
         ]),
-        footerNote: 'If you have questions about this transaction, contact billing@jacxishipping.com.',
+        footerNote: 'If you have questions about this transaction, contact billing@ampratorshipping.com.',
         tone,
       }),
       text: `Hello ${effectiveName}, a ${directionLabel} transaction of ${sign}${formattedAmount} was posted to your account on ${transactionDateValue}. Description: ${description}.${formattedBalance ? ` Current balance: ${formattedBalance}.` : ''}${notes?.trim() ? ` Notes: ${notes}.` : ''}`,

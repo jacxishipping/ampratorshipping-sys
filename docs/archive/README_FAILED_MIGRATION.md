@@ -201,7 +201,7 @@ A: Never delete migration files! It breaks migration history.
 ## 🚨 Troubleshooting
 
 ### "Cannot connect to database"
-**Fix**: Check `.env` has `jacxi_DATABASE_URL` set correctly
+**Fix**: Check `.env` has `amprator_DATABASE_URL` set correctly
 
 ### "Permission denied"
 **Fix**: 

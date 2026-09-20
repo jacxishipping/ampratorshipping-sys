@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
 
     if (Object.keys(importedRates).length === 0) {
       return NextResponse.json({
-        message: 'No rates were found in the PDF. Expected the Jacxi branch/city/total table or rows like "CA $1300".',
+        message: 'No rates were found in the PDF. Expected the Amprator branch/city/total table or rows like "CA $1300".',
       }, { status: 422 });
     }
 

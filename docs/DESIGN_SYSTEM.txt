@@ -1,4 +1,4 @@
-JACXI SHIPPING DESIGN SYSTEM
+Amprator SHIPPING DESIGN SYSTEM
 
 Purpose
 This file documents the current live design system used in the application. It describes the visual tokens, layout patterns, spacing rules, component behavior, and implementation conventions used across the site and dashboard.

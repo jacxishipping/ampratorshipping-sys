@@ -96,7 +96,7 @@ const UserCreateScreen: React.FC = () => {
         <Card style={styles.sectionCard}>
           <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>Basic Info</Text>
           <Input label="Full Name" value={form.name} onChangeText={(value) => updateField('name', value)} placeholder="Jane Doe" />
-          <Input label="Email" value={form.email} onChangeText={(value) => updateField('email', value)} placeholder="jane@jacxi.com" keyboardType="email-address" autoCapitalize="none" />
+          <Input label="Email" value={form.email} onChangeText={(value) => updateField('email', value)} placeholder="jane@amprator.com" keyboardType="email-address" autoCapitalize="none" />
           <Input label="Phone" value={form.phone} onChangeText={(value) => updateField('phone', value)} placeholder="Optional phone number" keyboardType="phone-pad" />
         </Card>
 

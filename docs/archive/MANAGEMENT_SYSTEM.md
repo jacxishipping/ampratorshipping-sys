@@ -1,7 +1,7 @@
-# JACXI Shipping - Management System Guide
+# Amprator Shipping - Management System Guide
 
 ## Overview
-The JACXI Shipping platform includes a comprehensive management system for handling shipments, tracking, and customer data.
+The Amprator Shipping platform includes a comprehensive management system for handling shipments, tracking, and customer data.
 
 ## Features Implemented
 
@@ -207,5 +207,5 @@ For issues or questions:
 
 ---
 
-**Built for JACXI Shipping** 🚢
+**Built for Amprator Shipping** 🚢
 

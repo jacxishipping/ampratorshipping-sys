@@ -44,7 +44,7 @@ function toTransactionDate(transaction: FinicityTransaction) {
 }
 
 function buildUsername(userId: string) {
-  return `jacxi-${userId}`.slice(0, 100);
+  return `amprator-${userId}`.slice(0, 100);
 }
 
 function getCustomerIdFromItem(item: PlaidItem) {

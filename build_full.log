@@ -1,5 +1,5 @@
 
-> jacxi-shipping@0.1.0 build
+> amprator-shipping@0.1.0 build
 > prisma generate --no-engine && next build --webpack
 
 Environment variables loaded from .env

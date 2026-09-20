@@ -2,7 +2,7 @@ I have created the following plan after thorough exploration and analysis of the
 
 ## Observations
 
-The JACXI Shipping platform is a mature Next.js 14 app using Material UI + Tailwind CSS + a custom design system (`src/components/design-system`). Many foundational UI/UX features are already in place: skeleton loaders, toast notifications, breadcrumbs, `DataTable` with bulk actions, `StatusBadge`, `CommandPalette`, `NotificationCenter`, dark mode tokens, and mobile `BottomNavigation`. The main gaps are: (1) inconsistent status badge rendering in the containers card view vs. the design system's `StatusBadge`, (2) the native `<select>` filter in the containers page lacks design-system styling, (3) the `PageHeader` component has no breadcrumb integration, (4) the `DataTable` footer only shows a count but no page-level pagination, and (5) the `Sidebar` has no user avatar/name footer section.
+The Amprator Shipping platform is a mature Next.js 14 app using Material UI + Tailwind CSS + a custom design system (`src/components/design-system`). Many foundational UI/UX features are already in place: skeleton loaders, toast notifications, breadcrumbs, `DataTable` with bulk actions, `StatusBadge`, `CommandPalette`, `NotificationCenter`, dark mode tokens, and mobile `BottomNavigation`. The main gaps are: (1) inconsistent status badge rendering in the containers card view vs. the design system's `StatusBadge`, (2) the native `<select>` filter in the containers page lacks design-system styling, (3) the `PageHeader` component has no breadcrumb integration, (4) the `DataTable` footer only shows a count but no page-level pagination, and (5) the `Sidebar` has no user avatar/name footer section.
 
 ## Approach
 

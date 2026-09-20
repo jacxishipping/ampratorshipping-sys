@@ -463,7 +463,7 @@ The effort is significant but worthwhile for long-term success.
 **Status**: Awaiting approval to proceed with implementation  
 **Version**: 2.0.0 (Major Breaking Change)  
 **Date**: December 5, 2025  
-**Created by**: JACXI Development Team
+**Created by**: Amprator Development Team
 
 ---
 

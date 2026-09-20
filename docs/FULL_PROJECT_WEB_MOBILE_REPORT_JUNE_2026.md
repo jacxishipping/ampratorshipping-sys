@@ -1,16 +1,16 @@
-# Jacxi Shipping Full Project Report
+# Amprator Shipping Full Project Report
 
 Date: June 2, 2026
 
 ## Purpose
 
-This report summarizes the implemented scope of the Jacxi Shipping platform across the web application and the mobile application, then compares both products side by side.
+This report summarizes the implemented scope of the Amprator Shipping platform across the web application and the mobile application, then compares both products side by side.
 
 This report is based on the current repository structure, key route trees, navigation files, API modules, and the highest-signal project documentation. Where documentation and code can diverge, the route and screen inventory was treated as the source of truth.
 
 ## Platform Summary
 
-Jacxi Shipping is a shipping operations platform centered on vehicle shipments, containerization, invoicing, finance tracking, document handling, user/customer management, and tracking visibility.
+Amprator Shipping is a shipping operations platform centered on vehicle shipments, containerization, invoicing, finance tracking, document handling, user/customer management, and tracking visibility.
 
 The platform currently consists of:
 

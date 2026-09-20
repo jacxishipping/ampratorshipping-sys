@@ -9,7 +9,7 @@
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient({
-  datasourceUrl: process.env.jacxi_PRISMA_DATABASE_URL,
+  datasourceUrl: process.env.amprator_PRISMA_DATABASE_URL,
   log: ['error'],
 });
 

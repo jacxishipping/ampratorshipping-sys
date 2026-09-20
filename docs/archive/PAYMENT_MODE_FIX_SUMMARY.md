@@ -44,7 +44,7 @@ Tested the database connection and confirmed that:
 
 ## Database Connection
 ```
-Database: jacxi
+Database: amprator
 Host: database-1.cda8cem8oi5h.us-east-2.rds.amazonaws.com
 Port: 5432
 ```

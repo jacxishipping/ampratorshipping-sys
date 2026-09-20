@@ -199,7 +199,7 @@ export const AppTopBar: React.FC<AppTopBarProps> = ({
           </TouchableOpacity>
 
           <View style={styles.textWrap}>
-            <Text style={[styles.eyebrow, { color: colors.textSecondary }]}>JACXI SHIPPING</Text>
+            <Text style={[styles.eyebrow, { color: colors.textSecondary }]}>Amprator SHIPPING</Text>
             <Text style={[styles.section, { color: colors.textPrimary }]} numberOfLines={1}>
               {section}
             </Text>
@@ -249,7 +249,7 @@ export const AppTopBar: React.FC<AppTopBarProps> = ({
         <ScrollView contentContainerStyle={styles.menuContent}>
           <View style={[styles.menuIdentity, { backgroundColor: colors.surfaceMuted, borderColor: colors.border }]}> 
             <Text style={[styles.menuTitle, { color: colors.textPrimary }]}>
-              {isAuthenticated ? user?.name || 'Jacxi user' : 'Jacxi mobile'}
+              {isAuthenticated ? user?.name || 'Amprator user' : 'Amprator mobile'}
             </Text>
             <Text style={[styles.menuSubtitle, { color: colors.textSecondary }]}>
               {isAuthenticated ? user?.email || 'Authenticated session' : 'Choose a sign in path or change the app theme.'}
