@@ -5,8 +5,8 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Amprator Shipping',
     short_name: 'Amprator',
     description:
-      'Vehicle shipping from the USA and Canada to Afghanistan through either Mersin or UAE with tracking, invoicing, and delivery operations.',
-    start_url: '/',
+      'Amprator Shipping management dashboard for tracking, invoicing, and delivery operations.',
+    start_url: '/dashboard',
     scope: '/',
     display: 'standalone',
     orientation: 'portrait',
