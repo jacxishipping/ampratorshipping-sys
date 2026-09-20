@@ -52,7 +52,7 @@ import {
 
 const DEFAULT_SETTINGS = {
   theme: 'futuristic',
-  accentColor: 'var(--accent-gold)',
+  accentColor: 'var(--primary)',
   sidebarDensity: 'comfortable',
   animationsEnabled: true,
   notifyShipmentEmail: true,
@@ -946,16 +946,16 @@ export default function SettingsPage() {
               my: 0.75,
               px: 1.5,
               '&:hover': {
-                color: 'var(--accent-gold)',
-                backgroundColor: 'rgba(var(--accent-gold-rgb), 0.08)',
+                color: 'var(--primary)',
+                backgroundColor: 'rgba(var(--primary-rgb), 0.08)',
               },
             },
             '& .Mui-selected': {
-              color: 'var(--accent-gold) !important',
-              backgroundColor: 'rgba(var(--accent-gold-rgb), 0.1)',
+              color: 'var(--primary) !important',
+              backgroundColor: 'rgba(var(--primary-rgb), 0.1)',
             },
             '& .MuiTabs-indicator': {
-              backgroundColor: 'var(--accent-gold)',
+              backgroundColor: 'var(--primary)',
               height: 3,
             },
           }}

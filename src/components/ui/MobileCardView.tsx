@@ -62,7 +62,7 @@ export function MobileCardView<T extends Record<string, any>>({
             onClick={() => onItemClick?.(item)}
             className={cn(
               'bg-[var(--panel)] border border-[var(--border)] rounded-lg overflow-hidden transition-all',
-              onItemClick && 'cursor-pointer hover:border-[var(--accent-gold)] hover:shadow-md active:scale-[0.99]'
+              onItemClick && 'cursor-pointer hover:border-[var(--primary)] hover:shadow-md active:scale-[0.99]'
             )}
           >
             {/* Primary field (header) */}

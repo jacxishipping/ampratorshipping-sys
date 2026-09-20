@@ -21,7 +21,7 @@ export const STATUS_TONE_CHIP: Record<StatusTone, string> = {
   success: 'border-[rgba(34,197,94,0.34)] bg-[rgba(34,197,94,0.12)] text-[rgb(21,128,61)]',
   warning: 'border-[rgba(245,158,11,0.32)] bg-[rgba(245,158,11,0.12)] text-[rgb(180,83,9)]',
   danger: 'border-[rgba(239,68,68,0.34)] bg-[rgba(239,68,68,0.12)] text-[rgb(185,28,28)]',
-  brand: 'border-[rgba(var(--accent-gold-rgb),0.32)] bg-[rgba(var(--accent-gold-rgb),0.14)] text-[var(--accent-gold)]',
+  brand: 'border-[rgba(var(--primary-rgb),0.32)] bg-[rgba(var(--primary-rgb),0.14)] text-[var(--primary)]',
 };
 
 export function statusChipClass(tone: StatusTone): string {

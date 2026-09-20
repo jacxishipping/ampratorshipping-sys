@@ -169,7 +169,7 @@ function getNextActionState({
 }
 
 const toneStyles: Record<ActionState['tone'], string> = {
-  ready: 'border-[rgba(var(--accent-gold-rgb),0.35)] bg-[rgba(var(--accent-gold-rgb),0.08)]',
+  ready: 'border-[rgba(var(--primary-rgb),0.35)] bg-[rgba(var(--primary-rgb),0.08)]',
   waiting: 'border-[rgba(59,130,246,0.28)] bg-[rgba(59,130,246,0.08)]',
   done: 'border-[rgba(34,197,94,0.32)] bg-[rgba(34,197,94,0.08)]',
   attention: 'border-[rgba(var(--warning-rgb),0.32)] bg-[rgba(var(--warning-rgb),0.08)]',
@@ -182,7 +182,7 @@ export default function ShipmentNextActionPanel(props: ShipmentNextActionPanelPr
     <div className={`rounded-2xl border p-4 ${toneStyles[action.tone]}`}>
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-w-0 gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--panel)] text-[var(--accent-gold)]">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--panel)] text-[var(--primary)]">
             {action.icon}
           </div>
           <div className="min-w-0">

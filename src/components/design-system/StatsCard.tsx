@@ -48,8 +48,8 @@ export default function StatsCard({
 	// Variant colors
 	const variantConfig = {
 		default: {
-			iconColor: 'var(--accent-gold)',
-			iconBg: 'rgba(var(--accent-gold-rgb), 0.15)',
+			iconColor: 'var(--primary)',
+			iconBg: 'rgba(var(--primary-rgb), 0.15)',
 		},
 		secondary: {
 			iconColor: 'var(--text-primary)',
@@ -108,7 +108,7 @@ export default function StatsCard({
 				height: '100%',
 				borderRadius: 2,
 				border: '1px solid var(--border)',
-				borderLeft: variant === 'default' ? '3px solid var(--accent-gold)' : undefined,
+				borderLeft: variant === 'default' ? '3px solid var(--primary)' : undefined,
 				background: 'var(--panel)',
 				padding: sizes.padding,
 			display: 'flex',
@@ -144,7 +144,7 @@ export default function StatsCard({
 							content: '""',
 							position: 'absolute',
 							inset: 0,
-							background: 'linear-gradient(135deg, rgba(var(--accent-gold-rgb), 0.08), transparent 72%)',
+							background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.08), transparent 72%)',
 							pointerEvents: 'none',
 						},
 						'& > *': {

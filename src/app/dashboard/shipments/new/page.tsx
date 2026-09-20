@@ -510,14 +510,14 @@ export default function NewShipmentPage() {
 						alternativeLabel
 						sx={{
 							'& .MuiStepLabel-root .Mui-completed': {
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 							},
 							'& .MuiStepLabel-label.Mui-completed': {
 								color: 'var(--text-primary)',
 								fontWeight: 600,
 							},
 							'& .MuiStepLabel-root .Mui-active': {
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 							},
 							'& .MuiStepLabel-label.Mui-active': {
 								color: 'var(--text-primary)',
@@ -531,17 +531,17 @@ export default function NewShipmentPage() {
 								borderColor: 'var(--border)',
 							},
 							'& .MuiStepConnector-root.Mui-completed .MuiStepConnector-line': {
-								borderColor: 'var(--accent-gold)',
+								borderColor: 'var(--primary)',
 							},
 							'& .MuiStepIcon-root': {
 								color: 'var(--border)',
 								fontSize: '2rem',
 							},
 							'& .MuiStepIcon-root.Mui-active': {
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 							},
 							'& .MuiStepIcon-root.Mui-completed': {
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 							},
 						}}
 					>
@@ -879,8 +879,8 @@ export default function NewShipmentPage() {
 											mt: 3, 
 											p: 3, 
 											borderRadius: '12px', 
-											backgroundColor: 'rgba(var(--accent-gold-rgb), 0.05)',
-											border: '1px solid rgba(var(--accent-gold-rgb), 0.2)'
+											backgroundColor: 'rgba(var(--primary-rgb), 0.05)',
+											border: '1px solid rgba(var(--primary-rgb), 0.2)'
 										}}>
 											<Typography sx={{ 
 												fontSize: '1rem', 
@@ -1008,8 +1008,8 @@ export default function NewShipmentPage() {
 									}}
 									onMouseEnter={(e) => {
 										if (!uploading) {
-											e.currentTarget.style.borderColor = 'var(--accent-gold)';
-											e.currentTarget.style.backgroundColor = 'rgba(var(--accent-gold-rgb), 0.05)';
+											e.currentTarget.style.borderColor = 'var(--primary)';
+											e.currentTarget.style.backgroundColor = 'rgba(var(--primary-rgb), 0.05)';
 										}
 									}}
 									onMouseLeave={(e) => {
@@ -1029,14 +1029,14 @@ export default function NewShipmentPage() {
 									<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, py: 4 }}>
 										{uploadingFiles.size > 0 ? (
 											<>
-												<Loader2 style={{ fontSize: 40, color: 'var(--accent-gold)' }} className="animate-spin" />
+												<Loader2 style={{ fontSize: 40, color: 'var(--primary)' }} className="animate-spin" />
 												<Typography sx={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
 													Uploading {uploadingFiles.size} photo{uploadingFiles.size !== 1 ? 's' : ''}...
 												</Typography>
 											</>
 										) : (
 											<>
-												<Upload style={{ fontSize: 40, color: 'var(--accent-gold)' }} />
+												<Upload style={{ fontSize: 40, color: 'var(--primary)' }} />
 												<Typography sx={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-primary)' }}>
 													Click to upload vehicle photos
 												</Typography>
@@ -1055,7 +1055,7 @@ export default function NewShipmentPage() {
 											<Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-primary)' }}>
 												Uploading {Object.keys(uploadProgress).length} photo{Object.keys(uploadProgress).length !== 1 ? 's' : ''}...
 											</Typography>
-											<Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--accent-gold)' }}>
+											<Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--primary)' }}>
 												{overallProgress}%
 											</Typography>
 										</Box>
@@ -1067,7 +1067,7 @@ export default function NewShipmentPage() {
 												borderRadius: 4,
 												backgroundColor: 'rgba(var(--border-rgb), 0.2)',
 												'& .MuiLinearProgress-bar': {
-													backgroundColor: 'var(--accent-gold)',
+													backgroundColor: 'var(--primary)',
 													borderRadius: 4,
 												},
 											}}
@@ -1226,10 +1226,10 @@ export default function NewShipmentPage() {
 																		borderColor: errors.containerId ? 'var(--error)' : 'rgba(var(--border-rgb), 0.9)',
 																	},
 																	'&:hover fieldset': {
-																		borderColor: errors.containerId ? 'var(--error)' : 'var(--accent-gold)',
+																		borderColor: errors.containerId ? 'var(--error)' : 'var(--primary)',
 																	},
 																	'&.Mui-focused fieldset': {
-																		borderColor: errors.containerId ? 'var(--error)' : 'var(--accent-gold)',
+																		borderColor: errors.containerId ? 'var(--error)' : 'var(--primary)',
 																	},
 																},
 																'& .MuiInputBase-input': {
@@ -1310,10 +1310,10 @@ export default function NewShipmentPage() {
 																borderColor: errors.userId ? 'var(--error)' : 'rgba(var(--border-rgb), 0.9)',
 															},
 															'&:hover fieldset': {
-																borderColor: errors.userId ? 'var(--error)' : 'var(--accent-gold)',
+																borderColor: errors.userId ? 'var(--error)' : 'var(--primary)',
 															},
 															'&.Mui-focused fieldset': {
-																borderColor: errors.userId ? 'var(--error)' : 'var(--accent-gold)',
+																borderColor: errors.userId ? 'var(--error)' : 'var(--primary)',
 															},
 														},
 														'& .MuiInputBase-input': {
@@ -1357,13 +1357,13 @@ export default function NewShipmentPage() {
 												justifyContent: 'center',
 												gap: 1.5,
 												p: 2,
-												border: watch('paymentMode') === 'CASH' ? '2px solid var(--accent-gold)' : '1px solid var(--border)',
+												border: watch('paymentMode') === 'CASH' ? '2px solid var(--primary)' : '1px solid var(--border)',
 												borderRadius: 2,
-												bgcolor: watch('paymentMode') === 'CASH' ? 'rgba(var(--accent-gold-rgb), 0.08)' : 'var(--panel)',
+												bgcolor: watch('paymentMode') === 'CASH' ? 'rgba(var(--primary-rgb), 0.08)' : 'var(--panel)',
 												cursor: 'pointer',
 												transition: 'all 0.2s ease',
 												'&:hover': {
-													borderColor: 'var(--accent-gold)',
+													borderColor: 'var(--primary)',
 												},
 											}}
 										>
@@ -1385,13 +1385,13 @@ export default function NewShipmentPage() {
 												justifyContent: 'center',
 												gap: 1.5,
 												p: 2,
-												border: watch('paymentMode') === 'DUE' ? '2px solid var(--accent-gold)' : '1px solid var(--border)',
+												border: watch('paymentMode') === 'DUE' ? '2px solid var(--primary)' : '1px solid var(--border)',
 												borderRadius: 2,
-												bgcolor: watch('paymentMode') === 'DUE' ? 'rgba(var(--accent-gold-rgb), 0.08)' : 'var(--panel)',
+												bgcolor: watch('paymentMode') === 'DUE' ? 'rgba(var(--primary-rgb), 0.08)' : 'var(--panel)',
 												cursor: 'pointer',
 												transition: 'all 0.2s ease',
 												'&:hover': {
-													borderColor: 'var(--accent-gold)',
+													borderColor: 'var(--primary)',
 												},
 											}}
 										>
@@ -1438,8 +1438,8 @@ export default function NewShipmentPage() {
 													px: 1.5,
 													py: 0.5,
 													borderRadius: 1,
-													bgcolor: formValues.serviceType === 'PURCHASE_AND_SHIPPING' ? 'rgba(var(--accent-gold-rgb), 0.15)' : 'rgba(99, 102, 241, 0.15)',
-													color: formValues.serviceType === 'PURCHASE_AND_SHIPPING' ? 'var(--accent-gold)' : 'rgb(99, 102, 241)',
+													bgcolor: formValues.serviceType === 'PURCHASE_AND_SHIPPING' ? 'rgba(var(--primary-rgb), 0.15)' : 'rgba(99, 102, 241, 0.15)',
+													color: formValues.serviceType === 'PURCHASE_AND_SHIPPING' ? 'var(--primary)' : 'rgb(99, 102, 241)',
 													fontSize: '0.75rem',
 													fontWeight: 600,
 												}}
@@ -1495,7 +1495,7 @@ export default function NewShipmentPage() {
 												<Typography sx={{ fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--text-secondary)', mb: 0.5 }}>
 													Purchase Price
 												</Typography>
-												<Typography sx={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--accent-gold)' }}>
+												<Typography sx={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--primary)' }}>
 													${parseFloat(formValues.purchasePrice).toLocaleString()}
 												</Typography>
 											</Box>

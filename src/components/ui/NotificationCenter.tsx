@@ -140,7 +140,7 @@ export function NotificationCenter() {
       case 'ERROR':
         return <AlertCircle className="w-4 h-4 text-[var(--error)]" />;
       default:
-        return <Bell className="w-4 h-4 text-[var(--accent-gold)]" />;
+        return <Bell className="w-4 h-4 text-[var(--primary)]" />;
     }
   };
 
@@ -179,9 +179,9 @@ export function NotificationCenter() {
     }
 
     return {
-      color: 'var(--accent-gold)',
-      backgroundColor: 'rgba(var(--accent-gold-rgb), 0.12)',
-      borderColor: 'rgba(var(--accent-gold-rgb), 0.2)',
+      color: 'var(--primary)',
+      backgroundColor: 'rgba(var(--primary-rgb), 0.12)',
+      borderColor: 'rgba(var(--primary-rgb), 0.2)',
     };
   };
 
@@ -240,7 +240,7 @@ export function NotificationCenter() {
             {unreadCount > 0 && (
               <button
                 onClick={markAllAsRead}
-                className="text-xs text-[var(--accent-gold)] hover:underline"
+                className="text-xs text-[var(--primary)] hover:underline"
               >
                 Mark all read
               </button>
@@ -288,7 +288,7 @@ export function NotificationCenter() {
                   sx={{
                     p: 3,
                     cursor: 'pointer',
-                    bgcolor: notification.read ? 'transparent' : 'rgba(var(--accent-gold-rgb), 0.05)',
+                    bgcolor: notification.read ? 'transparent' : 'rgba(var(--primary-rgb), 0.05)',
                     '&:hover': {
                       bgcolor: 'var(--background)',
                     },

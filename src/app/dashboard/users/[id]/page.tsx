@@ -339,7 +339,7 @@ export default function UserViewPage({ params }: { params: Promise<{ id: string 
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, pb: 2, borderBottom: '1px solid var(--border)' }}>
               <div className="w-16 h-16 rounded-full bg-[var(--panel)] border border-[var(--border)] flex items-center justify-center">
-                <User className="w-8 h-8 text-[var(--accent-gold)]" />
+                <User className="w-8 h-8 text-[var(--primary)]" />
               </div>
               <Box>
                 <Typography variant="h6" fontWeight="bold">
@@ -350,8 +350,8 @@ export default function UserViewPage({ params }: { params: Promise<{ id: string 
                   size="small"
                   sx={{
                     mt: 0.5,
-                    bgcolor: user.role === 'admin' ? 'rgba(var(--accent-gold-rgb), 0.1)' : 'var(--panel)',
-                    color: user.role === 'admin' ? 'var(--accent-gold)' : 'var(--text-secondary)',
+                    bgcolor: user.role === 'admin' ? 'rgba(var(--primary-rgb), 0.1)' : 'var(--panel)',
+                    color: user.role === 'admin' ? 'var(--primary)' : 'var(--text-secondary)',
                     fontWeight: 600,
                     fontSize: '0.7rem'
                   }}
@@ -455,7 +455,7 @@ export default function UserViewPage({ params }: { params: Promise<{ id: string 
                         label: 'Available Credit',
                         value: formatMoney(statement.summary.availableCredit),
                         detail: `Ledger balance ${formatMoney(statement.summary.accountBalance)}`,
-                        tone: 'text-[var(--accent-gold)]',
+                        tone: 'text-[var(--primary)]',
                       },
                     ].map((card) => (
                       <div key={card.label} className="rounded-lg border border-[var(--border)] bg-[var(--background)] p-4">
@@ -571,7 +571,7 @@ export default function UserViewPage({ params }: { params: Promise<{ id: string 
                           {statement.timeline.map((invoice) => (
                             <div key={invoice.id} className="grid grid-cols-12 items-start gap-3 px-3 py-3 text-sm">
                               <div className="col-span-4 min-w-0">
-                                <Link href={`/dashboard/invoices/${invoice.id}`} className="inline-flex items-center gap-2 font-semibold text-[var(--accent-gold)] hover:underline">
+                                <Link href={`/dashboard/invoices/${invoice.id}`} className="inline-flex items-center gap-2 font-semibold text-[var(--primary)] hover:underline">
                                   <FileText className="h-4 w-4" />
                                   {invoice.invoiceNumber}
                                 </Link>

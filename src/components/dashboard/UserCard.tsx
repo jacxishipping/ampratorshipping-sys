@@ -90,7 +90,7 @@ export default function UserCard({
               justifyContent: 'center',
             }}
           >
-            <User style={{ width: 20, height: 20, color: 'var(--accent-gold)' }} />
+            <User style={{ width: 20, height: 20, color: 'var(--primary)' }} />
           </Box>
           <Box sx={{ flex: 1, minWidth: 0 }}>
             <Typography sx={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-primary)' }} noWrap>
@@ -132,7 +132,7 @@ export default function UserCard({
                 {copiedEmail === user.id ? (
                   <Check style={{ color: 'green', width: 16, height: 16 }} />
                 ) : (
-                  <Copy style={{ color: 'var(--accent-gold)', width: 16, height: 16 }} />
+                  <Copy style={{ color: 'var(--primary)', width: 16, height: 16 }} />
                 )}
               </IconButton>
             )}

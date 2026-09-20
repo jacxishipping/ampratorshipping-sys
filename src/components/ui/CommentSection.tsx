@@ -157,7 +157,7 @@ export function CommentSection({
                     className="w-10 h-10 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="w-10 h-10 rounded-full bg-[var(--accent-gold)] flex items-center justify-center text-white text-sm font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-[var(--primary)] flex items-center justify-center text-white text-sm font-semibold">
                     {getInitials(comment.author.name)}
                   </div>
                 )}
@@ -230,7 +230,7 @@ export function CommentSection({
                       value={editContent}
                       onChange={(e) => setEditContent(e.target.value)}
                       maxLength={maxLength}
-                      className="w-full px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] resize-none"
+                      className="w-full px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] resize-none"
                       rows={3}
                     />
                     <div className="flex items-center justify-between">
@@ -247,7 +247,7 @@ export function CommentSection({
                         <button
                           onClick={() => handleEdit(comment.id)}
                           disabled={!editContent.trim()}
-                          className="px-3 py-1.5 text-sm font-medium text-white bg-[var(--accent-gold)] hover:bg-[#C9A24C] rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="px-3 py-1.5 text-sm font-medium text-white bg-[var(--primary)] hover:bg-[#C9A24C] rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                           Save
                         </button>
@@ -274,7 +274,7 @@ export function CommentSection({
             onChange={(e) => setNewComment(e.target.value)}
             placeholder={placeholder}
             maxLength={maxLength}
-            className="w-full px-4 py-3 pr-12 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] resize-none"
+            className="w-full px-4 py-3 pr-12 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] resize-none"
             rows={1}
             style={{ minHeight: '44px', maxHeight: '200px' }}
           />
@@ -284,7 +284,7 @@ export function CommentSection({
             className={cn(
               'absolute right-2 bottom-2 p-2 rounded-lg transition-all',
               newComment.trim()
-                ? 'bg-[var(--accent-gold)] text-white hover:bg-[#C9A24C]'
+                ? 'bg-[var(--primary)] text-white hover:bg-[#C9A24C]'
                 : 'bg-[var(--background)] text-[var(--text-secondary)] cursor-not-allowed'
             )}
           >

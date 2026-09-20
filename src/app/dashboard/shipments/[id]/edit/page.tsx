@@ -939,10 +939,10 @@ export default function EditShipmentPage() {
                                 borderColor: errors.userId ? 'var(--error)' : 'rgba(var(--border-rgb), 0.9)',
                               },
                               '&:hover fieldset': {
-                                borderColor: errors.userId ? 'var(--error)' : 'var(--accent-gold)',
+                                borderColor: errors.userId ? 'var(--error)' : 'var(--primary)',
                               },
                               '&.Mui-focused fieldset': {
-                                borderColor: errors.userId ? 'var(--error)' : 'var(--accent-gold)',
+                                borderColor: errors.userId ? 'var(--error)' : 'var(--primary)',
                               },
                             },
                             '& .MuiInputBase-input': {
@@ -1029,10 +1029,10 @@ export default function EditShipmentPage() {
                                   borderColor: errors.containerId ? 'var(--error)' : 'rgba(var(--border-rgb), 0.9)',
                                 },
                                 '&:hover fieldset': {
-                                  borderColor: errors.containerId ? 'var(--error)' : 'var(--accent-gold)',
+                                  borderColor: errors.containerId ? 'var(--error)' : 'var(--primary)',
                                 },
                                 '&.Mui-focused fieldset': {
-                                  borderColor: errors.containerId ? 'var(--error)' : 'var(--accent-gold)',
+                                  borderColor: errors.containerId ? 'var(--error)' : 'var(--primary)',
                                 },
                               },
                               '& .MuiInputBase-input': {
@@ -1093,7 +1093,7 @@ export default function EditShipmentPage() {
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, py: 4 }}>
                                     {Array.from(uploadingFiles).some(id => !id.includes('arrival')) ? (
                                         <>
-                                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-gold)]" />
+                                            <Loader2 className="w-8 h-8 animate-spin text-[var(--primary)]" />
                                             <Typography variant="body2" color="text.secondary">
                                                 Uploading {Array.from(uploadingFiles).filter(id => !id.includes('arrival')).length} photo{Array.from(uploadingFiles).filter(id => !id.includes('arrival')).length !== 1 ? 's' : ''}...
                                             </Typography>
@@ -1119,7 +1119,7 @@ export default function EditShipmentPage() {
                                         <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-primary)' }}>
                                             Uploading {Object.keys(uploadProgress).filter(id => !id.includes('arrival')).length} photo{Object.keys(uploadProgress).filter(id => !id.includes('arrival')).length !== 1 ? 's' : ''}...
                                         </Typography>
-                                        <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--accent-gold)' }}>
+                                        <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--primary)' }}>
                                             {vehiclePhotosProgress}%
                                         </Typography>
                                     </Box>
@@ -1131,7 +1131,7 @@ export default function EditShipmentPage() {
                                             borderRadius: 4,
                                             backgroundColor: 'rgba(var(--border-rgb), 0.2)',
                                             '& .MuiLinearProgress-bar': {
-                                                backgroundColor: 'var(--accent-gold)',
+                                                backgroundColor: 'var(--primary)',
                                                 borderRadius: 4,
                                             },
                                         }}
@@ -1190,7 +1190,7 @@ export default function EditShipmentPage() {
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, py: 4 }}>
                                     {Array.from(uploadingFiles).some(id => id.includes('arrival')) ? (
                                         <>
-                                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-gold)]" />
+                                            <Loader2 className="w-8 h-8 animate-spin text-[var(--primary)]" />
                                             <Typography variant="body2" color="text.secondary">
                                                 Uploading {Array.from(uploadingFiles).filter(id => id.includes('arrival')).length} photo{Array.from(uploadingFiles).filter(id => id.includes('arrival')).length !== 1 ? 's' : ''}...
                                             </Typography>
@@ -1216,7 +1216,7 @@ export default function EditShipmentPage() {
                                         <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-primary)' }}>
                                             Uploading {Object.keys(uploadProgress).filter(id => id.includes('arrival')).length} photo{Object.keys(uploadProgress).filter(id => id.includes('arrival')).length !== 1 ? 's' : ''}...
                                         </Typography>
-                                        <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--accent-gold)' }}>
+                                        <Typography sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--primary)' }}>
                                             {arrivalPhotosProgress}%
                                         </Typography>
                                     </Box>
@@ -1228,7 +1228,7 @@ export default function EditShipmentPage() {
                                             borderRadius: 4,
                                             backgroundColor: 'rgba(var(--border-rgb), 0.2)',
                                             '& .MuiLinearProgress-bar': {
-                                                backgroundColor: 'var(--accent-gold)',
+                                                backgroundColor: 'var(--primary)',
                                                 borderRadius: 4,
                                             },
                                         }}

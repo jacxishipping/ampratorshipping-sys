@@ -213,9 +213,9 @@ export default async function FinancePage() {
                     <div className="grid grid-cols-1 gap-3">
                         {visibleQuickActions.map((action) => (
                             <Link key={action.href} href={action.href}>
-                                <div className="p-4 rounded-xl border border-border bg-panel hover:border-[var(--accent-gold)] hover:shadow-lg transition-all cursor-pointer group">
+                                <div className="p-4 rounded-xl border border-border bg-panel hover:border-[var(--primary)] hover:shadow-lg transition-all cursor-pointer group">
                                     <div className="flex items-center gap-3 mb-2">
-                                        <div className="w-9 h-9 rounded-lg border border-border bg-[rgba(var(--accent-gold-rgb),0.12)] flex items-center justify-center text-[var(--accent-gold)] group-hover:scale-110 transition-transform">
+                                        <div className="w-9 h-9 rounded-lg border border-border bg-[rgba(var(--primary-rgb),0.12)] flex items-center justify-center text-[var(--primary)] group-hover:scale-110 transition-transform">
                                             {action.icon}
                                         </div>
                                         <span className="font-semibold text-primary">{action.label}</span>

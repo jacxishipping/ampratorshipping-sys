@@ -66,7 +66,7 @@ export const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
                 ? 'border-[var(--error)] bg-red-50/10 focus:ring-[var(--error)]'
                 : showSuccess
                 ? 'border-green-500 bg-green-50/10 focus:ring-green-500'
-                : 'border-[var(--border)] bg-[var(--background)] focus:ring-[var(--accent-gold)]',
+                : 'border-[var(--border)] bg-[var(--background)] focus:ring-[var(--primary)]',
               'disabled:opacity-50 disabled:cursor-not-allowed',
               className
             )}

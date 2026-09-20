@@ -71,13 +71,13 @@ export default function ShipmentOverviewTab({
             <>
               <div className="h-2 w-full overflow-hidden rounded-full bg-[var(--border)]">
                 <div
-                  className="h-full bg-[var(--accent-gold)] transition-all duration-500"
+                  className="h-full bg-[var(--primary)] transition-all duration-500"
                   style={{ width: `${Math.max(Math.min(shipment.container.progress || 0, 100), 0)}%` }}
                 />
               </div>
               {shipment.container.currentLocation && (
                 <div className="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                  <MapPin className="h-4 w-4 text-[var(--accent-gold)]" />
+                  <MapPin className="h-4 w-4 text-[var(--primary)]" />
                   <span>
                     Currently at <span className="font-medium text-[var(--text-primary)]">{shipment.container.currentLocation}</span>
                   </span>
@@ -110,7 +110,7 @@ export default function ShipmentOverviewTab({
           canAssignDispatch ? (
             <button
               onClick={onOpenAssignDispatch}
-              className="inline-flex items-center gap-1.5 rounded-md bg-[var(--accent-gold)] px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90"
+              className="inline-flex items-center gap-1.5 rounded-md bg-[var(--primary)] px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90"
             >
               <Truck className="h-3.5 w-3.5" />
               Assign to Dispatch
@@ -121,7 +121,7 @@ export default function ShipmentOverviewTab({
         {shipment.dispatch ? (
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Truck className="h-5 w-5 text-[var(--accent-gold)]" />
+              <Truck className="h-5 w-5 text-[var(--primary)]" />
               <span className="text-sm font-medium text-[var(--text-primary)]">
                 Ref: <strong>{shipment.dispatch.referenceNumber}</strong>
               </span>
@@ -146,7 +146,7 @@ export default function ShipmentOverviewTab({
             </div>
             <div className="mt-1 flex items-center gap-2">
               {canViewWorkflowCompanyDetails ? (
-                <Link href={`/dashboard/dispatches/${shipment.dispatch.id}`} className="text-xs font-medium text-[var(--accent-gold)] hover:underline">
+                <Link href={`/dashboard/dispatches/${shipment.dispatch.id}`} className="text-xs font-medium text-[var(--primary)] hover:underline">
                   View Dispatch Details →
                 </Link>
               ) : null}
@@ -179,7 +179,7 @@ export default function ShipmentOverviewTab({
                 <button
                   onClick={onGenerateReleaseToken}
                   disabled={creatingReleaseToken}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--accent-gold)] disabled:opacity-50"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--primary)] disabled:opacity-50"
                 >
                   {creatingReleaseToken ? 'Generating...' : 'Generate Release Token'}
                 </button>
@@ -187,7 +187,7 @@ export default function ShipmentOverviewTab({
               <button
                 onClick={onOpenAssignTransit}
                 disabled={!isReleasedForTransit}
-                className="inline-flex items-center gap-1.5 rounded-md bg-[var(--accent-gold)] px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex items-center gap-1.5 rounded-md bg-[var(--primary)] px-3 py-1.5 text-xs font-semibold text-white hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <Truck className="h-3.5 w-3.5" />
                 Assign to Transit
@@ -199,7 +199,7 @@ export default function ShipmentOverviewTab({
         {shipment.transit ? (
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Truck className="h-5 w-5 text-[var(--accent-gold)]" />
+              <Truck className="h-5 w-5 text-[var(--primary)]" />
               <span className="text-sm font-medium text-[var(--text-primary)]">
                 Ref: <strong>{shipment.transit.referenceNumber}</strong>
               </span>
@@ -226,7 +226,7 @@ export default function ShipmentOverviewTab({
             </div>
             <div className="mt-1 flex items-center gap-2">
               {canViewWorkflowCompanyDetails ? (
-                <Link href={`/dashboard/transits/${shipment.transit.id}`} className="text-xs font-medium text-[var(--accent-gold)] hover:underline">
+                <Link href={`/dashboard/transits/${shipment.transit.id}`} className="text-xs font-medium text-[var(--primary)] hover:underline">
                   View Transit Details →
                 </Link>
               ) : null}
@@ -255,7 +255,7 @@ export default function ShipmentOverviewTab({
                       void navigator.clipboard.writeText(shipment.releaseToken || '');
                       toast.success('Release token copied');
                     }}
-                    className="rounded border border-[var(--border)] px-2 py-0.5 text-[11px] font-medium text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+                    className="rounded border border-[var(--border)] px-2 py-0.5 text-[11px] font-medium text-[var(--text-primary)] hover:border-[var(--primary)]"
                   >
                     Copy
                   </button>
@@ -335,7 +335,7 @@ export default function ShipmentOverviewTab({
               </div>
               <div className="h-2 w-full overflow-hidden rounded-full bg-[var(--border)]">
                 <div
-                  className="h-full bg-[var(--accent-gold)] transition-all duration-500"
+                  className="h-full bg-[var(--primary)] transition-all duration-500"
                   style={{ width: `${Math.max(Math.min(shipment.container.progress || 0, 100), 0)}%` }}
                 />
               </div>
@@ -364,7 +364,7 @@ export default function ShipmentOverviewTab({
                 <div className="rounded-lg border border-[var(--border)] bg-[var(--background)] p-3">
                   <dt className="text-xs uppercase tracking-wide text-[var(--text-secondary)]">Current Location</dt>
                   <dd className="mt-1 flex items-center gap-1 text-sm font-semibold text-[var(--text-primary)]">
-                    <MapPin className="h-3 w-3 text-[var(--accent-gold)]" />
+                    <MapPin className="h-3 w-3 text-[var(--primary)]" />
                     {shipment.container.currentLocation}
                   </dd>
                 </div>
@@ -419,7 +419,7 @@ export default function ShipmentOverviewTab({
                       <div
                         className="absolute left-[-9px] top-0 h-4 w-4 rounded-full border-2"
                         style={{
-                          backgroundColor: event.completed ? 'var(--success)' : 'var(--accent-gold)',
+                          backgroundColor: event.completed ? 'var(--success)' : 'var(--primary)',
                           borderColor: 'var(--background)',
                         }}
                       />
@@ -589,7 +589,7 @@ export default function ShipmentOverviewTab({
                 void navigator.clipboard.writeText(shipment.releaseToken || '');
                 toast.success('Release token copied');
               }}
-              className="inline-flex w-full items-center justify-center gap-1.5 rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+              className="inline-flex w-full items-center justify-center gap-1.5 rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--primary)]"
             >
               <FileText className="h-3.5 w-3.5" />
               Copy Release Token

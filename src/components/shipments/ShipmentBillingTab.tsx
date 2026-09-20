@@ -588,7 +588,7 @@ export default function ShipmentBillingTab({ shipmentId, refreshKey, purchasePri
         <div className="grid grid-cols-1 gap-3 md:grid-cols-4">
           {[
             { label: 'Open To Invoice', amount: summary.open, tone: 'text-[rgb(29,78,216)]' },
-            { label: 'Invoiced', amount: summary.invoiced, tone: 'text-[var(--accent-gold)]' },
+            { label: 'Invoiced', amount: summary.invoiced, tone: 'text-[var(--primary)]' },
             { label: 'Paid', amount: summary.paid, tone: 'text-[rgb(21,128,61)]' },
             { label: 'Total Charges', amount: summary.total, tone: 'text-[var(--text-primary)]' },
           ].map((card) => (
@@ -680,7 +680,7 @@ export default function ShipmentBillingTab({ shipmentId, refreshKey, purchasePri
               </div>
               <div className="rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-2">
                 <p className="text-[10px] font-semibold uppercase tracking-wide text-[var(--text-secondary)]">Settled</p>
-                <p className="mt-1 text-base font-semibold text-[var(--accent-gold)]">{readiness.settledCount}</p>
+                <p className="mt-1 text-base font-semibold text-[var(--primary)]">{readiness.settledCount}</p>
               </div>
             </div>
           </div>
@@ -802,7 +802,7 @@ export default function ShipmentBillingTab({ shipmentId, refreshKey, purchasePri
                   <div className="col-span-2 text-xs">
                     {charge.invoice ? (
                       <div className="flex flex-col items-start gap-2">
-                        <Link href={`/dashboard/invoices/${charge.invoice.id}`} className="inline-flex items-center gap-1 font-semibold text-[var(--accent-gold)] hover:underline">
+                        <Link href={`/dashboard/invoices/${charge.invoice.id}`} className="inline-flex items-center gap-1 font-semibold text-[var(--primary)] hover:underline">
                           <FileText className="h-3.5 w-3.5" />
                           {charge.invoice.invoiceNumber}
                         </Link>

@@ -114,7 +114,7 @@ export default function Select({
               borderColor: error ? 'var(--error)' : 'var(--border)',
             },
             '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: error ? 'var(--error)' : 'var(--accent-gold)',
+              borderColor: error ? 'var(--error)' : 'var(--primary)',
               borderWidth: 2,
             },
             '& .MuiSelect-select': {
@@ -159,12 +159,12 @@ export default function Select({
                 mx: 0.5,
                 borderRadius: 1.5,
                 '&:hover': {
-                  bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                  bgcolor: 'rgba(var(--primary-rgb), 0.1)',
                 },
                 '&.Mui-selected': {
-                  bgcolor: 'rgba(var(--accent-gold-rgb), 0.15)',
+                  bgcolor: 'rgba(var(--primary-rgb), 0.15)',
                   '&:hover': {
-                    bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
+                    bgcolor: 'rgba(var(--primary-rgb), 0.2)',
                   },
                 },
               }}

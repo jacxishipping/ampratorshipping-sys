@@ -239,7 +239,7 @@ export default function UsersPage() {
 							{copiedEmail === row.id ? (
 								<Check style={{ color: 'green', width: 16, height: 16 }} />
 							) : (
-								<Copy style={{ color: 'var(--accent-gold)', width: 16, height: 16 }} />
+								<Copy style={{ color: 'var(--primary)', width: 16, height: 16 }} />
 							)}
 						</IconButton>
 					)}

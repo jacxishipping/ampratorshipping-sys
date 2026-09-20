@@ -930,10 +930,10 @@ export default function InvoiceDetailPage() {
 								icon={<Download className="w-4 h-4" />}
 								onClick={handleDownloadPDF}
 								sx={{
-									bgcolor: 'var(--accent-gold)',
+									bgcolor: 'var(--primary)',
 									color: 'white',
 									'&:hover': {
-										bgcolor: 'var(--accent-gold)',
+										bgcolor: 'var(--primary)',
 										opacity: 0.9,
 									}
 								}}
@@ -1310,7 +1310,7 @@ export default function InvoiceDetailPage() {
 										<TableCell align="right" sx={{ 
 											fontWeight: 700, 
 											fontSize: '1.1rem',
-											color: 'var(--accent-gold)',
+											color: 'var(--primary)',
 											borderTop: '2px solid var(--border)',
 										}}>
 											{formatCurrency(invoice.total)}

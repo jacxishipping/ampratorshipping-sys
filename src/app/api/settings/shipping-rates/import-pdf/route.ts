@@ -10,7 +10,7 @@ export const runtime = 'nodejs';
 
 const DEFAULT_SETTINGS = {
   theme: 'futuristic',
-  accentColor: 'var(--accent-gold)',
+  accentColor: 'var(--primary)',
   sidebarDensity: 'comfortable',
   animationsEnabled: true,
   notifyShipmentEmail: true,

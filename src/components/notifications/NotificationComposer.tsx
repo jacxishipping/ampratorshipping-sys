@@ -85,8 +85,8 @@ export default function NotificationComposer({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              bgcolor: 'rgba(var(--accent-gold-rgb), 0.12)',
-              color: 'var(--accent-gold)',
+              bgcolor: 'rgba(var(--primary-rgb), 0.12)',
+              color: 'var(--primary)',
             }}
           >
             {isCustomerToSupport ? <Headphones className="w-5 h-5" /> : <UserRound className="w-5 h-5" />}

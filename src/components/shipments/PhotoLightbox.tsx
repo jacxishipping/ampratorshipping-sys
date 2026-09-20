@@ -194,7 +194,7 @@ export default function PhotoLightbox({
               {zoom > 1 && (
                 <span
                   className="hidden shrink-0 rounded px-2 py-0.5 text-[11px] font-bold sm:inline"
-                  style={{ backgroundColor: 'var(--accent-gold)', color: '#fff' }}
+                  style={{ backgroundColor: 'var(--primary)', color: '#fff' }}
                 >
                   {zoomPct}%
                 </span>
@@ -210,7 +210,7 @@ export default function PhotoLightbox({
                 disabled={zoom <= ZOOM_MIN}
                 className="hidden h-8 w-8 items-center justify-center rounded-lg transition-all disabled:opacity-30 sm:flex"
                 style={{ backgroundColor: 'var(--background)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent-gold)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent-gold)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-secondary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'; }}
                 aria-label="Zoom out"
               >
@@ -223,7 +223,7 @@ export default function PhotoLightbox({
                 disabled={zoom >= ZOOM_MAX}
                 className="hidden h-8 w-8 items-center justify-center rounded-lg transition-all disabled:opacity-30 sm:flex"
                 style={{ backgroundColor: 'var(--background)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent-gold)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent-gold)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-secondary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'; }}
                 aria-label="Zoom in"
               >
@@ -240,7 +240,7 @@ export default function PhotoLightbox({
                   disabled={downloading}
                   className="inline-flex h-8 items-center gap-1.5 rounded-lg px-2.5 text-xs font-semibold transition-all disabled:opacity-40"
                   style={{ backgroundColor: 'var(--background)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent-gold)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent-gold)'; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)'; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'; }}
                   aria-label="Download this photo"
                 >
@@ -260,7 +260,7 @@ export default function PhotoLightbox({
                   onClick={() => void onDownloadAll(images)}
                   disabled={downloading}
                   className="inline-flex h-8 items-center gap-1.5 rounded-lg px-2.5 text-xs font-bold transition-all hover:brightness-110 disabled:opacity-40"
-                  style={{ backgroundColor: 'var(--accent-gold)', color: '#fff' }}
+                  style={{ backgroundColor: 'var(--primary)', color: '#fff' }}
                   aria-label="Download all photos"
                 >
                   {downloading ? (
@@ -361,7 +361,7 @@ export default function PhotoLightbox({
                   onClick={() => navigate(-1)}
                   className="absolute left-4 top-1/2 z-30 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-xl shadow-lg backdrop-blur-sm transition-all duration-200 focus-visible:outline-none sm:h-12 sm:w-12"
                   style={{ backgroundColor: 'var(--panel)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent-gold)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent-gold)'; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)'; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'; }}
                   aria-label="Previous photo"
                 >
@@ -372,7 +372,7 @@ export default function PhotoLightbox({
                   onClick={() => navigate(1)}
                   className="absolute right-4 top-1/2 z-30 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-xl shadow-lg backdrop-blur-sm transition-all duration-200 focus-visible:outline-none sm:h-12 sm:w-12"
                   style={{ backgroundColor: 'var(--panel)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent-gold)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent-gold)'; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)'; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'; }}
                   aria-label="Next photo"
                 >
@@ -414,7 +414,7 @@ export default function PhotoLightbox({
                         i === index ? 'opacity-100' : 'opacity-60 hover:opacity-100'
                       )}
                       style={i === index
-                        ? { borderColor: 'var(--accent-gold)', boxShadow: '0 0 0 2px rgba(212,175,55,0.25)' }
+                        ? { borderColor: 'var(--primary)', boxShadow: '0 0 0 2px rgba(212,175,55,0.25)' }
                         : { borderColor: 'var(--border)' }
                       }
                       aria-label={`Go to photo ${i + 1}`}
@@ -430,7 +430,7 @@ export default function PhotoLightbox({
                       <span
                         className="absolute bottom-0.5 right-0.5 rounded px-1 py-0.5 text-[9px] font-bold leading-none"
                         style={i === index
-                          ? { backgroundColor: 'var(--accent-gold)', color: '#fff' }
+                          ? { backgroundColor: 'var(--primary)', color: '#fff' }
                           : { backgroundColor: 'rgba(0,0,0,0.65)', color: '#fff' }
                         }
                       >

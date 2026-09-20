@@ -326,9 +326,9 @@ export function DocumentManager({
             startIcon={<Upload size={18} />}
             onClick={() => setIsUploadOpen(true)}
             sx={{
-                bgcolor: 'var(--accent-gold)',
-                color: 'var(--background)',
-                '&:hover': { bgcolor: 'var(--accent-gold-hover)' }
+                bgcolor: 'var(--primary)',
+                color: '#FFFFFF',
+                '&:hover': { bgcolor: '#1D3567' }
             }}
           >
             Upload

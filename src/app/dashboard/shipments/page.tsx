@@ -126,7 +126,7 @@ export default function ShipmentsListPage() {
 
 				return (
 					<Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.2 }}>
-						<span style={{ fontWeight: 700, color: 'var(--accent-gold)' }}>
+						<span style={{ fontWeight: 700, color: 'var(--primary)' }}>
 							${total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
 						</span>
 						{paid > 0 ? (

@@ -32,7 +32,7 @@ export default function PageHeader({ title, description, actions, showBreadcrumb
 					alignItems: { xs: 'flex-start', md: 'center' },
 					gap: 2,
 					border: '1px solid var(--border)',
-					borderTop: '2px solid rgba(var(--accent-gold-rgb), 0.3)',
+					borderTop: '2px solid rgba(var(--primary-rgb), 0.3)',
 					borderRadius: 2,
 					backgroundColor: 'var(--panel)',
 					boxShadow: '0 14px 34px rgba(var(--text-primary-rgb), 0.08)',

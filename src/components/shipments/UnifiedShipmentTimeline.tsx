@@ -101,9 +101,9 @@ export default function UnifiedShipmentTimeline({ items, onOpenCompanyLedgerEntr
               onClick={() => setFilter(value)}
               className="rounded-full px-3 py-1.5 text-xs font-semibold transition-colors"
               style={{
-                backgroundColor: filter === value ? 'rgba(var(--accent-gold-rgb), 0.16)' : 'var(--panel)',
-                color: filter === value ? 'var(--accent-gold)' : 'var(--text-secondary)',
-                border: filter === value ? '1px solid rgba(var(--accent-gold-rgb), 0.32)' : '1px solid var(--border)',
+                backgroundColor: filter === value ? 'rgba(var(--primary-rgb), 0.16)' : 'var(--panel)',
+                color: filter === value ? 'var(--primary)' : 'var(--text-secondary)',
+                border: filter === value ? '1px solid rgba(var(--primary-rgb), 0.32)' : '1px solid var(--border)',
               }}
             >
               {filterLabels[value]}
@@ -118,7 +118,7 @@ export default function UnifiedShipmentTimeline({ items, onOpenCompanyLedgerEntr
         </div>
       ) : (
         <div className="relative pl-6">
-          <span className="absolute left-2 top-0 h-full w-0.5 bg-gradient-to-b from-[var(--accent-gold)] via-[var(--border)] to-transparent" />
+          <span className="absolute left-2 top-0 h-full w-0.5 bg-gradient-to-b from-[var(--primary)] via-[var(--border)] to-transparent" />
           <div className="space-y-4">
             {filteredItems.map((item) => {
               const sourceStyle = sourceStyles[item.source];
@@ -202,7 +202,7 @@ export default function UnifiedShipmentTimeline({ items, onOpenCompanyLedgerEntr
                         <button
                           type="button"
                           onClick={() => onOpenCompanyLedgerEntry(item.companyId!, item.companyLedgerEntryId!)}
-                          className="rounded border border-[var(--border)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+                          className="rounded border border-[var(--border)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[var(--primary)] hover:border-[var(--primary)]"
                         >
                           Open Company Ledger Entry
                         </button>

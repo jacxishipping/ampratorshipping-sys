@@ -58,8 +58,8 @@ export default function TrackingRouteMap({ progressPercent, origin, destination 
       >
         <defs>
           <linearGradient id="tracking-line-completed" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="var(--accent-gold)" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="var(--accent-gold)" stopOpacity="1" />
+            <stop offset="0%" stopColor="var(--primary)" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="var(--primary)" stopOpacity="1" />
           </linearGradient>
           
           <filter id="tracking-glow">
@@ -120,8 +120,8 @@ export default function TrackingRouteMap({ progressPercent, origin, destination 
             style={{ offsetPath: `path('${currentSegment.path}')` } as any}
         >
             {/* The active location pulse */}
-            <circle cx="0" cy="0" r="16" fill="var(--accent-gold)" opacity="0.3" filter="url(#tracking-glow)" />
-            <circle cx="0" cy="0" r="8" fill="var(--accent-gold)" />
+            <circle cx="0" cy="0" r="16" fill="var(--primary)" opacity="0.3" filter="url(#tracking-glow)" />
+            <circle cx="0" cy="0" r="8" fill="var(--primary)" />
 
             {/* Vehicle Icon */}
             {currentSegment.type === 'ship' ? (
@@ -161,7 +161,7 @@ export default function TrackingRouteMap({ progressPercent, origin, destination 
                 cx={node.x}
                 cy={node.y}
                 r={isReached ? "6" : "4"}
-                fill={isReached ? "var(--accent-gold)" : "#64748b"}
+                fill={isReached ? "var(--primary)" : "#64748b"}
                 stroke="#1e293b"
                 strokeWidth="2"
               />

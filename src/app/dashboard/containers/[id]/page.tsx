@@ -897,10 +897,10 @@ export default function ContainerDetailPage() {
 								onClick={handleDownloadPDF}
 								className="no-print"
 								sx={{
-									bgcolor: 'var(--accent-gold)',
+									bgcolor: 'var(--primary)',
 									color: 'white',
 									'&:hover': {
-										bgcolor: 'var(--accent-gold)',
+										bgcolor: 'var(--primary)',
 										opacity: 0.9,
 									}
 								}}
@@ -988,7 +988,7 @@ export default function ContainerDetailPage() {
 								<Box sx={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-primary)' }}>
 									Shipping Progress
 								</Box>
-								<Box sx={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+								<Box sx={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--primary)' }}>
 									{container.progress}%
 								</Box>
 							</Box>
@@ -1000,7 +1000,7 @@ export default function ContainerDetailPage() {
 									borderRadius: 1,
 									bgcolor: 'rgba(201, 155, 47, 0.1)',
 									'& .MuiLinearProgress-bar': {
-										bgcolor: 'var(--accent-gold)',
+										bgcolor: 'var(--primary)',
 									},
 								}}
 							/>
@@ -1378,7 +1378,7 @@ export default function ContainerDetailPage() {
 													<TableCell align="right" sx={{ fontWeight: 600, color: 'var(--text-primary)' }}>
 														{(shipment as any).price ? formatCurrency((shipment as any).price) : 'N/A'}
 													</TableCell>
-													<TableCell align="right" sx={{ fontWeight: 600, color: 'var(--accent-gold)' }}>
+													<TableCell align="right" sx={{ fontWeight: 600, color: 'var(--primary)' }}>
 														{(shipment as any).insuranceValue ? formatCurrency((shipment as any).insuranceValue) : 'N/A'}
 													</TableCell>
 													<TableCell>
@@ -1403,8 +1403,8 @@ export default function ContainerDetailPage() {
 																	}}
 																	disabled={isContainerWorkflowLocked}
 																	sx={{
-																		color: 'var(--accent-gold)',
-																		borderColor: 'var(--accent-gold)',
+																		color: 'var(--primary)',
+																		borderColor: 'var(--primary)',
 																	}}
 																>
 																	Expense
@@ -1433,7 +1433,7 @@ export default function ContainerDetailPage() {
 												<TableCell align="right" sx={{ fontWeight: 700, borderTop: '2px solid var(--border)', color: 'var(--success)' }}>
 													{formatCurrency(container.shipments.reduce((sum, s) => sum + ((s as any).price || 0), 0))}
 												</TableCell>
-												<TableCell align="right" sx={{ fontWeight: 700, borderTop: '2px solid var(--border)', color: 'var(--accent-gold)' }}>
+												<TableCell align="right" sx={{ fontWeight: 700, borderTop: '2px solid var(--border)', color: 'var(--primary)' }}>
 													{formatCurrency(container.shipments.reduce((sum, s) => sum + ((s as any).insuranceValue || 0), 0))}
 												</TableCell>
 												<TableCell colSpan={2} sx={{ borderTop: '2px solid var(--border)' }}></TableCell>
@@ -1495,10 +1495,10 @@ export default function ContainerDetailPage() {
 											minHeight: 40,
 										},
 										'& .Mui-selected': {
-											color: 'var(--accent-gold) !important',
+											color: 'var(--primary) !important',
 										},
 										'& .MuiTabs-indicator': {
-											backgroundColor: 'var(--accent-gold)',
+											backgroundColor: 'var(--primary)',
 										},
 									}}
 								>
@@ -2053,7 +2053,7 @@ export default function ContainerDetailPage() {
 													width: 16,
 													height: 16,
 													borderRadius: '50%',
-													bgcolor: (event as any).completed ? 'var(--success)' : 'var(--accent-gold)',
+													bgcolor: (event as any).completed ? 'var(--success)' : 'var(--primary)',
 													border: '2px solid var(--background)',
 												}}
 											/>
@@ -2265,13 +2265,13 @@ export default function ContainerDetailPage() {
 								width: 40,
 								height: 40,
 								borderRadius: '50%',
-								bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+								bgcolor: 'rgba(var(--primary-rgb), 0.1)',
 								display: 'flex',
 								alignItems: 'center',
 								justifyContent: 'center',
 							}}
 						>
-							<Copy className="w-5 h-5" style={{ color: 'var(--accent-gold)' }} />
+							<Copy className="w-5 h-5" style={{ color: 'var(--primary)' }} />
 						</Box>
 						Duplicate Container
 					</DialogTitle>
@@ -2369,10 +2369,10 @@ export default function ContainerDetailPage() {
 							onClick={handleDuplicateContainer}
 							disabled={duplicating || !newContainerNumber.trim()}
 							sx={{
-								bgcolor: 'var(--accent-gold)',
+								bgcolor: 'var(--primary)',
 								color: 'white',
 								'&:hover': {
-									bgcolor: 'var(--accent-gold)',
+									bgcolor: 'var(--primary)',
 									opacity: 0.9,
 								},
 								'&:disabled': {
@@ -2731,13 +2731,13 @@ export default function ContainerDetailPage() {
 								width: 40,
 								height: 40,
 								borderRadius: '50%',
-								bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+								bgcolor: 'rgba(var(--primary-rgb), 0.1)',
 								display: 'flex',
 								alignItems: 'center',
 								justifyContent: 'center',
 							}}
 						>
-							<Package className="w-5 h-5" style={{ color: 'var(--accent-gold)' }} />
+							<Package className="w-5 h-5" style={{ color: 'var(--primary)' }} />
 						</Box>
 						Assign Shipments to Container
 					</DialogTitle>
@@ -2778,7 +2778,7 @@ export default function ContainerDetailPage() {
 											<Box sx={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
 												Selected:
 											</Box>
-											<Box sx={{ fontWeight: 600, color: 'var(--accent-gold)', fontSize: '0.875rem' }}>
+											<Box sx={{ fontWeight: 600, color: 'var(--primary)', fontSize: '0.875rem' }}>
 												{selectedShipmentIds.length} shipment{selectedShipmentIds.length !== 1 ? 's' : ''}
 											</Box>
 										</Box>
@@ -2830,7 +2830,7 @@ export default function ContainerDetailPage() {
 											width: 24,
 											height: 24,
 											border: '3px solid var(--border)',
-											borderTopColor: 'var(--accent-gold)',
+											borderTopColor: 'var(--primary)',
 											borderRadius: '50%',
 											animation: 'spin 0.6s linear infinite',
 											'@keyframes spin': {
@@ -2873,7 +2873,7 @@ export default function ContainerDetailPage() {
 																	setSelectedShipmentIds([]);
 																}
 															}}
-															sx={{ color: 'var(--text-secondary)', '&.Mui-checked': { color: 'var(--accent-gold)' }, '&.MuiCheckbox-indeterminate': { color: 'var(--accent-gold)' } }}
+															sx={{ color: 'var(--text-secondary)', '&.Mui-checked': { color: 'var(--primary)' }, '&.MuiCheckbox-indeterminate': { color: 'var(--primary)' } }}
 														/>
 													</TableCell>
 													<TableCell sx={{ fontWeight: 600, fontSize: '0.8rem', color: 'var(--text-secondary)', bgcolor: 'var(--background)' }}>Vehicle</TableCell>
@@ -2895,8 +2895,8 @@ export default function ContainerDetailPage() {
 															sx={{
 																cursor: isDisabled ? 'not-allowed' : 'pointer',
 																opacity: isDisabled ? 0.5 : 1,
-																'&.Mui-selected': { bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)' },
-																'&.Mui-selected:hover': { bgcolor: 'rgba(var(--accent-gold-rgb), 0.12)' },
+																'&.Mui-selected': { bgcolor: 'rgba(var(--primary-rgb), 0.08)' },
+																'&.Mui-selected:hover': { bgcolor: 'rgba(var(--primary-rgb), 0.12)' },
 															}}
 															onClick={() => {
 																if (isDisabled) return;
@@ -2910,7 +2910,7 @@ export default function ContainerDetailPage() {
 																	size="small"
 																	checked={isSelected}
 																	disabled={isDisabled}
-																	sx={{ color: 'var(--text-secondary)', '&.Mui-checked': { color: 'var(--accent-gold)' } }}
+																	sx={{ color: 'var(--text-secondary)', '&.Mui-checked': { color: 'var(--primary)' } }}
 																/>
 															</TableCell>
 															<TableCell sx={{ fontSize: '0.875rem', color: 'var(--text-primary)' }}>
@@ -2928,8 +2928,8 @@ export default function ContainerDetailPage() {
 																	size="small"
 																	sx={{
 																		fontSize: '0.7rem',
-																		bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
-																		color: 'var(--accent-gold)',
+																		bgcolor: 'rgba(var(--primary-rgb), 0.1)',
+																		color: 'var(--primary)',
 																		fontWeight: 600,
 																	}}
 																/>
@@ -2971,10 +2971,10 @@ export default function ContainerDetailPage() {
 							onClick={handleAssignShipments}
 							disabled={selectedShipmentIds.length === 0 || assigningShipments}
 							sx={{
-								bgcolor: 'var(--accent-gold)',
+								bgcolor: 'var(--primary)',
 								color: 'white',
 								'&:hover': {
-									bgcolor: 'var(--accent-gold)',
+									bgcolor: 'var(--primary)',
 									opacity: 0.9,
 								},
 								'&:disabled': {

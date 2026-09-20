@@ -198,9 +198,9 @@ export default function SimpleLoginPageClient({ portal }: SimpleLoginPageClientP
 														onClick={() => setShowCode(!showCode)}
 														edge="end"
 														sx={{
-															color: 'var(--accent-gold)',
+															color: 'var(--primary)',
 															'&:hover': {
-																color: 'var(--accent-gold)',
+																color: 'var(--primary)',
 															},
 														}}
 													>
@@ -225,7 +225,7 @@ export default function SimpleLoginPageClient({ portal }: SimpleLoginPageClientP
 													borderColor: 'var(--panel)',
 												},
 												'&.Mui-focused fieldset': {
-													borderColor: 'var(--accent-gold)',
+													borderColor: 'var(--primary)',
 													borderWidth: 2,
 												},
 												'& input': {
@@ -252,16 +252,16 @@ export default function SimpleLoginPageClient({ portal }: SimpleLoginPageClientP
 									endIcon={!isLoading && <ArrowForward />}
 									sx={{
 										width: '100%',
-										bgcolor: 'var(--accent-gold)',
-										color: 'var(--background)',
+										bgcolor: 'var(--primary)',
+										color: '#FFFFFF',
 										fontWeight: 600,
 										py: 1.5,
 										fontSize: '1rem',
 										'&:hover': {
-											bgcolor: 'var(--accent-gold)',
+											bgcolor: 'var(--primary)',
 										},
 										'&:disabled': {
-											bgcolor: 'rgba(var(--accent-gold-rgb), 0.5)',
+											bgcolor: 'rgba(var(--primary-rgb), 0.5)',
 											color: 'rgba(var(--background-rgb), 0.85)',
 										},
 									}}
@@ -288,14 +288,14 @@ export default function SimpleLoginPageClient({ portal }: SimpleLoginPageClientP
 									sx={{
 										background: 'none',
 										border: 'none',
-										color: 'var(--accent-gold)',
+										color: 'var(--primary)',
 										fontWeight: 500,
 										cursor: 'pointer',
 										fontSize: '0.875rem',
 										textDecoration: 'underline',
 										transition: 'color 0.2s ease',
 										'&:hover': {
-											color: 'var(--accent-gold)',
+											color: 'var(--primary)',
 										},
 									}}
 								>

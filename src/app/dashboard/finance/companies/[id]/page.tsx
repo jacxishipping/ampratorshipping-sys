@@ -1171,16 +1171,16 @@ export default function CompanyLedgerDetailPage() {
                 my: 0.75,
                 px: 1.5,
                 '&:hover': {
-                  color: 'var(--accent-gold)',
-                  backgroundColor: 'rgba(var(--accent-gold-rgb), 0.08)',
+                  color: 'var(--primary)',
+                  backgroundColor: 'rgba(var(--primary-rgb), 0.08)',
                 },
               },
               '& .Mui-selected': {
-                color: 'var(--accent-gold) !important',
-                backgroundColor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                color: 'var(--primary) !important',
+                backgroundColor: 'rgba(var(--primary-rgb), 0.1)',
               },
               '& .MuiTabs-indicator': {
-                backgroundColor: 'var(--accent-gold)',
+                backgroundColor: 'var(--primary)',
                 height: 3,
               },
             }}
@@ -1237,8 +1237,8 @@ export default function CompanyLedgerDetailPage() {
             <Box
               sx={{
                 mb: 2,
-                border: '1px solid rgba(var(--accent-gold-rgb), 0.32)',
-                background: 'rgba(var(--accent-gold-rgb), 0.08)',
+                border: '1px solid rgba(var(--primary-rgb), 0.32)',
+                background: 'rgba(var(--primary-rgb), 0.08)',
                 borderRadius: 2,
                 p: 2,
               }}
@@ -1278,7 +1278,7 @@ export default function CompanyLedgerDetailPage() {
             keyField="id"
             getRowClassName={(row) =>
               row.id === focusedEntryId
-                ? 'bg-[rgba(var(--accent-gold-rgb),0.12)] ring-1 ring-inset ring-[rgba(var(--accent-gold-rgb),0.35)]'
+                ? 'bg-[rgba(var(--primary-rgb),0.12)] ring-1 ring-inset ring-[rgba(var(--primary-rgb),0.35)]'
                 : undefined
             }
           />
@@ -1345,7 +1345,7 @@ export default function CompanyLedgerDetailPage() {
               )}
             </Box>
 
-            <Box sx={{ p: 1.5, borderRadius: 2, border: '1px solid rgba(var(--accent-gold-rgb), 0.32)', background: 'rgba(var(--accent-gold-rgb), 0.08)' }}>
+            <Box sx={{ p: 1.5, borderRadius: 2, border: '1px solid rgba(var(--primary-rgb), 0.32)', background: 'rgba(var(--primary-rgb), 0.08)' }}>
               <Box sx={{ fontWeight: 700, color: 'var(--text-primary)' }}>How to upload</Box>
               <Box sx={{ mt: 0.5, fontSize: '0.84rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
                 Upload a PDF, CSV, TXT, or XLSX rate sheet with state, branch/city, and total price columns. Preview first, edit or delete rows if needed, then import to create a new active version. Older versions stay in Import History and can be restored.
@@ -1360,7 +1360,7 @@ export default function CompanyLedgerDetailPage() {
               ].map(([step, title, detail]) => (
                 <Box key={step} sx={{ p: 1.25, borderRadius: 1.5, border: '1px solid var(--border)', background: 'var(--background)', display: 'grid', gap: 0.5 }}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
-                    <Box sx={{ width: 22, height: 22, borderRadius: 999, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 800, background: 'rgba(var(--accent-gold-rgb), 0.14)', color: 'var(--accent-gold)' }}>{step}</Box>
+                    <Box sx={{ width: 22, height: 22, borderRadius: 999, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 800, background: 'rgba(var(--primary-rgb), 0.14)', color: 'var(--primary)' }}>{step}</Box>
                     <Box sx={{ fontWeight: 700, fontSize: '0.86rem' }}>{title}</Box>
                   </Box>
                   <Box sx={{ fontSize: '0.76rem', color: 'var(--text-secondary)' }}>{detail}</Box>

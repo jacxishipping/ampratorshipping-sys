@@ -110,7 +110,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
           <select
             value={condition.value}
             onChange={(e) => updateCondition(condition.id, { value: e.target.value })}
-            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           >
             <option value="">Select...</option>
             {field.options?.map((option) => (
@@ -128,7 +128,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
             value={condition.value}
             onChange={(e) => updateCondition(condition.id, { value: e.target.value })}
             placeholder="Enter number"
-            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />
         );
 
@@ -138,7 +138,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
             type="date"
             value={condition.value}
             onChange={(e) => updateCondition(condition.id, { value: e.target.value })}
-            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />
         );
 
@@ -149,7 +149,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
             value={condition.value}
             onChange={(e) => updateCondition(condition.id, { value: e.target.value })}
             placeholder="Enter value"
-            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+            className="flex-1 px-3 py-2 text-sm bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />
         );
     }
@@ -165,8 +165,8 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
         className={cn(
           'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border transition-all',
           activeFiltersCount > 0
-            ? 'bg-[var(--accent-gold)] text-white border-[var(--accent-gold)]'
-            : 'bg-[var(--panel)] text-[var(--text-primary)] border-[var(--border)] hover:border-[var(--accent-gold)]'
+            ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
+            : 'bg-[var(--panel)] text-[var(--text-primary)] border-[var(--border)] hover:border-[var(--primary)]'
         )}
       >
         <Filter className="w-4 h-4" />
@@ -224,7 +224,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
                           value: '',
                         });
                       }}
-                      className="w-32 px-3 py-2 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                      className="w-32 px-3 py-2 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
                     >
                       {fields.map((field) => (
                         <option key={field.key} value={field.key}>
@@ -241,7 +241,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
                           operator: e.target.value as FilterOperator,
                         })
                       }
-                      className="w-40 px-3 py-2 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                      className="w-40 px-3 py-2 text-sm bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
                     >
                       {getAvailableOperators(condition.field).map((op) => (
                         <option key={op.value} value={op.value}>
@@ -284,7 +284,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
                 </button>
                 <button
                   onClick={handleApply}
-                  className="px-4 py-2 text-sm font-medium text-white bg-[var(--accent-gold)] hover:bg-[#C9A24C] rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[var(--primary)] hover:bg-[#C9A24C] rounded-lg transition-colors"
                 >
                   Apply Filters
                 </button>

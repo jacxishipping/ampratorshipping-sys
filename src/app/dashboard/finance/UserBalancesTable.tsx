@@ -45,7 +45,7 @@ export default function UserBalancesTable({ data }: UserBalancesTableProps) {
                     );
                 }
                 return (
-                    <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: 'rgba(var(--accent-gold-rgb), 0.12)', color: 'var(--accent-gold)' }}>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: 'rgba(var(--primary-rgb), 0.12)', color: 'var(--primary)' }}>
                         Credit
                     </span>
                 );

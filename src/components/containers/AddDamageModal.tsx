@@ -145,7 +145,7 @@ export default function AddDamageModal({
 			size="sm"
 			title={
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-					<DollarSign style={{ width: 20, height: 20, color: 'var(--accent-gold)' }} />
+					<DollarSign style={{ width: 20, height: 20, color: 'var(--primary)' }} />
 					<Box component="span" sx={{ fontWeight: 700 }}>Add Damage Record</Box>
 				</Box>
 			}
@@ -213,8 +213,8 @@ export default function AddDamageModal({
 							sx={{
 								p: 1.5,
 								borderRadius: 1,
-								bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)',
-								border: '1px solid rgba(var(--accent-gold-rgb), 0.2)',
+								bgcolor: 'rgba(var(--primary-rgb), 0.08)',
+								border: '1px solid rgba(var(--primary-rgb), 0.2)',
 							}}
 						>
 							<Typography sx={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>

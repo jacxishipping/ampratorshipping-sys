@@ -296,7 +296,7 @@ export default function GlobalSearch() {
       case 'shipment':
         return <Truck className="h-5 w-5 text-[var(--info)]" />;
       case 'item':
-        return <Package className="h-5 w-5 text-[var(--accent-gold)]" />;
+        return <Package className="h-5 w-5 text-[var(--primary)]" />;
       case 'user':
         return <User className="h-5 w-5 text-[var(--success)]" />;
       default:
@@ -318,7 +318,7 @@ export default function GlobalSearch() {
         onClick={() => setIsOpen(true)}
         aria-label="Open search"
         aria-keyshortcuts="Meta+K Control+K"
-        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--accent-gold)] transition-all"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--primary)] transition-all"
       >
         <Search className="h-4 w-4" />
         <span className="text-sm hidden lg:inline">Search...</span>
@@ -376,7 +376,7 @@ export default function GlobalSearch() {
                     className="flex-1 bg-transparent border-none outline-none text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] text-base min-w-0"
                   />
                   {loading && (
-                    <Loader2 className="h-5 w-5 text-[var(--accent-gold)] animate-spin flex-shrink-0" aria-label="Searching" />
+                    <Loader2 className="h-5 w-5 text-[var(--primary)] animate-spin flex-shrink-0" aria-label="Searching" />
                   )}
                   <button
                     type="button"
@@ -412,7 +412,7 @@ export default function GlobalSearch() {
                             className={cn(
                               'w-full flex items-center gap-3 p-3 rounded-lg text-left transition-colors border',
                               selectedIndex === index
-                                ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.08)]'
+                                ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.08)]'
                                 : 'border-transparent hover:bg-[var(--background)]',
                             )}
                           >
@@ -463,7 +463,7 @@ export default function GlobalSearch() {
                           <button
                             type="button"
                             onClick={clearRecent}
-                            className="text-xs text-[var(--accent-gold)] hover:underline transition-colors"
+                            className="text-xs text-[var(--primary)] hover:underline transition-colors"
                           >
                             Clear
                           </button>

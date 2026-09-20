@@ -212,7 +212,7 @@ export default function DashboardTodayWork({
                 href={activity.href}
                 className="flex items-center gap-1.5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               >
-                <Bot className="h-3 w-3 text-[var(--accent-gold)]" />
+                <Bot className="h-3 w-3 text-[var(--primary)]" />
                 <span className="truncate">{activity.label}: {activity.description}</span>
                 <span className="ml-auto shrink-0 text-[10px] opacity-60">{formatActivityTime(activity.timestamp)}</span>
               </Link>

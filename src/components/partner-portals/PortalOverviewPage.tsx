@@ -594,10 +594,10 @@ export default function PortalOverviewPage() {
                   ) : partialLoadWarning ? (
                     <Box
                       sx={{
-                        border: '1px solid rgba(var(--accent-gold-rgb),0.35)',
+                        border: '1px solid rgba(var(--primary-rgb),0.35)',
                         borderRadius: 2,
                         p: 1.25,
-                        bgcolor: 'rgba(var(--accent-gold-rgb),0.08)',
+                        bgcolor: 'rgba(var(--primary-rgb),0.08)',
                         fontSize: '0.85rem',
                         color: 'var(--text-primary)',
                       }}

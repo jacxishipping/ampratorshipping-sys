@@ -110,7 +110,7 @@ export default function DashboardAgingExceptionsPanel({
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start justify-between gap-3 rounded-lg border border-border bg-background px-3 py-3 transition-all duration-200 hover:bg-background/70 hover:border-[rgba(var(--accent-gold-rgb),0.4)] hover:shadow-[0_4px_12px_rgba(var(--text-primary-rgb),0.08)] hover:translate-x-[2px]"
+                    className="flex items-start justify-between gap-3 rounded-lg border border-border bg-background px-3 py-3 transition-all duration-200 hover:bg-background/70 hover:border-[rgba(var(--primary-rgb),0.4)] hover:shadow-[0_4px_12px_rgba(var(--text-primary-rgb),0.08)] hover:translate-x-[2px]"
                     style={{
                       borderLeft: `3px solid ${severityColor}`,
                       transition: 'all 200ms ease',

@@ -395,7 +395,7 @@ export default function AnalyticsPage() {
                 <XAxis dataKey="month" stroke="var(--text-secondary)" tickLine={false} axisLine={false} />
                 <YAxis allowDecimals={false} stroke="var(--text-secondary)" tickLine={false} axisLine={false} />
                 <ChartTooltip contentStyle={{ backgroundColor: 'var(--panel)', border: '1px solid var(--border)', borderRadius: 8, color: 'var(--text-primary)' }} />
-                <Line type="monotone" dataKey="count" stroke="var(--accent-gold)" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
+                <Line type="monotone" dataKey="count" stroke="var(--primary)" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
               </LineChart>
             </ResponsiveContainer>
           </Box>
@@ -412,7 +412,7 @@ export default function AnalyticsPage() {
                   contentStyle={{ backgroundColor: 'var(--panel)', border: '1px solid var(--border)', borderRadius: 8, color: 'var(--text-primary)' }}
                   formatter={(value) => formatCurrency(Number(value ?? 0))}
                 />
-                <Bar dataKey="totalUSD" fill="var(--accent-gold)" radius={[6, 6, 0, 0]} />
+                <Bar dataKey="totalUSD" fill="var(--primary)" radius={[6, 6, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </Box>

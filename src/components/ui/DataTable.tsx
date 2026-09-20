@@ -179,9 +179,9 @@ export function DataTable<T extends Record<string, any>>({
       return <ArrowUpDown className="w-4 h-4 opacity-30" />;
     }
     return sortDirection === 'asc' ? (
-      <ArrowUp className="w-4 h-4 text-[var(--accent-gold)]" />
+      <ArrowUp className="w-4 h-4 text-[var(--primary)]" />
     ) : (
-      <ArrowDown className="w-4 h-4 text-[var(--accent-gold)]" />
+      <ArrowDown className="w-4 h-4 text-[var(--primary)]" />
     );
   };
 
@@ -259,7 +259,7 @@ export function DataTable<T extends Record<string, any>>({
                         disabled={isLastVisible}
                         sx={{
                           color: 'var(--text-secondary)',
-                          '&.Mui-checked': { color: 'var(--accent-gold)' },
+                          '&.Mui-checked': { color: 'var(--primary)' },
                         }}
                       />
                       <span className="truncate">{column.header}</span>
@@ -344,10 +344,10 @@ export function DataTable<T extends Record<string, any>>({
                     sx={{
                       color: 'var(--text-secondary)',
                       '&.Mui-checked': {
-                        color: 'var(--accent-gold)',
+                        color: 'var(--primary)',
                       },
                       '&.MuiCheckbox-indeterminate': {
-                        color: 'var(--accent-gold)',
+                        color: 'var(--primary)',
                       },
                     }}
                   />
@@ -367,7 +367,7 @@ export function DataTable<T extends Record<string, any>>({
                     <button
                       type="button"
                       onClick={() => handleSort(column.key)}
-                      className="flex w-full items-center gap-2 rounded-md px-1 py-1 text-left text-sm font-semibold text-[var(--text-primary)] transition-colors hover:bg-[var(--background)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--panel)]"
+                      className="flex w-full items-center gap-2 rounded-md px-1 py-1 text-left text-sm font-semibold text-[var(--text-primary)] transition-colors hover:bg-[var(--background)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--panel)]"
                       aria-label={getSortButtonLabel(column.header, column.key)}
                     >
                       <span>{column.header}</span>
@@ -415,7 +415,7 @@ export function DataTable<T extends Record<string, any>>({
                       'transition-colors',
                       zebraStripes && rowIndex % 2 === 1 && 'bg-[var(--panel)]/40',
                       onRowClick && 'cursor-pointer hover:bg-[var(--panel)]',
-                      isSelected && 'bg-[var(--accent-gold)]/5',
+                      isSelected && 'bg-[var(--primary)]/5',
                       customRowClassName
                     )}
                     onClick={() => onRowClick?.(row)}
@@ -429,7 +429,7 @@ export function DataTable<T extends Record<string, any>>({
                           sx={{
                             color: 'var(--text-secondary)',
                             '&.Mui-checked': {
-                              color: 'var(--accent-gold)',
+                              color: 'var(--primary)',
                             },
                           }}
                         />
@@ -452,7 +452,7 @@ export function DataTable<T extends Record<string, any>>({
                             <button
                               type="button"
                               onClick={() => onRowClick(row)}
-                              className="inline-flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium text-[var(--text-primary)] hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
+                              className="inline-flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium text-[var(--text-primary)] hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
                               aria-label={`Open details for row ${rowId}`}
                               title="Open details"
                             >
@@ -464,7 +464,7 @@ export function DataTable<T extends Record<string, any>>({
                             <button
                               type="button"
                               onClick={() => onEdit(row)}
-                              className="p-1.5 rounded hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
+                              className="p-1.5 rounded hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
                               aria-label={`Edit row ${rowId}`}
                               title="Edit"
                             >
@@ -475,7 +475,7 @@ export function DataTable<T extends Record<string, any>>({
                             <button
                               type="button"
                               onClick={() => onDelete([rowId])}
-                              className="p-1.5 rounded hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
+                              className="p-1.5 rounded hover:bg-[var(--panel)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] transition-colors"
                               aria-label={`Delete row ${rowId}`}
                               title="Delete"
                             >

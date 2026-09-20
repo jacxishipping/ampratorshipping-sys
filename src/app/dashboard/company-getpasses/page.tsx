@@ -209,7 +209,7 @@ export default function CompanyGetpassesPage() {
                         </td>
                         <td className="px-3 py-4">
                           <div className="flex items-center gap-2 text-[var(--text-primary)]">
-                            <Building2 className="h-4 w-4 text-[var(--accent-gold)]" />
+                            <Building2 className="h-4 w-4 text-[var(--primary)]" />
                             <span>{shipment.shippingCompany?.name || 'Not assigned'}</span>
                           </div>
                         </td>

@@ -6,7 +6,7 @@ import { normalizeShippingRateConfig } from '@/lib/shipping-rate-calculator';
 
 const DEFAULT_SETTINGS = {
   theme: 'futuristic',
-  accentColor: 'var(--accent-gold)',
+  accentColor: 'var(--primary)',
   sidebarDensity: 'comfortable',
   animationsEnabled: true,
   notifyShipmentEmail: true,

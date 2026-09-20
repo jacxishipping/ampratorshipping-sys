@@ -127,8 +127,8 @@ export function ActivityLog({ logs }: ActivityLogProps) {
       case 'STATUS_CHANGE':
         return {
           label: 'Status Changed',
-          color: 'rgba(var(--accent-gold-rgb), 0.14)',
-          textColor: 'var(--accent-gold)',
+          color: 'rgba(var(--primary-rgb), 0.14)',
+          textColor: 'var(--primary)',
         };
       case 'USER_REASSIGNED':
         return {
@@ -190,7 +190,7 @@ export function ActivityLog({ logs }: ActivityLogProps) {
       case 'EXPENSE_ADDED':
         return <BadgeDollarSign className="w-4 h-4 text-blue-500" />;
       case 'STATUS_CHANGE':
-        return <CheckCircle className="w-4 h-4 text-[var(--accent-gold)]" />;
+        return <CheckCircle className="w-4 h-4 text-[var(--primary)]" />;
       case 'DELETE':
       case 'CONTAINER_REMOVED':
       case 'SHIPMENT_REMOVED':
@@ -441,9 +441,9 @@ export function ActivityLog({ logs }: ActivityLogProps) {
               variant={selectedCategory === category ? 'filled' : 'outlined'}
               sx={{
                 fontWeight: 600,
-                bgcolor: selectedCategory === category ? 'rgba(var(--accent-gold-rgb), 0.14)' : 'transparent',
-                color: selectedCategory === category ? 'var(--accent-gold)' : 'var(--text-secondary)',
-                borderColor: selectedCategory === category ? 'rgba(var(--accent-gold-rgb), 0.28)' : 'var(--border)',
+                bgcolor: selectedCategory === category ? 'rgba(var(--primary-rgb), 0.14)' : 'transparent',
+                color: selectedCategory === category ? 'var(--primary)' : 'var(--text-secondary)',
+                borderColor: selectedCategory === category ? 'rgba(var(--primary-rgb), 0.28)' : 'var(--border)',
               }}
             />
           ))}

@@ -119,7 +119,7 @@ export default function AgingReportPage() {
       render: (_, shipment) => (
         <Link
           href={`/dashboard/shipments/${shipment.id}`}
-          className="text-[var(--accent-gold)] hover:underline"
+          className="text-[var(--primary)] hover:underline"
         >
           {shipment.trackingNumber || '—'}
         </Link>
@@ -182,7 +182,7 @@ export default function AgingReportPage() {
       <AdminRoute>
         <div className="min-h-screen bg-[var(--background)] flex items-center justify-center">
           <div className="text-center space-y-4 text-[var(--text-secondary)]">
-            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--accent-gold)] mx-auto" />
+            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--primary)] mx-auto" />
             <p>Loading aging report...</p>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function AgingReportPage() {
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-start gap-3 min-w-0 flex-1">
               <Link href="/dashboard/finance/reports">
-                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back
                 </Button>
@@ -358,7 +358,7 @@ export default function AgingReportPage() {
                     Across {report.summary.totalShipments} shipments
                   </p>
                 </div>
-                <TrendingUp className="w-12 h-12 text-[var(--accent-gold)] opacity-50" />
+                <TrendingUp className="w-12 h-12 text-[var(--primary)] opacity-50" />
               </div>
             </CardContent>
           </Card>

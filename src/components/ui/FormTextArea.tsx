@@ -54,7 +54,7 @@ export const FormTextArea = forwardRef<HTMLTextAreaElement, FormTextAreaProps>(
             'resize-vertical min-h-[100px]',
             hasError
               ? 'border-[var(--error)] bg-red-50/10 focus:ring-[var(--error)]'
-              : 'border-[var(--border)] bg-[var(--background)] focus:ring-[var(--accent-gold)]',
+              : 'border-[var(--border)] bg-[var(--background)] focus:ring-[var(--primary)]',
             'disabled:opacity-50 disabled:cursor-not-allowed',
             className
           )}

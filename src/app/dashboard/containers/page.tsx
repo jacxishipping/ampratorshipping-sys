@@ -545,7 +545,7 @@ export default function ContainersPage() {
                           sx={{
                             width: `${container.progress}%`,
                             height: '100%',
-                            bgcolor: 'var(--accent-gold)',
+                            bgcolor: 'var(--primary)',
                             transition: 'width 0.3s ease',
                           }}
                         />
@@ -591,7 +591,7 @@ export default function ContainersPage() {
                       }}
                     >
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                        <Package style={{ fontSize: 14, color: 'var(--accent-gold)' }} />
+                        <Package style={{ fontSize: 14, color: 'var(--primary)' }} />
                         <Typography sx={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                           {container._count.shipments}/{container.maxCapacity}
                         </Typography>
@@ -668,7 +668,7 @@ export default function ContainersPage() {
               px: 2,
               color: 'var(--text-primary)',
               '&:hover': {
-                bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                bgcolor: 'rgba(var(--primary-rgb), 0.1)',
               },
             }}
           >
@@ -684,7 +684,7 @@ export default function ContainersPage() {
                 px: 2,
                 color: 'var(--text-primary)',
                 '&:hover': {
-                  bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                  bgcolor: 'rgba(var(--primary-rgb), 0.1)',
                 },
               }}
             >

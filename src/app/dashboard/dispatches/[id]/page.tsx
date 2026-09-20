@@ -493,7 +493,7 @@ export default function DispatchDetailPage() {
           const handoffSummary = parseHandoffEventDescription(row.description);
           return (
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' }}>
-              <Chip label="Handoff" size="small" sx={{ bgcolor: 'rgba(var(--accent-gold-rgb), 0.16)', color: 'var(--accent-gold)', fontWeight: 700 }} />
+              <Chip label="Handoff" size="small" sx={{ bgcolor: 'rgba(var(--primary-rgb), 0.16)', color: 'var(--primary)', fontWeight: 700 }} />
               {handoffSummary?.containerLabel && <Chip label={handoffSummary.containerLabel} size="small" variant="outlined" />}
             </Box>
           );
@@ -572,7 +572,7 @@ export default function DispatchDetailPage() {
           </Typography>
           {row.attachmentUrl ? (
             <Link href={row.attachmentUrl} target="_blank" style={{ textDecoration: 'none' }}>
-              <Typography sx={{ fontSize: '0.75rem', color: 'var(--accent-gold)', fontWeight: 600 }}>
+              <Typography sx={{ fontSize: '0.75rem', color: 'var(--primary)', fontWeight: 600 }}>
                 {row.attachmentName || 'Open attachment'}
               </Typography>
             </Link>
@@ -739,7 +739,7 @@ export default function DispatchDetailPage() {
               mb: 3,
               borderRadius: 2,
               border: '1px solid var(--border)',
-              background: 'rgba(var(--accent-gold-rgb), 0.08)',
+              background: 'rgba(var(--primary-rgb), 0.08)',
               px: 2,
               py: 1.5,
               color: 'var(--text-secondary)',
@@ -752,8 +752,8 @@ export default function DispatchDetailPage() {
             sx={{
               mb: 3,
               borderRadius: 2,
-              border: '1px solid rgba(var(--accent-gold-rgb), 0.35)',
-              background: 'rgba(var(--accent-gold-rgb), 0.06)',
+              border: '1px solid rgba(var(--primary-rgb), 0.35)',
+              background: 'rgba(var(--primary-rgb), 0.06)',
               px: 2,
               py: 1.5,
               color: 'var(--text-secondary)',

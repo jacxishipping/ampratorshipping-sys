@@ -125,7 +125,7 @@ export function DashboardPanel({
 			style={{
 				borderColor: 'var(--border)',
 				backgroundColor: 'var(--panel)',
-				borderTop: '2px solid rgba(var(--accent-gold-rgb), 0.3)',
+				borderTop: '2px solid rgba(var(--primary-rgb), 0.3)',
 				boxShadow: '0 20px 48px rgba(var(--text-primary-rgb), 0.10)',
 				maxWidth: '100%',
 			}}

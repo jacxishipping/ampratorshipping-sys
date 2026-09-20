@@ -216,7 +216,7 @@ function SpreadBar({ spread, maxSpread }: { spread: number | null; maxSpread: nu
             width: `${width}%`,
             height: '100%',
             borderRadius: 999,
-            background: 'linear-gradient(90deg, rgba(var(--accent-gold-rgb), 0.45), var(--accent-gold))',
+            background: 'linear-gradient(90deg, rgba(var(--primary-rgb), 0.45), var(--primary))',
           }}
         />
       </Box>
@@ -709,9 +709,9 @@ export default function CompanyPriceComparisonPage() {
             borderRadius: 999,
             fontSize: '0.72rem',
             fontWeight: 600,
-            bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
-            color: 'var(--accent-gold)',
-            border: '1px solid rgba(var(--accent-gold-rgb), 0.25)',
+            bgcolor: 'rgba(var(--primary-rgb), 0.1)',
+            color: 'var(--primary)',
+            border: '1px solid rgba(var(--primary-rgb), 0.25)',
           }}
         >
           {vehicleMultiplier}x vehicle adjustment
@@ -780,7 +780,7 @@ export default function CompanyPriceComparisonPage() {
                   <tr
                     key={row.key}
                     style={{ borderBottom: '1px solid var(--border)', background: rowBg, transition: 'background 0.15s ease' }}
-                    onMouseEnter={(event) => { event.currentTarget.style.background = 'rgba(var(--accent-gold-rgb), 0.05)'; }}
+                    onMouseEnter={(event) => { event.currentTarget.style.background = 'rgba(var(--primary-rgb), 0.05)'; }}
                     onMouseLeave={(event) => { event.currentTarget.style.background = rowBg; }}
                   >
                     <td style={{ padding: '10px 14px', position: 'sticky', left: 0, background: 'inherit', zIndex: 1 }}>
@@ -906,16 +906,16 @@ export default function CompanyPriceComparisonPage() {
                 my: 0.75,
                 px: 1.5,
                 '&:hover': {
-                  color: 'var(--accent-gold)',
-                  backgroundColor: 'rgba(var(--accent-gold-rgb), 0.08)',
+                  color: 'var(--primary)',
+                  backgroundColor: 'rgba(var(--primary-rgb), 0.08)',
                 },
               },
               '& .Mui-selected': {
-                color: 'var(--accent-gold) !important',
-                backgroundColor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                color: 'var(--primary) !important',
+                backgroundColor: 'rgba(var(--primary-rgb), 0.1)',
               },
               '& .MuiTabs-indicator': {
-                backgroundColor: 'var(--accent-gold)',
+                backgroundColor: 'var(--primary)',
                 height: 3,
               },
             }}

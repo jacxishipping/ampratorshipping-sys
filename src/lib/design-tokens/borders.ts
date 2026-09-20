@@ -59,8 +59,8 @@ export const semanticBorders = {
   strong: `2px solid var(--border)`,
   
   // Interactive states
-  hover: `1px solid var(--accent-gold)`,
-  focus: `2px solid var(--accent-gold)`,
+  hover: `1px solid var(--primary)`,
+  focus: `2px solid var(--primary)`,
   error: `1px solid var(--error)`,
   success: `1px solid var(--success)`,
   warning: `1px solid var(--warning)`,

@@ -362,7 +362,7 @@ export default function ProfilePage() {
 												sx={{
 													width: 80,
 													height: 80,
-													bgcolor: 'var(--accent-gold)',
+													bgcolor: 'var(--primary)',
 													fontSize: '2rem',
 													fontWeight: 600,
 												}}
@@ -601,12 +601,12 @@ export default function ProfilePage() {
 														alignItems: 'center',
 														gap: 1,
 														bgcolor: 'var(--background)',
-														border: '2px solid var(--accent-gold)',
+														border: '2px solid var(--primary)',
 														borderRadius: 2,
 														p: 2,
 													}}
 												>
-													<Key className="w-5 h-5" style={{ color: 'var(--accent-gold)' }} />
+													<Key className="w-5 h-5" style={{ color: 'var(--primary)' }} />
 													<Box 
 														sx={{ 
 															fontSize: '1.5rem', 
@@ -631,7 +631,7 @@ export default function ProfilePage() {
 											</Box>
 											<Box sx={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
 												Use this code to login at{' '}
-												<Box component="span" sx={{ color: 'var(--accent-gold)', fontWeight: 500 }}>
+												<Box component="span" sx={{ color: 'var(--primary)', fontWeight: 500 }}>
 													/auth/simple-login
 												</Box>
 												. Keep it secure and don't share it with others.

@@ -125,7 +125,7 @@ export default function ShipmentCompanyGetpassTab({
     <DashboardPanel title="Company Getpass" description="Track the time since the shipping company getpass started">
       <div className="flex flex-col gap-6 py-2 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--accent-gold)]">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--primary)]">
             <Building2 className="h-5 w-5" />
           </div>
           <div className="min-w-0">

@@ -408,7 +408,7 @@ export default function UserLedgerManagementPage() {
                 </Box>
               )}
             </Box>
-            <Typography sx={{ fontSize: '0.72rem', color: 'var(--accent-gold)', mt: 0.5, fontWeight: 600 }}>
+            <Typography sx={{ fontSize: '0.72rem', color: 'var(--primary)', mt: 0.5, fontWeight: 600 }}>
               {row.transactionInfoType ? transactionInfoTypeLabels[row.transactionInfoType] : 'Not specified'}
             </Typography>
             {row.notes && (
@@ -417,7 +417,7 @@ export default function UserLedgerManagementPage() {
               </Typography>
             )}
             {row.shipment && (
-              <Typography sx={{ fontSize: '0.75rem', color: 'var(--accent-gold)', mt: 0.5 }}>
+              <Typography sx={{ fontSize: '0.75rem', color: 'var(--primary)', mt: 0.5 }}>
                 {row.shipment.vehicleMake} {row.shipment.vehicleModel}
               </Typography>
             )}
@@ -479,7 +479,7 @@ export default function UserLedgerManagementPage() {
           <IconButton
             size="small"
             onClick={() => openEditModal(row)}
-            sx={{ color: 'var(--accent-gold)' }}
+            sx={{ color: 'var(--primary)' }}
           >
             <Edit fontSize="small" />
           </IconButton>

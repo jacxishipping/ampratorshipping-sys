@@ -75,7 +75,7 @@ export function ContainerUtilizationChart({ data, className }: ContainerUtilizat
             wrapperStyle={{ paddingTop: '10px' }}
             formatter={(value) => <span style={{ color: 'var(--text-secondary)', fontSize: '12px', fontWeight: 500 }}>{value}</span>}
           />
-          <Bar dataKey="utilization" stackId="a" fill="var(--accent-gold)" name="Used" radius={[0, 0, 4, 4]}>
+          <Bar dataKey="utilization" stackId="a" fill="var(--primary)" name="Used" radius={[0, 0, 4, 4]}>
             {chartData.map((entry, index) => (
               <Cell
                 key={`cell-${index}`}

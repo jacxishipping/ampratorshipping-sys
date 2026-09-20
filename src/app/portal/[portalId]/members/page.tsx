@@ -128,7 +128,7 @@ export default function PortalMembersPage() {
     result: { loginCode: string; simpleLoginUrl: string; portalUrl: string; email: string; name: string | null },
     title: string,
   ) => (
-    <Box sx={{ border: '1px solid rgba(var(--accent-gold-rgb), 0.28)', bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)', borderRadius: 2, p: 2, display: 'grid', gap: 0.75 }}>
+    <Box sx={{ border: '1px solid rgba(var(--primary-rgb), 0.28)', bgcolor: 'rgba(var(--primary-rgb), 0.08)', borderRadius: 2, p: 2, display: 'grid', gap: 0.75 }}>
       <Typography sx={{ fontWeight: 700 }}>{title}</Typography>
       <Typography sx={{ color: 'var(--text-secondary)' }}>
         Share the sign-in page and code with this user. The workspace route is where they land after sign-in.
@@ -412,7 +412,7 @@ export default function PortalMembersPage() {
             <DashboardGrid className="grid-cols-1 gap-3 xl:grid-cols-[1fr]">
               <DashboardPanel title="Member Actions" description="Launch the member creation flow from a dedicated action instead of editing fields inline.">
                 <Box sx={{ display: 'grid', gap: 2 }}>
-                  <Box sx={{ border: '1px solid rgba(var(--accent-gold-rgb), 0.24)', borderRadius: 2.5, p: 2.25, display: 'grid', gap: 1.25, bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)' }}>
+                  <Box sx={{ border: '1px solid rgba(var(--primary-rgb), 0.24)', borderRadius: 2.5, p: 2.25, display: 'grid', gap: 1.25, bgcolor: 'rgba(var(--primary-rgb), 0.08)' }}>
                     <Typography sx={{ fontSize: '1rem', fontWeight: 700 }}>Create New Portal User</Typography>
                     <Typography sx={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                       Create a portal-ready user profile, assign the workspace role, and issue the initial access code from a single modal.

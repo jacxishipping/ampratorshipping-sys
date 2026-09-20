@@ -168,15 +168,15 @@ export default function ShipmentRow({
 					transition: 'all 200ms ease',
 					outline: 'none',
 					'&:hover': {
-						borderColor: 'rgba(var(--accent-gold-rgb), 0.35)',
-						borderLeft: '3px solid var(--accent-gold)',
+						borderColor: 'rgba(var(--primary-rgb), 0.35)',
+						borderLeft: '3px solid var(--primary)',
 						boxShadow: '0 8px 24px rgba(var(--text-primary-rgb), 0.10)',
 						transform: 'translateY(-1px)',
 					},
 					'&:focus-visible': {
-						borderColor: 'rgba(var(--accent-gold-rgb), 0.45)',
-						borderLeft: '3px solid var(--accent-gold)',
-						boxShadow: '0 0 0 3px rgba(var(--accent-gold-rgb), 0.14)',
+						borderColor: 'rgba(var(--primary-rgb), 0.45)',
+						borderLeft: '3px solid var(--primary)',
+						boxShadow: '0 0 0 3px rgba(var(--primary-rgb), 0.14)',
 					},
 				}}
 			>
@@ -240,7 +240,7 @@ export default function ShipmentRow({
 						<Typography sx={{ fontSize: { xs: '0.6rem', sm: '0.62rem', md: '0.65rem' }, textTransform: 'uppercase', letterSpacing: '0.18em', color: 'var(--text-secondary)', mb: 0.3 }}>
 							Purchase Price
 						</Typography>
-						<Typography sx={{ fontSize: { xs: '0.85rem', sm: '0.9rem', md: '0.95rem' }, fontWeight: 700, color: 'var(--accent-gold)' }}>
+						<Typography sx={{ fontSize: { xs: '0.85rem', sm: '0.9rem', md: '0.95rem' }, fontWeight: 700, color: 'var(--primary)' }}>
 							${purchasePrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
 						</Typography>
 						{paidAmount > 0 ? (
@@ -266,12 +266,12 @@ export default function ShipmentRow({
 								Transit
 							</Typography>
 							<Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--accent-gold)' }} />
+								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--primary)' }} />
 								<Typography
 									sx={{
 										fontSize: { xs: '0.72rem', sm: '0.75rem', md: '0.78rem' },
 										fontWeight: 600,
-										color: 'var(--accent-gold)',
+										color: 'var(--primary)',
 										overflow: 'hidden',
 										textOverflow: 'ellipsis',
 										whiteSpace: 'nowrap',
@@ -297,12 +297,12 @@ export default function ShipmentRow({
 							
 							{/* Container Number */}
 							<Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--accent-gold)' }} />
+								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--primary)' }} />
 								<Typography
 									sx={{
 										fontSize: { xs: '0.72rem', sm: '0.75rem', md: '0.78rem' },
 										fontWeight: 600,
-										color: 'var(--accent-gold)',
+										color: 'var(--primary)',
 										overflow: 'hidden',
 										textOverflow: 'ellipsis',
 										whiteSpace: 'nowrap',
@@ -328,7 +328,7 @@ export default function ShipmentRow({
 											sx={{
 												fontSize: { xs: '0.62rem', sm: '0.65rem', md: '0.68rem' },
 												fontWeight: 600,
-												color: 'var(--accent-gold)',
+												color: 'var(--primary)',
 											}}
 										>
 											{container.progress}%
@@ -342,7 +342,7 @@ export default function ShipmentRow({
 											borderRadius: 1,
 											backgroundColor: 'rgba(var(--border-rgb), 0.3)',
 											'& .MuiLinearProgress-bar': {
-												backgroundColor: 'var(--accent-gold)',
+												backgroundColor: 'var(--primary)',
 												borderRadius: 1,
 											},
 										}}
@@ -397,12 +397,12 @@ export default function ShipmentRow({
 								Dispatch To Port
 							</Typography>
 							<Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--accent-gold)' }} />
+								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--primary)' }} />
 								<Typography
 									sx={{
 										fontSize: { xs: '0.72rem', sm: '0.75rem', md: '0.78rem' },
 										fontWeight: 600,
-										color: 'var(--accent-gold)',
+										color: 'var(--primary)',
 										overflow: 'hidden',
 										textOverflow: 'ellipsis',
 										whiteSpace: 'nowrap',
@@ -458,10 +458,10 @@ export default function ShipmentRow({
 							minWidth: 'auto',
 							minHeight: { xs: '44px', md: 'auto' },
 							px: 1.25,
-							color: 'var(--accent-gold)',
+							color: 'var(--primary)',
 							'&:hover': {
-								bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)',
-								color: 'var(--accent-gold)',
+								bgcolor: 'rgba(var(--primary-rgb), 0.08)',
+								color: 'var(--primary)',
 							},
 						}}
 					>
@@ -512,10 +512,10 @@ export default function ShipmentRow({
 								minHeight: { xs: '44px', md: 'auto' },
 								borderRadius: '999px',
 								px: 1.25,
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 								'&:hover': {
-									bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)',
-									color: 'var(--accent-gold)',
+									bgcolor: 'rgba(var(--primary-rgb), 0.08)',
+									color: 'var(--primary)',
 								},
 							}}
 						>

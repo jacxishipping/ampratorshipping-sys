@@ -81,7 +81,7 @@ export function FloatingActionButton() {
                     'w-12 h-12 rounded-full shadow-lg transition-all duration-200',
                     'flex items-center justify-center text-white',
                     'hover:scale-110 active:scale-95',
-                    'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent-gold)]'
+                    'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]'
                   )}
                   style={{ backgroundColor: action.color }}
                   aria-label={action.label}
@@ -97,7 +97,7 @@ export function FloatingActionButton() {
         <Fab
           onClick={() => setOpen(!open)}
           sx={{
-            bgcolor: open ? 'var(--error)' : 'var(--accent-gold)',
+            bgcolor: open ? 'var(--error)' : 'var(--primary)',
             color: 'white',
             width: 56,
             height: 56,

@@ -120,7 +120,7 @@ export default function ShipmentCustomerTab({ user, shipmentId }: ShipmentCustom
                 onClick={() => setIntent(option.value)}
                 className={`rounded-lg border px-3 py-2 text-sm transition-colors ${
                   intent === option.value
-                    ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.12)] text-[var(--text-primary)]'
+                    ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.12)] text-[var(--text-primary)]'
                     : 'border-[var(--border)] bg-transparent text-[var(--text-secondary)] hover:bg-[rgba(var(--border-rgb),0.18)]'
                 }`}
               >

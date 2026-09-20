@@ -83,19 +83,19 @@ function getStageSummary(props: ShipmentWorkflowStripProps, currentStageIndex: n
 
 const cardStyles: Record<StageState, string> = {
   pending: 'border-[var(--border)] bg-[var(--panel)] text-[var(--text-secondary)]',
-  current: 'border-[rgba(var(--accent-gold-rgb),0.45)] bg-[rgba(var(--accent-gold-rgb),0.1)] text-[var(--text-primary)]',
+  current: 'border-[rgba(var(--primary-rgb),0.45)] bg-[rgba(var(--primary-rgb),0.1)] text-[var(--text-primary)]',
   complete: 'border-[rgba(34,197,94,0.35)] bg-[rgba(34,197,94,0.08)] text-[var(--text-primary)]',
 };
 
 const badgeStyles: Record<StageState, string> = {
   pending: 'border-[var(--border)] bg-[var(--background)] text-[var(--text-secondary)]',
-  current: 'border-[rgba(var(--accent-gold-rgb),0.45)] bg-[rgba(var(--accent-gold-rgb),0.16)] text-[var(--accent-gold)]',
+  current: 'border-[rgba(var(--primary-rgb),0.45)] bg-[rgba(var(--primary-rgb),0.16)] text-[var(--primary)]',
   complete: 'border-[rgba(34,197,94,0.35)] bg-[rgba(34,197,94,0.14)] text-[rgb(34,197,94)]',
 };
 
 const markerStyles: Record<StageState, string> = {
   pending: 'border-[var(--border)] bg-[var(--background)] text-[var(--text-secondary)]',
-  current: 'border-[var(--accent-gold)] bg-[var(--accent-gold)] text-white',
+  current: 'border-[var(--primary)] bg-[var(--primary)] text-white',
   complete: 'border-[rgb(34,197,94)] bg-[rgb(34,197,94)] text-white',
 };
 
@@ -147,7 +147,7 @@ export default function ShipmentWorkflowStrip(props: ShipmentWorkflowStripProps)
       <div className="mt-4">
         <div className="relative h-2 rounded-full bg-[var(--background)]">
           <div
-            className="h-2 rounded-full bg-[var(--accent-gold)] transition-all duration-300"
+            className="h-2 rounded-full bg-[var(--primary)] transition-all duration-300"
             style={{ width: `${progressWidth}%` }}
           />
           <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-1">

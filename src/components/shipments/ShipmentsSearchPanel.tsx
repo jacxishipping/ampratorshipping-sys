@@ -32,7 +32,7 @@ export default function ShipmentsSearchPanel({
 			<DashboardPanel
 				title={
 					<Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1 }}>
-						<Inventory2 sx={{ fontSize: 18, color: 'var(--accent-gold)' }} />
+						<Inventory2 sx={{ fontSize: 18, color: 'var(--primary)' }} />
 						<span>Shipments</span>
 					</Box>
 				}

@@ -295,8 +295,8 @@ export default function CompanyPriceComparisonSideBySide({
           sx={{
             p: 1.25,
             borderRadius: 2,
-            border: '1px solid rgba(var(--accent-gold-rgb), 0.35)',
-            background: 'rgba(var(--accent-gold-rgb), 0.08)',
+            border: '1px solid rgba(var(--primary-rgb), 0.35)',
+            background: 'rgba(var(--primary-rgb), 0.08)',
             gridColumn: { xs: 'span 2', md: 'auto' },
           }}
         >

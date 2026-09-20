@@ -66,8 +66,8 @@ import type {
 } from '@/components/shipments/shipment-detail-types';
 
 const statusColors: Record<string, StatusColors> = {
-  'ON_HAND': { bg: 'rgba(var(--accent-gold-rgb), 0.15)', text: 'var(--accent-gold)', border: 'rgba(var(--accent-gold-rgb), 0.4)' },
-  'IN_TRANSIT': { bg: 'rgba(var(--accent-gold-rgb), 0.15)', text: 'var(--accent-gold)', border: 'rgba(var(--accent-gold-rgb), 0.4)' },
+  'ON_HAND': { bg: 'rgba(var(--primary-rgb), 0.15)', text: 'var(--primary)', border: 'rgba(var(--primary-rgb), 0.4)' },
+  'IN_TRANSIT': { bg: 'rgba(var(--primary-rgb), 0.15)', text: 'var(--primary)', border: 'rgba(var(--primary-rgb), 0.4)' },
   'DELIVERED': { bg: 'rgba(34, 197, 94, 0.15)', text: 'rgb(34, 197, 94)', border: 'rgba(34, 197, 94, 0.4)' },
   'CANCELLED': { bg: 'rgba(var(--error-rgb), 0.15)', text: 'var(--error)', border: 'rgba(var(--error-rgb), 0.4)' },
 };
@@ -1132,7 +1132,7 @@ export default function ShipmentDetailPage() {
                   <button
                     type="button"
                     onClick={() => openShipmentTab(4)}
-                    className={`rounded-lg border p-3 text-left transition-colors hover:border-[rgba(var(--accent-gold-rgb),0.45)] ${priceListHeaderClass}`}
+                    className={`rounded-lg border p-3 text-left transition-colors hover:border-[rgba(var(--primary-rgb),0.45)] ${priceListHeaderClass}`}
                   >
                     <div className="flex items-center gap-2 text-xs font-semibold uppercase text-[var(--text-secondary)]">
                       <ReceiptText className="h-4 w-4" />
@@ -1262,16 +1262,16 @@ export default function ShipmentDetailPage() {
                 my: 0.75,
                 px: 1.5,
                 '&:hover': {
-                  color: 'var(--accent-gold)',
-                  backgroundColor: 'rgba(var(--accent-gold-rgb), 0.08)',
+                  color: 'var(--primary)',
+                  backgroundColor: 'rgba(var(--primary-rgb), 0.08)',
                 },
               },
               '& .Mui-selected': {
-                color: 'var(--accent-gold) !important',
-                backgroundColor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                color: 'var(--primary) !important',
+                backgroundColor: 'rgba(var(--primary-rgb), 0.1)',
               },
               '& .MuiTabs-indicator': {
-                backgroundColor: 'var(--accent-gold)',
+                backgroundColor: 'var(--primary)',
                 height: 3,
               },
             }}

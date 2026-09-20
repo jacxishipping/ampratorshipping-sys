@@ -216,7 +216,7 @@ export default function Sidebar({ mobileOpen = false, onMobileClose }: SidebarPr
 						background: 'linear-gradient(180deg, var(--panel) 0%, rgba(var(--panel-rgb), 0.97) 100%)',
 						color: 'var(--text-primary)',
 						borderRight: '1px solid var(--border)',
-						borderTop: '2px solid rgba(var(--accent-gold-rgb), 0.15)',
+						borderTop: '2px solid rgba(var(--primary-rgb), 0.15)',
 						boxShadow: '0 10px 30px rgba(var(--text-primary-rgb),0.12)',
 						mt: '48px',
 					},
@@ -244,7 +244,7 @@ export default function Sidebar({ mobileOpen = false, onMobileClose }: SidebarPr
 						background: 'linear-gradient(180deg, var(--panel) 0%, rgba(var(--panel-rgb), 0.97) 100%)',
 						color: 'var(--text-primary)',
 						borderRight: '1px solid var(--border)',
-						borderTop: '2px solid rgba(var(--accent-gold-rgb), 0.15)',
+						borderTop: '2px solid rgba(var(--primary-rgb), 0.15)',
 						boxShadow: 'inset -1px 0 0 var(--border)',
 						position: 'relative',
 						height: '100%',
@@ -304,11 +304,11 @@ function NavItem({ item, isActive, badge, badgeColor, onNavClick }: NavItemProps
 				py: 0.75,
 				minHeight: 0,
 				transition: 'all 150ms ease',
-				color: active ? 'var(--accent-gold)' : 'var(--text-primary)',
-				bgcolor: active ? 'rgba(var(--accent-gold-rgb), 0.15)' : 'transparent',
-				boxShadow: active ? 'inset 0 0 0 1px rgba(var(--accent-gold-rgb), 0.2)' : 'none',
+				color: active ? 'var(--primary)' : 'var(--text-primary)',
+				bgcolor: active ? 'rgba(var(--primary-rgb), 0.15)' : 'transparent',
+				boxShadow: active ? 'inset 0 0 0 1px rgba(var(--primary-rgb), 0.2)' : 'none',
 				'&:hover': {
-					bgcolor: 'rgba(var(--accent-gold-rgb), 0.06)',
+					bgcolor: 'rgba(var(--primary-rgb), 0.06)',
 					color: 'var(--text-primary)',
 				},
 				'&::before': active
@@ -320,8 +320,8 @@ function NavItem({ item, isActive, badge, badgeColor, onNavClick }: NavItemProps
 							bottom: 4,
 							width: 4,
 							borderRadius: '0 2px 2px 0',
-							backgroundColor: 'var(--accent-gold)',
-							boxShadow: '2px 0 8px rgba(var(--accent-gold-rgb), 0.4)',
+							backgroundColor: 'var(--primary)',
+							boxShadow: '2px 0 8px rgba(var(--primary-rgb), 0.4)',
 					  }
 					: {},
 			}}
@@ -329,10 +329,10 @@ function NavItem({ item, isActive, badge, badgeColor, onNavClick }: NavItemProps
 			<ListItemIcon
 				sx={{
 					minWidth: 32,
-					color: active ? 'var(--accent-gold)' : 'var(--text-primary)',
+					color: active ? 'var(--primary)' : 'var(--text-primary)',
 				}}
 			>
-				<Icon sx={{ fontSize: 18, filter: active ? 'drop-shadow(0 0 4px rgba(var(--accent-gold-rgb), 0.5))' : 'none' }} />
+				<Icon sx={{ fontSize: 18, filter: active ? 'drop-shadow(0 0 4px rgba(var(--primary-rgb), 0.5))' : 'none' }} />
 			</ListItemIcon>
 			<ListItemText
 				primary={item.name}
@@ -646,7 +646,7 @@ function SidebarContent({
 						sx={{
 							width: 32,
 							height: 32,
-							bgcolor: 'var(--accent-gold)',
+							bgcolor: 'var(--primary)',
 							fontSize: '0.875rem',
 							fontWeight: 600,
 							color: 'var(--background)',
@@ -690,8 +690,8 @@ function SidebarContent({
 						textTransform: 'none',
 						fontWeight: 600,
 						'&:hover': {
-							borderColor: 'var(--accent-gold)',
-							backgroundColor: 'rgba(var(--accent-gold-rgb), 0.08)',
+							borderColor: 'var(--primary)',
+							backgroundColor: 'rgba(var(--primary-rgb), 0.08)',
 						},
 					}}
 				>

@@ -230,7 +230,7 @@ export default function AddInvoiceModal({
 			size="sm"
 			title={
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-					<FileText style={{ fontSize: 24, color: 'var(--accent-gold)' }} />
+					<FileText style={{ fontSize: 24, color: 'var(--primary)' }} />
 					<span>Create Invoice</span>
 				</Box>
 			}

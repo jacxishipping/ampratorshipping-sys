@@ -22,17 +22,16 @@ export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'size'> {
 // Variant configurations
 const variantStyles = {
   primary: {
-    bgcolor: 'var(--accent-gold)',
-    // Dark text on gold for WCAG AA contrast (light text on #C9A24C is only ~2.1:1)
-    color: 'var(--text-primary)',
+    bgcolor: 'var(--primary)',
+    // White text on navy for strong WCAG contrast
+    color: '#FFFFFF',
     border: 'none',
     '&:hover': {
-      bgcolor: 'var(--accent-gold)',
-      opacity: 0.9,
+      bgcolor: '#1D3567',
     },
     '&:disabled': {
-      bgcolor: 'rgba(var(--accent-gold-rgb), 0.5)',
-      color: 'rgba(var(--text-primary-rgb), 0.7)',
+      bgcolor: 'rgba(var(--primary-rgb), 0.5)',
+      color: 'rgba(255, 255, 255, 0.7)',
     },
   },
   secondary: {
@@ -41,7 +40,7 @@ const variantStyles = {
     border: '1px solid var(--border)',
     '&:hover': {
       bgcolor: 'var(--background)',
-      borderColor: 'var(--accent-gold)',
+      borderColor: 'var(--primary)',
     },
     '&:disabled': {
       bgcolor: 'var(--panel)',
@@ -54,7 +53,7 @@ const variantStyles = {
     border: '1px solid var(--border)',
     '&:hover': {
       bgcolor: 'rgba(var(--border-rgb), 0.1)',
-      borderColor: 'var(--accent-gold)',
+      borderColor: 'var(--primary)',
     },
     '&:disabled': {
       opacity: 0.5,

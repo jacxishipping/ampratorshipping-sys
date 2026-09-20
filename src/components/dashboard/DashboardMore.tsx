@@ -44,13 +44,13 @@ export default function DashboardMore({
           {/* Trends & Charts */}
           <Link
             href="/dashboard/analytics"
-            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 hover:border-[var(--accent-gold)]/30 transition-all text-left"
+            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 hover:border-[var(--primary)]/30 transition-all text-left"
           >
             <div className="flex items-start justify-between">
-              <div className="rounded-md p-2 bg-[rgba(var(--accent-gold-rgb),0.08)] text-[var(--accent-gold)]">
+              <div className="rounded-md p-2 bg-[rgba(var(--primary-rgb),0.08)] text-[var(--primary)]">
                 <Activity className="h-4 w-4" />
               </div>
-              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--accent-gold)] transition-colors" />
+              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--primary)] transition-colors" />
             </div>
             <div className="mt-2">
               <div className="font-medium text-[var(--text-primary)] text-sm">Trends &amp; Utilization</div>
@@ -63,13 +63,13 @@ export default function DashboardMore({
           {/* Rate Calculator */}
           <button
             onClick={() => setShowCalculator(true)}
-            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 text-left hover:border-[var(--accent-gold)]/30 transition-all"
+            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 text-left hover:border-[var(--primary)]/30 transition-all"
           >
             <div className="flex items-start justify-between">
               <div className="rounded-md p-2 bg-[rgba(var(--success-rgb),0.1)] text-[var(--success)]">
                 <Calculator className="h-4 w-4" />
               </div>
-              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--accent-gold)] transition-colors" />
+              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--primary)] transition-colors" />
             </div>
             <div className="mt-3">
               <div className="font-semibold text-[var(--text-primary)]">Rate Calculator</div>
@@ -82,13 +82,13 @@ export default function DashboardMore({
           {/* Pipeline */}
           <Link
             href="/dashboard/dispatches"
-            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 hover:border-[var(--accent-gold)]/30 transition-all"
+            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 hover:border-[var(--primary)]/30 transition-all"
           >
             <div className="flex items-start justify-between">
               <div className="rounded-md p-2 bg-[rgba(var(--info-rgb),0.1)] text-[var(--info)]">
                 <Truck className="h-4 w-4" />
               </div>
-              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--accent-gold)] transition-colors" />
+              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--primary)] transition-colors" />
             </div>
             <div className="mt-3">
               <div className="font-semibold text-[var(--text-primary)]">Operations Pipeline</div>
@@ -103,13 +103,13 @@ export default function DashboardMore({
           {/* AI Brief */}
           <button
             onClick={() => setShowAi(true)}
-            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 text-left hover:border-[var(--accent-gold)]/30 transition-all"
+            className="group flex flex-col rounded-lg border border-[var(--border)] bg-[var(--background)] p-3 text-left hover:border-[var(--primary)]/30 transition-all"
           >
             <div className="flex items-start justify-between">
-              <div className="rounded-md p-2 bg-[rgba(var(--accent-gold-rgb),0.1)] text-[var(--accent-gold)]">
+              <div className="rounded-md p-2 bg-[rgba(var(--primary-rgb),0.1)] text-[var(--primary)]">
                 <Bot className="h-4 w-4" />
               </div>
-              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--accent-gold)] transition-colors" />
+              <ArrowRight className="h-4 w-4 text-[var(--text-secondary)] group-hover:text-[var(--primary)] transition-colors" />
             </div>
             <div className="mt-3">
               <div className="font-semibold text-[var(--text-primary)]">AI Ops Brief</div>

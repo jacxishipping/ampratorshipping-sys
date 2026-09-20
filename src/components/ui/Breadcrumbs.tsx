@@ -39,7 +39,7 @@ export function Breadcrumbs({ items, className, showHome = true }: BreadcrumbsPr
               {item.href && !isLast ? (
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1.5 text-[var(--text-secondary)] hover:text-[var(--accent-gold)] transition-colors duration-200 hover:underline"
+                  className="flex items-center gap-1.5 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors duration-200 hover:underline"
                 >
                   {item.icon}
                   <span>{item.label}</span>

@@ -199,7 +199,7 @@ export default function NewContainerPage() {
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-start gap-3 min-w-0 flex-1">
               <Link href="/dashboard/containers">
-                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)] flex-shrink-0 text-xs sm:text-sm">
+                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)] flex-shrink-0 text-xs sm:text-sm">
                   <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
                   Back
                 </Button>
@@ -220,17 +220,17 @@ export default function NewContainerPage() {
               alternativeLabel
               sx={{
                 '& .MuiStepLabel-root .Mui-completed': {
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                 },
                 '& .MuiStepLabel-root .Mui-active': {
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                 },
                 '& .MuiStepLabel-label': {
                   color: 'var(--text-secondary)',
                   fontSize: { xs: '0.75rem', sm: '0.875rem' },
                 },
                 '& .MuiStepLabel-label.Mui-active': {
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                   fontWeight: 600,
                 },
                 '& .MuiStepLabel-label.Mui-completed': {
@@ -240,10 +240,10 @@ export default function NewContainerPage() {
                   color: 'var(--border)',
                 },
                 '& .MuiStepIcon-root.Mui-active': {
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                 },
                 '& .MuiStepIcon-root.Mui-completed': {
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                 },
               }}
             >
@@ -303,7 +303,7 @@ export default function NewContainerPage() {
                       onClick={fetchContainerData}
                       disabled={fetching || !formData.containerNumber.trim()}
                       variant="outline"
-                      className="sm:w-auto w-full border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)] whitespace-nowrap mb-6"
+                      className="sm:w-auto w-full border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)] whitespace-nowrap mb-6"
                     >
                       {fetching ? (
                         <>
@@ -482,7 +482,7 @@ export default function NewContainerPage() {
                     type="button"
                     onClick={addTransshipmentPort}
                     variant="outline"
-                    className="mt-3 border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+                    className="mt-3 border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]"
                   >
                     + Add Transshipment Port
                   </Button>
@@ -590,7 +590,7 @@ export default function NewContainerPage() {
                     onClick={handleBack}
                     variant="outline"
                     disabled={loading}
-                    className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+                    className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]"
                   >
                     <ChevronLeft className="w-4 h-4 mr-2" />
                     Back
@@ -604,7 +604,7 @@ export default function NewContainerPage() {
                     type="button"
                     onClick={handleNext}
                     disabled={loading || (activeStep === 0 && (!formData.containerNumber || !formData.companyId))}
-                    className="bg-[var(--accent-gold)] hover:bg-[var(--accent-gold)] shadow-[rgba(var(--accent-gold-rgb),0.25)]"
+                    className="bg-[var(--primary)] hover:bg-[var(--primary)] shadow-[rgba(var(--primary-rgb),0.25)]"
                     style={{ color: 'white' }}
                   >
                     Next
@@ -614,7 +614,7 @@ export default function NewContainerPage() {
                   <Button
                     type="submit"
                     disabled={loading || !formData.containerNumber || !formData.companyId}
-                    className="bg-[var(--accent-gold)] hover:bg-[var(--accent-gold)] shadow-[rgba(var(--accent-gold-rgb),0.25)]"
+                    className="bg-[var(--primary)] hover:bg-[var(--primary)] shadow-[rgba(var(--primary-rgb),0.25)]"
                     style={{ color: 'white' }}
                   >
                     {loading ? 'Creating...' : 'Create Container'}

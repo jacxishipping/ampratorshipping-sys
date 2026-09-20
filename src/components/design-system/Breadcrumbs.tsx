@@ -105,7 +105,7 @@ export default function Breadcrumbs({
                 borderRadius: 1.5,
                 transition: 'all 200ms cubic-bezier(0.4, 0, 0.2, 1)',
                 '&:hover': {
-                  bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+                  bgcolor: 'rgba(var(--primary-rgb), 0.1)',
                 },
               }}
             >
@@ -159,8 +159,8 @@ export default function Breadcrumbs({
                       borderRadius: 1.5,
                       transition: 'all 200ms cubic-bezier(0.4, 0, 0.2, 1)',
                       '&:hover': {
-                        bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
-                        color: 'var(--accent-gold)',
+                        bgcolor: 'rgba(var(--primary-rgb), 0.1)',
+                        color: 'var(--primary)',
                       },
                     }}
                   >
@@ -209,7 +209,7 @@ export function BreadcrumbsCompact({ className }: { className?: string }) {
                   fontWeight: 500,
                   color: 'var(--text-secondary)',
                   '&:hover': {
-                    color: 'var(--accent-gold)',
+                    color: 'var(--primary)',
                   },
                 }}
               >

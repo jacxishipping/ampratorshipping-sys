@@ -9,7 +9,7 @@
 
 export const colors = {
 	brand: {
-		accent: 'var(--accent-gold)',
+		accent: 'var(--primary)',
 		background: '#F9FAFB',
 		panel: 'var(--panel)',
 		textPrimary: 'var(--text-primary)',
@@ -256,10 +256,10 @@ export const shadows = {
 
   // Brand-colored shadows - Amprator signature
   brand: {
-    cyan: '0 4px 14px 0 rgb(var(--accent-gold-rgb) / 0.25)',
-    cyanSoft: '0 2px 8px 0 rgb(var(--accent-gold-rgb) / 0.15)',
-    gold: '0 4px 14px 0 rgb(var(--accent-gold-rgb) / 0.25)',
-    goldSoft: '0 2px 8px 0 rgb(var(--accent-gold-rgb) / 0.15)',
+    cyan: '0 4px 14px 0 rgb(var(--primary-rgb) / 0.25)',
+    cyanSoft: '0 2px 8px 0 rgb(var(--primary-rgb) / 0.15)',
+    gold: '0 4px 14px 0 rgb(var(--primary-rgb) / 0.25)',
+    goldSoft: '0 2px 8px 0 rgb(var(--primary-rgb) / 0.15)',
     navy: '0 4px 14px 0 rgb(var(--text-primary-rgb) / 0.25)',
     navySoft: '0 2px 8px 0 rgb(var(--text-primary-rgb) / 0.15)',
   },
@@ -272,8 +272,8 @@ export const shadows = {
 
   // Glowing effects - Tech premium
   glow: {
-    cyan: '0 0 20px rgb(var(--accent-gold-rgb) / 0.3)',
-    gold: '0 0 20px rgb(var(--accent-gold-rgb) / 0.3)',
+    cyan: '0 0 20px rgb(var(--primary-rgb) / 0.3)',
+    gold: '0 0 20px rgb(var(--primary-rgb) / 0.3)',
     navy: '0 0 20px rgb(var(--text-primary-rgb) / 0.3)',
   },
 } as const;

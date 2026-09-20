@@ -487,7 +487,7 @@ export default function DocumentsPage() {
                                     bgcolor: 'var(--background)',
                                 }}
                             >
-                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75, color: 'var(--accent-gold)', mb: 0.75 }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75, color: 'var(--primary)', mb: 0.75 }}>
                                     {item.icon}
                                     <Typography sx={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                                         {item.title}

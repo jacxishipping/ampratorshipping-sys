@@ -137,13 +137,13 @@ export default function ShipmentCard({
 						{/* Container Number and Status */}
 						<Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 1, minWidth: 0 }}>
 							<Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, minWidth: 0, flex: 1 }}>
-								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--accent-gold)', flexShrink: 0 }} />
+								<LocalShipping sx={{ fontSize: { xs: 14, sm: 16 }, color: 'var(--primary)', flexShrink: 0 }} />
 								<Link href={`/dashboard/containers/${containerId}`} style={{ textDecoration: 'none', minWidth: 0, overflow: 'hidden' }}>
 									<Typography
 										sx={{
 											fontSize: { xs: '0.7rem', sm: '0.75rem' },
 											fontWeight: 600,
-											color: 'var(--accent-gold)',
+											color: 'var(--primary)',
 											overflow: 'hidden',
 											textOverflow: 'ellipsis',
 											whiteSpace: 'nowrap',
@@ -181,7 +181,7 @@ export default function ShipmentCard({
 										sx={{
 											fontSize: { xs: '0.65rem', sm: '0.7rem' },
 											fontWeight: 600,
-											color: 'var(--accent-gold)',
+											color: 'var(--primary)',
 										}}
 									>
 										{container.progress}%
@@ -195,7 +195,7 @@ export default function ShipmentCard({
 										borderRadius: 1,
 										backgroundColor: 'rgba(var(--border-rgb, 255, 255, 255), 0.1)',
 										'& .MuiLinearProgress-bar': {
-											backgroundColor: 'var(--accent-gold)',
+											backgroundColor: 'var(--primary)',
 											borderRadius: 1,
 										},
 									}}
@@ -267,7 +267,7 @@ export default function ShipmentCard({
 								fontSize: { xs: '0.65rem', sm: '0.7rem' },
 								fontWeight: 600,
 								textTransform: 'none',
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 								minWidth: 0,
 								padding: 0,
 							}}

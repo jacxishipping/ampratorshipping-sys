@@ -204,7 +204,7 @@ export default function ShipmentCalculator() {
                 <Box sx={{ 
                     p: 1.5, 
                     borderRadius: 2, 
-                    bgcolor: 'var(--accent-gold)', 
+                    bgcolor: 'var(--primary)', 
                     color: 'white',
                     display: 'flex',
                     alignItems: 'center',
@@ -424,8 +424,8 @@ export default function ShipmentCalculator() {
                                 mt: 2, 
                                 p: 2, 
                                 borderRadius: 2, 
-                                bgcolor: 'rgba(var(--accent-gold-rgb), 0.12)', 
-                                border: '1px solid rgba(var(--accent-gold-rgb), 0.6)',
+                                bgcolor: 'rgba(var(--primary-rgb), 0.12)', 
+                                border: '1px solid rgba(var(--primary-rgb), 0.6)',
                                 textAlign: 'center'
                             }}>
                                 <Typography variant="caption" sx={{ color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: 1 }}>

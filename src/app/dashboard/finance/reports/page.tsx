@@ -313,7 +313,7 @@ export default function FinancialReportsPage() {
             <button
               type="button"
               onClick={() => router.push(`/dashboard/finance/companies/${linkedRecoveries[0].linkedCompanyLedgerEntry!.companyId}?entryId=${linkedRecoveries[0].linkedCompanyLedgerEntry!.id}`)}
-              className="rounded border border-[var(--border)] px-2 py-1 text-xs font-semibold text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+              className="rounded border border-[var(--border)] px-2 py-1 text-xs font-semibold text-[var(--primary)] hover:border-[var(--primary)]"
             >
               View Entry
             </button>
@@ -330,7 +330,7 @@ export default function FinancialReportsPage() {
       <AdminRoute>
         <div className="min-h-screen bg-[var(--background)] flex items-center justify-center">
           <div className="text-center space-y-4 text-[var(--text-secondary)]">
-            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--accent-gold)] mx-auto" />
+            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--primary)] mx-auto" />
             <p>Loading report...</p>
           </div>
         </div>
@@ -350,7 +350,7 @@ export default function FinancialReportsPage() {
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div className="flex items-start gap-3 min-w-0 flex-1">
               <Link href="/dashboard/finance">
-                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+                <Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back
                 </Button>
@@ -367,7 +367,7 @@ export default function FinancialReportsPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => setShowFilters(!showFilters)}
-                className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+                className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]"
               >
                 <Filter className="w-4 h-4 mr-2" />
                 Filters
@@ -376,7 +376,7 @@ export default function FinancialReportsPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => handleExportReport('json')}
-                className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+                className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Export JSON
@@ -397,8 +397,8 @@ export default function FinancialReportsPage() {
                   onClick={() => setReportType('summary')}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${
                     reportType === 'summary'
-                      ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.08)]'
-                      : 'border-[var(--border)] hover:border-[rgba(var(--accent-gold-rgb),0.5)]'
+                      ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.08)]'
+                      : 'border-[var(--border)] hover:border-[rgba(var(--primary-rgb),0.5)]'
                   }`}
                 >
                   <FileText className="w-6 h-6 text-[var(--info)] mb-2" />
@@ -410,8 +410,8 @@ export default function FinancialReportsPage() {
                   onClick={() => setReportType('user-wise')}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${
                     reportType === 'user-wise'
-                      ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.08)]'
-                      : 'border-[var(--border)] hover:border-[rgba(var(--accent-gold-rgb),0.5)]'
+                      ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.08)]'
+                      : 'border-[var(--border)] hover:border-[rgba(var(--primary-rgb),0.5)]'
                   }`}
                 >
                   <Users className="w-6 h-6 text-[var(--info)] mb-2" />
@@ -423,8 +423,8 @@ export default function FinancialReportsPage() {
                   onClick={() => setReportType('shipment-wise')}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${
                     reportType === 'shipment-wise'
-                      ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.08)]'
-                      : 'border-[var(--border)] hover:border-[rgba(var(--accent-gold-rgb),0.5)]'
+                      ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.08)]'
+                      : 'border-[var(--border)] hover:border-[rgba(var(--primary-rgb),0.5)]'
                   }`}
                 >
                   <Package className="w-6 h-6 text-[var(--info)] mb-2" />
@@ -453,7 +453,7 @@ export default function FinancialReportsPage() {
                       type="date"
                       value={filters.startDate}
                       onChange={(e) => setFilters({ ...filters, startDate: e.target.value })}
-                      className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--panel)] text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)] focus:border-[var(--accent-gold)]"
+                      className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--panel)] text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)] focus:border-[var(--primary)]"
                     />
                   </div>
 
@@ -465,14 +465,14 @@ export default function FinancialReportsPage() {
                       type="date"
                       value={filters.endDate}
                       onChange={(e) => setFilters({ ...filters, endDate: e.target.value })}
-                      className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--panel)] text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)] focus:border-[var(--accent-gold)]"
+                      className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--panel)] text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)] focus:border-[var(--primary)]"
                     />
                   </div>
 
                   <div className="flex items-end">
                     <Button
                       onClick={fetchReport}
-                      className="w-full bg-[var(--accent-gold)] hover:bg-[var(--accent-gold)]"
+                      className="w-full bg-[var(--primary)] hover:bg-[var(--primary)]"
                     >
                       Apply Filters
                     </Button>
@@ -741,7 +741,7 @@ export default function FinancialReportsPage() {
                                     <p className="text-sm font-semibold text-[var(--text-primary)]">{shipment.vehicle}</p>
                                     <p className="text-xs text-[var(--text-secondary)]">{linkedExpenses.length} linked recovery entr{linkedExpenses.length === 1 ? 'y' : 'ies'}</p>
                                   </div>
-                                  <span className="text-sm font-semibold text-[var(--accent-gold)]">{formatCurrency(linkedExpenses.reduce((sum, expense) => sum + expense.amount, 0))}</span>
+                                  <span className="text-sm font-semibold text-[var(--primary)]">{formatCurrency(linkedExpenses.reduce((sum, expense) => sum + expense.amount, 0))}</span>
                                 </div>
 
                                 <div className="mt-3 space-y-2">
@@ -756,7 +756,7 @@ export default function FinancialReportsPage() {
                                         <button
                                           type="button"
                                           onClick={() => router.push(`/dashboard/finance/companies/${expense.linkedCompanyLedgerEntry!.companyId}?entryId=${expense.linkedCompanyLedgerEntry!.id}`)}
-                                          className="rounded border border-[var(--border)] px-2 py-1 text-xs font-semibold text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+                                          className="rounded border border-[var(--border)] px-2 py-1 text-xs font-semibold text-[var(--primary)] hover:border-[var(--primary)]"
                                         >
                                           Company Entry
                                         </button>

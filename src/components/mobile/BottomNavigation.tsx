@@ -23,7 +23,7 @@ export function BottomNavigation() {
         paddingBottom: 'env(safe-area-inset-bottom)',
         backdropFilter: 'blur(16px)',
         background: 'rgba(var(--panel-rgb), 0.92)',
-        borderTop: '1px solid rgba(var(--accent-gold-rgb), 0.2)',
+        borderTop: '1px solid rgba(var(--primary-rgb), 0.2)',
       }}
     >
       <div className="flex items-center justify-around h-[68px] px-2">
@@ -39,7 +39,7 @@ export function BottomNavigation() {
                 'relative flex flex-1 items-center justify-center h-full min-w-0 px-2 transition-all duration-200',
                 'min-w-0 px-2',
                 isActive
-                  ? 'text-[var(--accent-gold)]'
+                  ? 'text-[var(--primary)]'
                   : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
               )}
             >
@@ -47,8 +47,8 @@ export function BottomNavigation() {
                 <div
                   className="absolute left-1/2 top-2 h-1 w-1 -translate-x-1/2 rounded-full"
                   style={{
-                    background: 'var(--accent-gold)',
-                    boxShadow: '0 0 6px rgba(var(--accent-gold-rgb), 0.6)',
+                    background: 'var(--primary)',
+                    boxShadow: '0 0 6px rgba(var(--primary-rgb), 0.6)',
                   }}
                 />
               )}
@@ -60,7 +60,7 @@ export function BottomNavigation() {
                 style={
                   isActive
                     ? {
-                      background: 'rgba(var(--accent-gold-rgb), 0.12)',
+                      background: 'rgba(var(--primary-rgb), 0.12)',
                       borderRadius: '12px',
                       padding: '4px 12px',
                     }
@@ -70,7 +70,7 @@ export function BottomNavigation() {
                 <Icon className="h-5 w-5 flex-shrink-0" />
                 <span className={cn(
                   'w-full truncate text-center text-xs font-medium',
-                  isActive && 'text-[var(--accent-gold)]'
+                  isActive && 'text-[var(--primary)]'
                 )}>
                   {item.label}
                 </span>

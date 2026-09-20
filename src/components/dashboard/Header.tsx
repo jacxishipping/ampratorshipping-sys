@@ -140,7 +140,7 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 					left: 0,
 					right: 0,
 					height: '1px',
-					background: 'linear-gradient(90deg, transparent, rgba(var(--accent-gold-rgb), 0.3), transparent)',
+					background: 'linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.3), transparent)',
 				},
 			}}
 		>
@@ -211,12 +211,12 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 							<IconButton
 								onClick={handleQuickActionOpen}
 								sx={{
-									color: 'var(--accent-gold)',
+									color: 'var(--primary)',
 									p: 0.75,
 									mr: 0.25,
 									'&:hover': {
-										bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
-										boxShadow: '0 0 0 1px rgba(var(--accent-gold-rgb), 0.2)',
+										bgcolor: 'rgba(var(--primary-rgb), 0.1)',
+										boxShadow: '0 0 0 1px rgba(var(--primary-rgb), 0.2)',
 									},
 								}}
 							>
@@ -281,7 +281,7 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 							sx={{
 									width: 30,
 									height: 30,
-								bgcolor: 'var(--accent-gold)',
+								bgcolor: 'var(--primary)',
 								fontSize: '0.875rem',
 								fontWeight: 600,
 								color: 'var(--background)',
@@ -335,7 +335,7 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 						<Typography
 							sx={{
 								fontSize: '0.6875rem',
-								color: 'var(--accent-gold)',
+								color: 'var(--primary)',
 								mt: 0.5,
 								textTransform: 'uppercase',
 								fontWeight: 600,

@@ -73,7 +73,7 @@ export default function CreateUserPage() {
 					<Typography variant="h4" sx={{ mb: 2, fontWeight: 700 }}>Access Restricted</Typography>
           <Typography sx={{ mb: 3 }}>You do not have permission to create this account type.</Typography>
 					<Link href="/dashboard" style={{ textDecoration: 'none' }}>
-					<MuiButton variant="contained" sx={{ bgcolor: 'var(--accent-gold)', color: 'var(--text-primary)', '&:hover': { bgcolor: 'var(--accent-gold)' } }}>
+					<MuiButton variant="contained" sx={{ bgcolor: 'var(--primary)', color: '#FFFFFF', '&:hover': { bgcolor: '#1D3567' } }}>
 						Go to Dashboard
 					</MuiButton>
 					</Link>
@@ -231,11 +231,11 @@ export default function CreateUserPage() {
                   <StepLabel
                     sx={{
                       '& .MuiStepLabel-label': { color: 'var(--text-secondary)' },
-                      '& .MuiStepLabel-label.Mui-active': { color: 'var(--accent-gold)', fontWeight: 600 },
-                      '& .MuiStepLabel-label.Mui-completed': { color: 'var(--accent-gold)' },
+                      '& .MuiStepLabel-label.Mui-active': { color: 'var(--primary)', fontWeight: 600 },
+                      '& .MuiStepLabel-label.Mui-completed': { color: 'var(--primary)' },
                       '& .MuiStepIcon-root': { color: 'var(--border)' },
-                      '& .MuiStepIcon-root.Mui-active': { color: 'var(--accent-gold)' },
-                      '& .MuiStepIcon-root.Mui-completed': { color: 'var(--accent-gold)' },
+                      '& .MuiStepIcon-root.Mui-active': { color: 'var(--primary)' },
+                      '& .MuiStepIcon-root.Mui-completed': { color: 'var(--primary)' },
                     }}
                   >
                     {label}
@@ -353,7 +353,7 @@ export default function CreateUserPage() {
                       placeholder="Enter password (min. 6 characters)"
                       InputProps={{
                         startAdornment: (<InputAdornment position="start"><LockIcon sx={{ fontSize: 20, color: 'var(--text-secondary)' }} /></InputAdornment>),
-                        endAdornment: (<InputAdornment position="end"><IconButton onClick={() => setShowPassword(!showPassword)} edge="end" sx={{ color: 'var(--accent-gold)' }}>{showPassword ? <VisibilityOff sx={{ fontSize: 20 }} /> : <Visibility sx={{ fontSize: 20 }} />}</IconButton></InputAdornment>)
+                        endAdornment: (<InputAdornment position="end"><IconButton onClick={() => setShowPassword(!showPassword)} edge="end" sx={{ color: 'var(--primary)' }}>{showPassword ? <VisibilityOff sx={{ fontSize: 20 }} /> : <Visibility sx={{ fontSize: 20 }} />}</IconButton></InputAdornment>)
                       }}
                       sx={{ '& .MuiOutlinedInput-root': { bgcolor: 'var(--background)', borderRadius: 2, color: 'var(--text-primary)' } }}
                     />
@@ -366,7 +366,7 @@ export default function CreateUserPage() {
                       placeholder="Confirm password"
                       InputProps={{
                         startAdornment: (<InputAdornment position="start"><LockIcon sx={{ fontSize: 20, color: 'var(--text-secondary)' }} /></InputAdornment>),
-                        endAdornment: (<InputAdornment position="end"><IconButton onClick={() => setShowConfirmPassword(!showConfirmPassword)} edge="end" sx={{ color: 'var(--accent-gold)' }}>{showConfirmPassword ? <VisibilityOff sx={{ fontSize: 20 }} /> : <Visibility sx={{ fontSize: 20 }} />}</IconButton></InputAdornment>)
+                        endAdornment: (<InputAdornment position="end"><IconButton onClick={() => setShowConfirmPassword(!showConfirmPassword)} edge="end" sx={{ color: 'var(--primary)' }}>{showConfirmPassword ? <VisibilityOff sx={{ fontSize: 20 }} /> : <Visibility sx={{ fontSize: 20 }} />}</IconButton></InputAdornment>)
                       }}
                       sx={{ '& .MuiOutlinedInput-root': { bgcolor: 'var(--background)', borderRadius: 2, color: 'var(--text-primary)' } }}
                     />
@@ -403,9 +403,9 @@ export default function CreateUserPage() {
                 variant="contained"
                 disabled={isLoading}
                 sx={{
-                  bgcolor: 'var(--accent-gold)',
-                  color: 'var(--background)',
-                  '&:hover': { bgcolor: 'var(--accent-gold)' },
+                  bgcolor: 'var(--primary)',
+                  color: '#FFFFFF',
+                  '&:hover': { bgcolor: '#1D3567' },
                 }}
               >
                 {activeStep === steps.length - 1 ? (isLoading ? 'Creating...' : 'Create Account') : 'Next'}

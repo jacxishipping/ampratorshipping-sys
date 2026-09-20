@@ -145,7 +145,7 @@ export default function AddTrackingEventModal({
 			size="lg"
 			title={
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-					<MapPin style={{ fontSize: 24, color: 'var(--accent-gold)' }} />
+					<MapPin style={{ fontSize: 24, color: 'var(--primary)' }} />
 					<span>Add Tracking Event</span>
 				</Box>
 			}

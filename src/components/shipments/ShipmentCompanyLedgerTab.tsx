@@ -269,7 +269,7 @@ export default function ShipmentCompanyLedgerTab({
         )}
         {companyEntries.length === 0 ? (
           <div className="flex flex-col items-center gap-2 py-10 text-center text-[var(--text-secondary)]">
-            <ReceiptText className="h-7 w-7 text-[var(--accent-gold)]" />
+            <ReceiptText className="h-7 w-7 text-[var(--primary)]" />
             <p className="text-sm">No company ledger transactions are linked to this shipment.</p>
           </div>
         ) : (
@@ -299,7 +299,7 @@ export default function ShipmentCompanyLedgerTab({
                           <button
                             type="button"
                             onClick={() => void openEditEntry(entry)}
-                            className="flex items-center justify-center rounded p-1 text-[var(--text-secondary)] transition-colors hover:bg-[rgba(var(--accent-gold-rgb),0.12)] hover:text-[var(--accent-gold)]"
+                            className="flex items-center justify-center rounded p-1 text-[var(--text-secondary)] transition-colors hover:bg-[rgba(var(--primary-rgb),0.12)] hover:text-[var(--primary)]"
                             title="Edit transaction"
                           >
                             <Pencil className="h-3.5 w-3.5" />

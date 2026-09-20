@@ -78,8 +78,8 @@ export function ThemeToggle() {
           color: 'var(--text-secondary)',
           transition: 'all 200ms cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
-            color: 'var(--accent-gold)',
-            bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
+            color: 'var(--primary)',
+            bgcolor: 'rgba(var(--primary-rgb), 0.1)',
             transform: 'rotate(20deg)',
           },
           '&:active': {

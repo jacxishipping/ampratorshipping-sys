@@ -47,7 +47,7 @@ function SiteMarkFallback({ size, className }: { size: number; className?: strin
   return (
     <div
       className={cn(
-        'flex items-center justify-center rounded-xl bg-[var(--accent-gold)] font-extrabold text-[var(--background)] shadow-sm',
+        'flex items-center justify-center rounded-xl bg-[var(--primary)] font-extrabold text-[var(--background)] shadow-sm',
         className,
       )}
       style={{ width: size, height: size }}

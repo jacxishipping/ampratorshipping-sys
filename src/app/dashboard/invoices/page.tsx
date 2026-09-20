@@ -292,7 +292,7 @@ export default function InvoicesPage() {
 					return (
 						<Link
 							href={`/dashboard/shipments/${row.referenceId}`}
-							style={{ color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: 600 }}
+							style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}
 						>
 							{String(value)}
 						</Link>
@@ -302,7 +302,7 @@ export default function InvoicesPage() {
 					return (
 						<Link
 							href={`/dashboard/containers/${row.referenceId}`}
-							style={{ color: 'var(--accent-gold)', textDecoration: 'none', fontFamily: 'monospace', fontWeight: 600 }}
+							style={{ color: 'var(--primary)', textDecoration: 'none', fontFamily: 'monospace', fontWeight: 600 }}
 						>
 							{String(value)}
 						</Link>
@@ -696,7 +696,7 @@ const confirmAction = useConfirmAction();
 														<Link 
 															href={`/dashboard/containers/${invoice.containerId}`}
 															style={{ 
-																color: 'var(--accent-gold)', 
+																color: 'var(--primary)', 
 																textDecoration: 'none',
 																fontFamily: 'monospace',
 																fontWeight: 600,
@@ -707,7 +707,7 @@ const confirmAction = useConfirmAction();
 													) : invoice.shipment ? (
 														<Link
 															href={`/dashboard/shipments/${invoice.shipment.id}`}
-															style={{ color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: 600 }}
+															style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}
 														>
 															{[invoice.shipment.vehicleYear, invoice.shipment.vehicleMake, invoice.shipment.vehicleModel].filter(Boolean).join(' ') || invoice.shipment.vehicleType}
 														</Link>
@@ -723,7 +723,7 @@ const confirmAction = useConfirmAction();
 														sx={{ fontSize: '0.75rem' }}
 													/>
 												</TableCell>
-												<TableCell align="right" sx={{ fontWeight: 600, color: 'var(--accent-gold)' }}>
+												<TableCell align="right" sx={{ fontWeight: 600, color: 'var(--primary)' }}>
 													{formatCurrency(invoice.total)}
 												</TableCell>
 												<TableCell align="right">

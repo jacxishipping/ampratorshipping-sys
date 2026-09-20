@@ -60,7 +60,7 @@ export default function FormField({
 							borderColor: 'var(--border)',
 						},
 						'&.Mui-focused fieldset': {
-							borderColor: 'var(--accent-gold)',
+							borderColor: 'var(--primary)',
 							borderWidth: 2,
 						},
 						'& input, & textarea': {

@@ -219,7 +219,7 @@ export default function ShipmentFinancialsTab({
         <div className="rounded-lg border border-[var(--border)] bg-[var(--background)] p-4">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
             <div className="flex items-start gap-3">
-              <div className="rounded-lg border border-[rgba(var(--accent-gold-rgb),0.25)] bg-[rgba(var(--accent-gold-rgb),0.10)] p-2 text-[var(--accent-gold)]">
+              <div className="rounded-lg border border-[rgba(var(--primary-rgb),0.25)] bg-[rgba(var(--primary-rgb),0.10)] p-2 text-[var(--primary)]">
                 <ReceiptText className="h-5 w-5" />
               </div>
               <div>
@@ -382,7 +382,7 @@ export default function ShipmentFinancialsTab({
                             <button
                               type="button"
                               onClick={() => onOpenCompanyLedgerEntry(entry.companyLedgerEntry)}
-                              className="shrink-0 rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+                              className="shrink-0 rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)] hover:border-[var(--primary)]"
                             >
                               View Entry
                             </button>
@@ -391,7 +391,7 @@ export default function ShipmentFinancialsTab({
                             <button
                               type="button"
                               onClick={() => onOpenCompanyLedgerEntry(entry.linkedCompanyLedgerEntry!)}
-                              className="shrink-0 rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+                              className="shrink-0 rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)] hover:border-[var(--primary)]"
                             >
                               Company Entry
                             </button>
@@ -474,11 +474,11 @@ export default function ShipmentFinancialsTab({
                         onClick={() => onExpenseSourceFilterChange(option.value)}
                         className="rounded-full px-3 py-1.5 text-xs font-semibold transition-colors"
                         style={{
-                          backgroundColor: expenseSourceFilter === option.value ? 'rgba(var(--accent-gold-rgb), 0.16)' : 'var(--panel)',
-                          color: expenseSourceFilter === option.value ? 'var(--accent-gold)' : 'var(--text-secondary)',
+                          backgroundColor: expenseSourceFilter === option.value ? 'rgba(var(--primary-rgb), 0.16)' : 'var(--panel)',
+                          color: expenseSourceFilter === option.value ? 'var(--primary)' : 'var(--text-secondary)',
                           border:
                             expenseSourceFilter === option.value
-                              ? '1px solid rgba(var(--accent-gold-rgb), 0.32)'
+                              ? '1px solid rgba(var(--primary-rgb), 0.32)'
                               : '1px solid var(--border)',
                         }}
                       >
@@ -509,7 +509,7 @@ export default function ShipmentFinancialsTab({
                           <button
                             type="button"
                             onClick={() => onOpenCompanyLedgerEntry(entry.linkedCompanyLedgerEntry!)}
-                            className="rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--accent-gold)] hover:border-[var(--accent-gold)]"
+                            className="rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)] hover:border-[var(--primary)]"
                           >
                             Company Ledger
                           </button>
@@ -524,7 +524,7 @@ export default function ShipmentFinancialsTab({
                           <button
                             type="button"
                             onClick={() => openEditExpense(entry)}
-                            className="flex items-center justify-center rounded p-1 text-[var(--text-secondary)] transition-colors hover:bg-[rgba(var(--accent-gold-rgb),0.12)] hover:text-[var(--accent-gold)]"
+                            className="flex items-center justify-center rounded p-1 text-[var(--text-secondary)] transition-colors hover:bg-[rgba(var(--primary-rgb),0.12)] hover:text-[var(--primary)]"
                             title="Edit expense"
                           >
                             <Pencil className="h-3.5 w-3.5" />
@@ -550,9 +550,9 @@ export default function ShipmentFinancialsTab({
           )}
         </div>
 
-        <div className="flex justify-between rounded-lg bg-[var(--accent-gold)]/10 p-4">
-          <span className="font-bold text-[var(--accent-gold)]">Total Estimated Cost</span>
-          <span className="font-bold text-[var(--accent-gold)]">${totalEstimatedCost.toFixed(2)}</span>
+        <div className="flex justify-between rounded-lg bg-[var(--primary)]/10 p-4">
+          <span className="font-bold text-[var(--primary)]">Total Estimated Cost</span>
+          <span className="font-bold text-[var(--primary)]">${totalEstimatedCost.toFixed(2)}</span>
         </div>
       </div>
       </DashboardPanel>

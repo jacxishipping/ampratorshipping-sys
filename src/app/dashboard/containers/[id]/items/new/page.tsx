@@ -136,7 +136,7 @@ export default function NewItemPage() {
 				<div className="relative z-10">
 					<div className="flex items-center gap-6">
 						<Link href={`/dashboard/containers/${containerId ?? ''}`}>
-							<Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+							<Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
 								<ArrowLeft className="w-4 h-4 mr-2" />
 								Back
 							</Button>
@@ -174,7 +174,7 @@ export default function NewItemPage() {
 										type="text"
 										id="vin"
 										{...register('vin', { required: 'VIN is required' })}
-										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)] ${
+										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)] ${
 											errors.vin ? 'border-[rgba(var(--error-rgb),0.5)]' : 'border-[var(--border)]'
 										}`}
 									/>
@@ -189,7 +189,7 @@ export default function NewItemPage() {
 										type="text"
 										id="lotNumber"
 										{...register('lotNumber', { required: 'Lot number is required' })}
-										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)] ${
+										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)] ${
 											errors.lotNumber ? 'border-[rgba(var(--error-rgb),0.5)]' : 'border-[var(--border)]'
 										}`}
 									/>
@@ -204,7 +204,7 @@ export default function NewItemPage() {
 										type="text"
 										id="auctionCity"
 										{...register('auctionCity', { required: 'Auction city is required' })}
-										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)] ${
+										className={`w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)] ${
 											errors.auctionCity ? 'border-[rgba(var(--error-rgb),0.5)]' : 'border-[var(--border)]'
 										}`}
 									/>
@@ -230,27 +230,27 @@ export default function NewItemPage() {
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 								<div>
 									<label htmlFor="freightCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">Freight Cost</label>
-									<input type="number" step="0.01" id="freightCost" {...register('freightCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="freightCost" {...register('freightCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 								<div>
 									<label htmlFor="towingCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">Towing Cost</label>
-									<input type="number" step="0.01" id="towingCost" {...register('towingCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="towingCost" {...register('towingCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 								<div>
 									<label htmlFor="clearanceCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">Clearance Cost</label>
-									<input type="number" step="0.01" id="clearanceCost" {...register('clearanceCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="clearanceCost" {...register('clearanceCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 								<div>
 									<label htmlFor="vatCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">VAT Cost</label>
-									<input type="number" step="0.01" id="vatCost" {...register('vatCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="vatCost" {...register('vatCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 								<div>
 									<label htmlFor="customsCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">Customs Cost</label>
-									<input type="number" step="0.01" id="customsCost" {...register('customsCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="customsCost" {...register('customsCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 								<div>
 									<label htmlFor="otherCost" className="block text-sm font-medium text-[var(--panel)]/90 mb-2">Other Cost</label>
-									<input type="number" step="0.01" id="otherCost" {...register('otherCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]" />
+									<input type="number" step="0.01" id="otherCost" {...register('otherCost')} defaultValue={0} className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]" />
 								</div>
 							</div>
 
@@ -270,11 +270,11 @@ export default function NewItemPage() {
 
 						<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-col sm:flex-row justify-end gap-4 pt-4">
 							<Link href={`/dashboard/containers/${containerId ?? ''}`} className="sm:w-auto w-full">
-								<Button type="button" variant="outline" disabled={isSubmitting} className="w-full sm:w-auto border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+								<Button type="button" variant="outline" disabled={isSubmitting} className="w-full sm:w-auto border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
 									Cancel
 								</Button>
 							</Link>
-							<Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto bg-[var(--accent-gold)] text-[var(--text-primary)] hover:bg-[var(--accent-gold)] shadow-lg shadow-[rgba(var(--accent-gold-rgb),0.25)]">
+							<Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto bg-[var(--primary)] text-[var(--text-primary)] hover:bg-[var(--primary)] shadow-lg shadow-[rgba(var(--primary-rgb),0.25)]">
 								{isSubmitting ? 'Creating...' : 'Create Item'}
 							</Button>
 						</motion.div>

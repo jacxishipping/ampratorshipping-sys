@@ -59,10 +59,10 @@ export default function AnimatedWorldMap() {
         >
           <defs>
             <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="var(--accent-gold)" stopOpacity="0" />
-              <stop offset="25%" stopColor="var(--accent-gold)" stopOpacity="0.8" />
-              <stop offset="75%" stopColor="var(--accent-gold)" stopOpacity="0.8" />
-              <stop offset="100%" stopColor="var(--accent-gold)" stopOpacity="0" />
+              <stop offset="0%" stopColor="var(--primary)" stopOpacity="0" />
+              <stop offset="25%" stopColor="var(--primary)" stopOpacity="0.8" />
+              <stop offset="75%" stopColor="var(--primary)" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="var(--primary)" stopOpacity="0" />
             </linearGradient>
             
             <filter id="glow">
@@ -122,15 +122,15 @@ export default function AnimatedWorldMap() {
                   <g transform="translate(-12, -12) scale(0.6)">
                     <path 
                       d="M32 18H29V14C29 12.8954 28.1046 12 27 12H13C11.8954 12 11 12.8954 11 14V18H8C6.67157 18 5.43432 18.7369 4.81977 19.897L2.1795 24.8841C1.94248 25.3318 2.26873 25.8696 2.77663 25.8696H37.2234C37.7313 25.8696 38.0575 25.3318 37.8205 24.8841L35.1802 19.897C34.5657 18.7369 33.3284 18 32 18Z" 
-                      fill="var(--accent-gold)"
+                      fill="var(--primary)"
                     />
                     <path
                       d="M20 7C20 6.44772 20.4477 6 21 6H25V12H20V7Z"
-                      fill="var(--accent-gold)"
+                      fill="var(--primary)"
                     />
                     <path
                       d="M2 28C2 28 5 30 10 30C15 30 20 28 20 28C20 28 25 30 30 30C35 30 38 28 38 28"
-                      stroke="var(--accent-gold)"
+                      stroke="var(--primary)"
                       strokeWidth="2"
                       strokeLinecap="round"
                       fill="none"
@@ -141,7 +141,7 @@ export default function AnimatedWorldMap() {
                   <g transform="translate(-12, -12) scale(0.6)">
                     <path 
                       d="M19.167 4.195C19.5397 3.51139 20.4603 3.51139 20.833 4.195L24.821 11.5126H35.8457C36.9387 11.5126 37.6406 12.6738 37.149 13.666L33.0039 22.0321L36.8837 32.222C37.1352 32.8824 36.6473 33.6006 35.9388 33.6006H30.434L20.833 22.0321L14.7335 22.0321L9.17647 31.9688C8.82524 32.597 8.16362 33 7.44738 33H4.07261C3.41505 33 2.94636 32.3551 3.14902 31.7226L7.17865 19.1418L3.14902 6.561C2.94636 5.92854 3.41505 5.28366 4.07261 5.28366H7.44738C8.16362 5.28366 8.82524 5.68662 9.17647 6.31481L14.7335 16.2515H20.833L19.167 4.195Z" 
-                      fill="var(--accent-gold)"
+                      fill="var(--primary)"
                     />
                   </g>
                 )}
@@ -169,7 +169,7 @@ export default function AnimatedWorldMap() {
               >
                 <path
                   d="M10 0C4.47715 0 0 4.47715 0 10C0 17 10 24 10 24C10 24 20 17 20 10C20 4.47715 15.5228 0 10 0ZM10 14C7.79086 14 6 12.2091 6 10C6 7.79086 7.79086 6 10 6C12.2091 6 14 7.79086 14 10C14 12.2091 12.2091 14 10 14Z"
-                  fill="var(--accent-gold)"
+                  fill="var(--primary)"
                   filter="url(#glow)"
                 />
               </motion.g>
@@ -181,7 +181,7 @@ export default function AnimatedWorldMap() {
                 rx="14"
                 ry="7"
                 fill="none"
-                stroke="var(--accent-gold)"
+                stroke="var(--primary)"
                 strokeWidth="1.5"
                 initial={{ scale: 1, opacity: 0.8 }}
                 animate={{

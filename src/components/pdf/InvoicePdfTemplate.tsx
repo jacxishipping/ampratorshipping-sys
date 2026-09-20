@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
 	itemTotalUsd: {
 		fontSize: 11,
 		fontWeight: 'bold',
-		color: 'var(--accent-gold)',
+		color: 'var(--primary)',
 	},
 	itemTotalAed: {
 		fontSize: 9,
@@ -272,7 +272,7 @@ const styles = StyleSheet.create({
 		color: 'var(--text-primary)',
 	},
 	totalValueAccent: {
-		color: 'var(--accent-gold)',
+		color: 'var(--primary)',
 	},
 	notesBox: {
 		borderWidth: 1,
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
 	},
 	socialLink: {
 		fontSize: 10,
-		color: 'var(--accent-gold)',
+		color: 'var(--primary)',
 		textDecoration: 'none',
 	},
 	footerText: {

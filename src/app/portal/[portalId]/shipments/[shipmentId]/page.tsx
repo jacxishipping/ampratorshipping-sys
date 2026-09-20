@@ -239,14 +239,14 @@ export default function PortalShipmentDetailPage() {
                   <Typography sx={{ color: 'var(--text-secondary)' }}>Status: {shipment.status}</Typography>
                 </Box>
                 <Box sx={{ height: 8, borderRadius: 999, bgcolor: 'var(--border)', overflow: 'hidden' }}>
-                  <Box sx={{ height: '100%', width: `${data.customerTracking.progressPercent}%`, bgcolor: 'var(--accent-gold)' }} />
+                  <Box sx={{ height: '100%', width: `${data.customerTracking.progressPercent}%`, bgcolor: 'var(--primary)' }} />
                 </Box>
                 <Box sx={{ display: 'grid', gap: 1.5 }}>
                   {data.customerTracking.milestones.map((milestone) => (
                     <Box key={milestone.key} sx={{ border: '1px solid var(--border)', borderRadius: 2, p: 2, bgcolor: 'var(--panel)' }}>
                       <Box sx={{ display: 'flex', justifyContent: 'space-between', gap: 2, flexWrap: 'wrap' }}>
                         <Typography sx={{ fontWeight: 600 }}>{milestone.label}</Typography>
-                        <Typography sx={{ color: milestone.state === 'complete' ? 'var(--success)' : milestone.state === 'current' ? 'var(--accent-gold)' : 'var(--text-secondary)', textTransform: 'capitalize' }}>
+                        <Typography sx={{ color: milestone.state === 'complete' ? 'var(--success)' : milestone.state === 'current' ? 'var(--primary)' : 'var(--text-secondary)', textTransform: 'capitalize' }}>
                           {milestone.state}
                         </Typography>
                       </Box>
@@ -305,7 +305,7 @@ export default function PortalShipmentDetailPage() {
                   {shipment.container.trackingEvents.map((event) => (
                     <Box key={event.id} sx={{ border: '1px solid var(--border)', borderRadius: 2, p: 2, display: 'flex', gap: 2, alignItems: 'flex-start' }}>
                       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 48 }}>
-                        <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: event.completed ? 'var(--success)' : 'var(--accent-gold)' }} />
+                        <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: event.completed ? 'var(--success)' : 'var(--primary)' }} />
                         <Typography sx={{ fontSize: '0.7rem', color: 'var(--text-secondary)', mt: 0.5, textTransform: 'uppercase' }}>
                           {event.completed ? 'Done' : 'Pending'}
                         </Typography>

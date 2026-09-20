@@ -32,7 +32,7 @@ export default function CompanyPriceComparisonInsights({
         }}
       >
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75, mb: 1.25 }}>
-          <Trophy className="w-4 h-4" style={{ color: 'var(--accent-gold)' }} />
+          <Trophy className="w-4 h-4" style={{ color: 'var(--primary)' }} />
           <Box sx={{ fontWeight: 700 }}>Company Scorecard</Box>
         </Box>
         <Box sx={{ display: 'grid', gap: 1 }}>
@@ -97,7 +97,7 @@ export default function CompanyPriceComparisonInsights({
                         borderRadius: 999,
                         background: isLeader
                           ? 'linear-gradient(90deg, rgb(22, 163, 74), rgb(34, 197, 94))'
-                          : 'linear-gradient(90deg, rgba(var(--accent-gold-rgb), 0.5), var(--accent-gold))',
+                          : 'linear-gradient(90deg, rgba(var(--primary-rgb), 0.5), var(--primary))',
                       }}
                     />
                   </Box>

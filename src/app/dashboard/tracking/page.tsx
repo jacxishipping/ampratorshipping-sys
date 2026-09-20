@@ -396,7 +396,7 @@ export default function DashboardTrackingPage() {
 									<Typography sx={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-primary)' }}>
 										Shipment Progress
 									</Typography>
-									<Typography sx={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+									<Typography sx={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)' }}>
 										{progressValue}%
 									</Typography>
 								</Box>
@@ -414,7 +414,7 @@ export default function DashboardTrackingPage() {
 										sx={{
 											width: `${progressValue}%`,
 											height: '100%',
-											bgcolor: 'var(--accent-gold)',
+											bgcolor: 'var(--primary)',
 											transition: 'width 0.5s ease',
 										}}
 									/>
@@ -447,7 +447,7 @@ export default function DashboardTrackingPage() {
 												transition: 'all 0.2s ease',
 												'&:hover': {
 													transform: 'translateX(4px)',
-													borderColor: isActual ? 'rgba(34, 211, 238, 0.5)' : 'var(--accent-gold)',
+													borderColor: isActual ? 'rgba(34, 211, 238, 0.5)' : 'var(--primary)',
 												},
 											}}
 										>

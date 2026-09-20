@@ -552,7 +552,7 @@ export default function TransitDetailPage() {
                   setSelectedShipmentForExpense(row.id);
                   setShipmentExpenseModalOpen(true);
                 }}
-                sx={{ color: 'var(--accent-gold)' }}
+                sx={{ color: 'var(--primary)' }}
                 disabled={isTransitWorkflowLocked}
               >
                 <DollarSign className="w-4 h-4" />
@@ -658,7 +658,7 @@ export default function TransitDetailPage() {
                     setTransitExpenseModalOpen(true);
                   }}
                   disabled={isTransitWorkflowLocked}
-                  sx={{ color: 'var(--accent-gold)' }}
+                  sx={{ color: 'var(--primary)' }}
                 >
                   <Pencil className="w-4 h-4" />
                 </IconButton>
@@ -789,7 +789,7 @@ export default function TransitDetailPage() {
             {transit.deliveryProofUrl && (
               <Box>
                 <Box sx={{ fontSize: '0.75rem', color: 'var(--text-secondary)', mb: 0.5 }}>PROOF OF DELIVERY</Box>
-                <a href={transit.deliveryProofUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-gold)', fontWeight: 600, textDecoration: 'none' }}>
+                <a href={transit.deliveryProofUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'none' }}>
                   {transit.deliveryProofName || 'Open proof file'}
                 </a>
               </Box>
@@ -816,9 +816,9 @@ export default function TransitDetailPage() {
               variant="scrollable"
               scrollButtons="auto"
               sx={{
-                '& .MuiTab-root': { textTransform: 'none', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', minHeight: 44, '&:hover': { color: 'var(--accent-gold)' } },
-                '& .Mui-selected': { color: 'var(--accent-gold) !important' },
-                '& .MuiTabs-indicator': { backgroundColor: 'var(--accent-gold)' },
+                '& .MuiTab-root': { textTransform: 'none', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', minHeight: 44, '&:hover': { color: 'var(--primary)' } },
+                '& .Mui-selected': { color: 'var(--primary) !important' },
+                '& .MuiTabs-indicator': { backgroundColor: 'var(--primary)' },
               }}
             >
               <Tab icon={<Package className="h-4 w-4" />} iconPosition="start" label={`Shipments (${transit._count.shipments})`} />

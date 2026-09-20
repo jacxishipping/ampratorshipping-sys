@@ -161,7 +161,7 @@ export default function PartnerPortalDetailPage() {
     result: { loginCode: string; simpleLoginUrl: string; portalUrl: string; email: string; name: string | null },
     title: string,
   ) => (
-    <Box sx={{ border: '1px solid rgba(var(--accent-gold-rgb), 0.28)', bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)', borderRadius: 2, p: 2, display: 'grid', gap: 0.75 }}>
+    <Box sx={{ border: '1px solid rgba(var(--primary-rgb), 0.28)', bgcolor: 'rgba(var(--primary-rgb), 0.08)', borderRadius: 2, p: 2, display: 'grid', gap: 0.75 }}>
       <Typography sx={{ fontWeight: 700 }}>{title}</Typography>
       <Typography sx={{ color: 'var(--text-secondary)' }}>
         Share the sign-in page and code with this user. The workspace route is where they land after sign-in.
@@ -688,14 +688,14 @@ export default function PartnerPortalDetailPage() {
                     color: 'var(--text-secondary)',
                     minHeight: 48,
                     '&:hover': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   },
                   '& .Mui-selected': {
-                    color: 'var(--accent-gold) !important',
+                    color: 'var(--primary) !important',
                   },
                   '& .MuiTabs-indicator': {
-                    backgroundColor: 'var(--accent-gold)',
+                    backgroundColor: 'var(--primary)',
                   },
                 }}
               >
@@ -801,7 +801,7 @@ export default function PartnerPortalDetailPage() {
                     </Box>
                   </Box>
 
-                  <Box sx={{ border: '1px solid rgba(var(--accent-gold-rgb), 0.24)', borderRadius: 2.5, p: 2.25, display: 'grid', gap: 1.25, bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)' }}>
+                  <Box sx={{ border: '1px solid rgba(var(--primary-rgb), 0.24)', borderRadius: 2.5, p: 2.25, display: 'grid', gap: 1.25, bgcolor: 'rgba(var(--primary-rgb), 0.08)' }}>
                     <Typography sx={{ fontSize: '1rem', fontWeight: 700 }}>Create New Portal User</Typography>
                     <Typography sx={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                       Create a new portal-ready user, then issue an access code and sign-in link immediately.

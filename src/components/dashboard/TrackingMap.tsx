@@ -277,7 +277,7 @@ export function TrackingMap({ origin, destination, currentLocation, currentCoord
         {pathPositions.length > 1 && (
           <Polyline 
             positions={pathPositions} 
-            color="var(--accent-gold)" 
+            color="var(--primary)" 
             weight={3} 
             dashArray="10, 10" 
             opacity={0.8}

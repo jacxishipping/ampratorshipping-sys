@@ -20,7 +20,7 @@ export default function OfflinePage() {
           <button
             type="button"
             onClick={() => window.location.reload()}
-            className="inline-flex items-center gap-2 rounded-md bg-[var(--accent-gold)] px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            className="inline-flex items-center gap-2 rounded-md bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
           >
             <RefreshCcw className="h-4 w-4" />
             Retry
@@ -28,7 +28,7 @@ export default function OfflinePage() {
 
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--panel)] px-4 py-2 text-sm font-semibold text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+            className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-[var(--panel)] px-4 py-2 text-sm font-semibold text-[var(--text-primary)] hover:border-[var(--primary)]"
           >
             Go Home
           </Link>

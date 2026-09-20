@@ -132,7 +132,7 @@ export default function NewInvoicePage() {
 	if (loading) {
 		return (
 			<div className="min-h-screen bg-[var(--text-primary)] flex items-center justify-center">
-				<div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--accent-gold)]"></div>
+				<div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--border)] border-t-[var(--primary)]"></div>
 			</div>
 		);
 	}
@@ -173,7 +173,7 @@ export default function NewInvoicePage() {
 				<div className="relative z-10">
 					<div className="flex items-center gap-6">
 						<Link href={`/dashboard/containers/${containerId ?? ''}`}>
-							<Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+							<Button variant="outline" size="sm" className="border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
 								<ArrowLeft className="w-4 h-4 mr-2" />
 								Back
 							</Button>
@@ -206,7 +206,7 @@ export default function NewInvoicePage() {
 									id="exchangeRate"
 									value={exchangeRate}
 									onChange={(e) => setExchangeRate(parseFloat(e.target.value))}
-									className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]"
+									className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]"
 								/>
 							</div>
 							<div>
@@ -218,7 +218,7 @@ export default function NewInvoicePage() {
 									id="dueDate"
 									value={dueDate}
 									onChange={(e) => setDueDate(e.target.value)}
-									className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--accent-gold-rgb),0.25)]"
+									className="w-full px-4 py-3 bg-[var(--panel)] border border-[var(--border)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[rgba(var(--primary-rgb),0.25)]"
 								/>
 							</div>
 						</div>
@@ -245,8 +245,8 @@ export default function NewInvoicePage() {
 											key={item.id}
 											className={`flex items-center gap-4 p-4 rounded-lg border cursor-pointer transition-all ${
 												isSelected
-													? 'bg-[rgba(var(--accent-gold-rgb),0.08)] border-[var(--accent-gold)]'
-													: 'bg-[var(--panel)] border-[var(--border)] hover:border-[var(--accent-gold)]'
+													? 'bg-[rgba(var(--primary-rgb),0.08)] border-[var(--primary)]'
+													: 'bg-[var(--panel)] border-[var(--border)] hover:border-[var(--primary)]'
 											}`}
 										>
 											<input
@@ -268,7 +268,7 @@ export default function NewInvoicePage() {
 													<span className="text-sm text-[var(--text-secondary)]">City: {item.auctionCity}</span>
 												</div>
 											</div>
-											<span className="text-sm font-semibold text-[var(--accent-gold)]">${totalCost.toFixed(2)}</span>
+											<span className="text-sm font-semibold text-[var(--primary)]">${totalCost.toFixed(2)}</span>
 										</label>
 									);
 								})}
@@ -296,11 +296,11 @@ export default function NewInvoicePage() {
 					{/* Actions */}
 					<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="flex flex-col sm:flex-row justify-end gap-4 pt-4">
 						<Link href={`/dashboard/containers/${containerId}`} className="sm:w-auto w-full">
-							<Button type="button" variant="outline" disabled={isCreating} className="w-full sm:w-auto border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-gold)]">
+							<Button type="button" variant="outline" disabled={isCreating} className="w-full sm:w-auto border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]">
 								Cancel
 							</Button>
 						</Link>
-						<Button onClick={handleCreateInvoice} disabled={isCreating || selectedItems.length === 0} className="w-full sm:w-auto bg-[var(--accent-gold)] text-[var(--text-primary)] hover:bg-[var(--accent-gold)] shadow-lg shadow-[rgba(var(--accent-gold-rgb),0.25)]">
+						<Button onClick={handleCreateInvoice} disabled={isCreating || selectedItems.length === 0} className="w-full sm:w-auto bg-[var(--primary)] text-[var(--text-primary)] hover:bg-[var(--primary)] shadow-lg shadow-[rgba(var(--primary-rgb),0.25)]">
 							{isCreating ? 'Creating...' : 'Create Invoice'}
 						</Button>
 					</motion.div>

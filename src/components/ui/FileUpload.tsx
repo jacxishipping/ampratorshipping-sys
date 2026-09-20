@@ -188,8 +188,8 @@ export function FileUpload({
         className={cn(
           'border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors',
           isDragging
-            ? 'border-[var(--accent-gold)] bg-[var(--accent-gold)]/5'
-            : 'border-[var(--border)] hover:border-[var(--accent-gold)] hover:bg-[var(--background)]'
+            ? 'border-[var(--primary)] bg-[var(--primary)]/5'
+            : 'border-[var(--border)] hover:border-[var(--primary)] hover:bg-[var(--background)]'
         )}
       >
         <Upload className="w-12 h-12 mx-auto text-[var(--text-secondary)] mb-4" />
@@ -238,7 +238,7 @@ export function FileUpload({
                     {formatFileSize(uploadFile.file.size)}
                   </span>
                   {uploadFile.status === 'uploading' && (
-                    <span className="text-xs text-[var(--accent-gold)]">
+                    <span className="text-xs text-[var(--primary)]">
                       {uploadFile.progress}%
                     </span>
                   )}
@@ -253,7 +253,7 @@ export function FileUpload({
                 {uploadFile.status === 'uploading' && (
                   <div className="w-full h-1.5 bg-[var(--background)] rounded-full mt-2 overflow-hidden">
                     <div
-                      className="h-full bg-[var(--accent-gold)] transition-all duration-300"
+                      className="h-full bg-[var(--primary)] transition-all duration-300"
                       style={{ width: `${uploadFile.progress}%` }}
                     />
                   </div>

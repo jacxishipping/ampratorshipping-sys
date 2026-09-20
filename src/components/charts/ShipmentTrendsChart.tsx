@@ -36,8 +36,8 @@ export function ShipmentTrendsChart({ data, className }: ShipmentTrendsChartProp
         <LineChart data={chartData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <defs>
             <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="var(--accent-gold)" stopOpacity={0.2} />
-              <stop offset="100%" stopColor="var(--accent-gold)" stopOpacity={0} />
+              <stop offset="0%" stopColor="var(--primary)" stopOpacity={0.2} />
+              <stop offset="100%" stopColor="var(--primary)" stopOpacity={0} />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" opacity={0.3} vertical={false} />
@@ -81,9 +81,9 @@ export function ShipmentTrendsChart({ data, className }: ShipmentTrendsChartProp
           <Line
             type="monotone"
             dataKey="shipments"
-            stroke="var(--accent-gold)"
+            stroke="var(--primary)"
             strokeWidth={2.5}
-            dot={{ fill: 'var(--accent-gold)', r: 5, strokeWidth: 0 }}
+            dot={{ fill: 'var(--primary)', r: 5, strokeWidth: 0 }}
             activeDot={{ r: 7, stroke: 'var(--background)', strokeWidth: 2 }}
             name="Total Shipments"
           />

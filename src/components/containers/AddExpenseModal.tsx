@@ -138,7 +138,7 @@ export default function AddExpenseModal({
 			size="sm"
 			title={
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-					<DollarSign style={{ fontSize: 24, color: 'var(--accent-gold)' }} />
+					<DollarSign style={{ fontSize: 24, color: 'var(--primary)' }} />
 					<span>{isEditing ? 'Edit Container Expense' : 'Add Container Expense'}</span>
 				</Box>
 			}

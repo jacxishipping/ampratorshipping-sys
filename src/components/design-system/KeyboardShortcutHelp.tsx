@@ -75,7 +75,7 @@ export default function KeyboardShortcutHelp() {
       size="lg"
       title={
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-          <Keyboard sx={{ color: 'var(--accent-gold)' }} />
+          <Keyboard sx={{ color: 'var(--primary)' }} />
           <Typography variant="h6" sx={{ fontWeight: 700, color: 'var(--text-primary)' }}>
             Keyboard Shortcuts
           </Typography>

@@ -147,7 +147,7 @@ export default function CustomersPage() {
           </IconButton>
           {showEmailsFor.has(row.id) && (
             <IconButton size="small" onClick={() => copyToClipboard(row.email, row.id)} title="Copy email">
-              {copiedEmail === row.id ? <Check style={{ color: 'green', width: 16, height: 16 }} /> : <Copy style={{ color: 'var(--accent-gold)', width: 16, height: 16 }} />}
+              {copiedEmail === row.id ? <Check style={{ color: 'green', width: 16, height: 16 }} /> : <Copy style={{ color: 'var(--primary)', width: 16, height: 16 }} />}
             </IconButton>
           )}
         </Box>

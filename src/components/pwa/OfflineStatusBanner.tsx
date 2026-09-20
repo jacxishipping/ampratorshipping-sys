@@ -35,7 +35,7 @@ export default function OfflineStatusBanner() {
         </div>
         <Link
           href="/offline"
-          className="rounded-md border border-[var(--border)] px-2.5 py-1 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--accent-gold)]"
+          className="rounded-md border border-[var(--border)] px-2.5 py-1 text-xs font-semibold text-[var(--text-primary)] hover:border-[var(--primary)]"
         >
           Offline page
         </Link>

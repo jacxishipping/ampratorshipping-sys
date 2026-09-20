@@ -160,7 +160,7 @@ export default function DashboardAiBrief({ aiEnabled, payload }: DashboardAiBrie
                 onClick={() => setMode(item.value)}
                 className={`rounded-lg border px-3 py-2 text-left text-sm transition-colors ${
                   mode === item.value
-                    ? 'border-[var(--accent-gold)] bg-[rgba(var(--accent-gold-rgb),0.12)] text-primary'
+                    ? 'border-[var(--primary)] bg-[rgba(var(--primary-rgb),0.12)] text-primary'
                     : 'border-[var(--border)] bg-transparent text-muted-foreground hover:bg-background/80 hover:text-primary'
                 }`}
               >
@@ -179,7 +179,7 @@ export default function DashboardAiBrief({ aiEnabled, payload }: DashboardAiBrie
               onChange={(event) => setFocus(event.target.value)}
               rows={3}
               placeholder="Example: Which delays are most likely to trigger customer escalation this week?"
-              className="w-full rounded-xl border border-border bg-background px-3 py-2 text-sm text-primary outline-none transition-colors placeholder:text-muted-foreground focus:border-[var(--accent-gold)]"
+              className="w-full rounded-xl border border-border bg-background px-3 py-2 text-sm text-primary outline-none transition-colors placeholder:text-muted-foreground focus:border-[var(--primary)]"
             />
             <p className="text-xs text-muted-foreground">
               {aiEnabled

@@ -73,9 +73,9 @@ export default function ShipmentsResultsPanel({
 							px: 1,
 							py: 0.25,
 							borderRadius: '999px',
-							bgcolor: 'rgba(var(--accent-gold-rgb), 0.12)',
-							color: 'var(--accent-gold)',
-							border: '1px solid rgba(var(--accent-gold-rgb), 0.25)',
+							bgcolor: 'rgba(var(--primary-rgb), 0.12)',
+							color: 'var(--primary)',
+							border: '1px solid rgba(var(--primary-rgb), 0.25)',
 							fontSize: '0.72rem',
 							fontWeight: 700,
 							lineHeight: 1.2,
@@ -191,11 +191,11 @@ export default function ShipmentsResultsPanel({
 									px: 1.25,
 									py: 0.5,
 									borderRadius: '999px',
-									bgcolor: 'rgba(var(--accent-gold-rgb), 0.08)',
-									border: '1px solid rgba(var(--accent-gold-rgb), 0.2)',
+									bgcolor: 'rgba(var(--primary-rgb), 0.08)',
+									border: '1px solid rgba(var(--primary-rgb), 0.2)',
 								}}
 							>
-								<Typography sx={{ fontSize: { xs: '0.7rem', sm: '0.72rem', md: '0.75rem' }, color: 'var(--accent-gold)', fontWeight: 700 }}>
+								<Typography sx={{ fontSize: { xs: '0.7rem', sm: '0.72rem', md: '0.75rem' }, color: 'var(--primary)', fontWeight: 700 }}>
 									Page {currentPage} of {totalPages}
 								</Typography>
 							</Box>

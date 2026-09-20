@@ -125,11 +125,11 @@ export default function SmartSearch({
                 sx={{
                   fontSize: '0.875rem',
                   fontWeight: 500,
-                  borderColor: filters.workflowStage ? 'var(--border)' : 'rgba(var(--accent-gold-rgb), 0.4)',
-                  bgcolor: filters.workflowStage ? 'rgba(var(--panel-rgb), 0.5)' : 'rgba(var(--accent-gold-rgb), 0.15)',
-                  color: filters.workflowStage ? 'var(--text-secondary)' : 'var(--accent-gold)',
+                  borderColor: filters.workflowStage ? 'var(--border)' : 'rgba(var(--primary-rgb), 0.4)',
+                  bgcolor: filters.workflowStage ? 'rgba(var(--panel-rgb), 0.5)' : 'rgba(var(--primary-rgb), 0.15)',
+                  color: filters.workflowStage ? 'var(--text-secondary)' : 'var(--primary)',
                   '&:hover': {
-                    bgcolor: filters.workflowStage ? 'rgba(var(--panel-rgb), 0.7)' : 'rgba(var(--accent-gold-rgb), 0.25)',
+                    bgcolor: filters.workflowStage ? 'rgba(var(--panel-rgb), 0.7)' : 'rgba(var(--primary-rgb), 0.25)',
                     color: 'var(--text-primary)',
                   },
                 }}
@@ -147,20 +147,20 @@ export default function SmartSearch({
                     fontWeight: 500,
                     borderColor:
                       filters.workflowStage === stageOption.value
-                        ? 'rgba(var(--accent-gold-rgb), 0.4)'
+                        ? 'rgba(var(--primary-rgb), 0.4)'
                         : 'var(--border)',
                     bgcolor:
                       filters.workflowStage === stageOption.value
-                        ? 'rgba(var(--accent-gold-rgb), 0.15)'
+                        ? 'rgba(var(--primary-rgb), 0.15)'
                         : 'rgba(var(--panel-rgb), 0.5)',
                     color:
                       filters.workflowStage === stageOption.value
-                        ? 'var(--accent-gold)'
+                        ? 'var(--primary)'
                         : 'var(--text-secondary)',
                     '&:hover': {
                       bgcolor:
                         filters.workflowStage === stageOption.value
-                          ? 'rgba(var(--accent-gold-rgb), 0.25)'
+                          ? 'rgba(var(--primary-rgb), 0.25)'
                           : 'rgba(var(--panel-rgb), 0.7)',
                       color: 'var(--text-primary)',
                     },
@@ -219,7 +219,7 @@ export default function SmartSearch({
               startAdornment: (
                 <InputAdornment position="start">
                     {isSearching ? (
-                      <CircularProgress size={20} sx={{ color: 'var(--accent-gold)' }} />
+                      <CircularProgress size={20} sx={{ color: 'var(--primary)' }} />
                     ) : (
                       <Search sx={{ fontSize: 20, color: 'rgba(var(--text-secondary-rgb), 0.5)' }} />
                     )}
@@ -235,7 +235,7 @@ export default function SmartSearch({
                     borderColor: 'rgba(var(--text-primary-rgb), 0.16)',
                 },
                 '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                  borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                  borderColor: 'rgba(var(--primary-rgb), 0.5)',
                   borderWidth: 2,
                 },
                 '& input': {
@@ -272,12 +272,12 @@ export default function SmartSearch({
               endIcon={showFilters ? <ExpandLess sx={{ fontSize: 16 }} /> : <ExpandMore sx={{ fontSize: 16 }} />}
               onClick={() => setShowFilters(!showFilters)}
               sx={{
-                  borderColor: showFilters ? 'rgba(var(--accent-gold-rgb), 0.4)' : 'var(--border)',
-                  bgcolor: showFilters ? 'rgba(var(--accent-gold-rgb), 0.15)' : 'transparent',
+                  borderColor: showFilters ? 'rgba(var(--primary-rgb), 0.4)' : 'var(--border)',
+                  bgcolor: showFilters ? 'rgba(var(--primary-rgb), 0.15)' : 'transparent',
                   color: 'var(--text-primary)',
                 '&:hover': {
-                    bgcolor: showFilters ? 'rgba(var(--accent-gold-rgb), 0.25)' : 'rgba(var(--panel-rgb), 0.5)',
-                    borderColor: showFilters ? 'rgba(var(--accent-gold-rgb), 0.6)' : 'var(--border)',
+                    bgcolor: showFilters ? 'rgba(var(--primary-rgb), 0.25)' : 'rgba(var(--panel-rgb), 0.5)',
+                    borderColor: showFilters ? 'rgba(var(--primary-rgb), 0.6)' : 'var(--border)',
                 },
               }}
             >
@@ -290,8 +290,8 @@ export default function SmartSearch({
                     ml: 1,
                     height: 20,
                     fontSize: '0.75rem',
-                    bgcolor: 'var(--accent-gold)',
-                      color: 'var(--background)',
+                    bgcolor: 'var(--primary)',
+                      color: '#FFFFFF',
                   }}
                 />
               )}
@@ -320,11 +320,11 @@ export default function SmartSearch({
                 sx={{
                   fontSize: '0.875rem',
                   fontWeight: 500,
-                  borderColor: filters.type === value ? 'rgba(var(--accent-gold-rgb), 0.4)' : 'var(--border)',
-                  bgcolor: filters.type === value ? 'rgba(var(--accent-gold-rgb), 0.15)' : 'rgba(var(--panel-rgb), 0.5)',
-                  color: filters.type === value ? 'var(--accent-gold)' : 'var(--text-secondary)',
+                  borderColor: filters.type === value ? 'rgba(var(--primary-rgb), 0.4)' : 'var(--border)',
+                  bgcolor: filters.type === value ? 'rgba(var(--primary-rgb), 0.15)' : 'rgba(var(--panel-rgb), 0.5)',
+                  color: filters.type === value ? 'var(--primary)' : 'var(--text-secondary)',
                   '&:hover': {
-                    bgcolor: filters.type === value ? 'rgba(var(--accent-gold-rgb), 0.25)' : 'rgba(var(--panel-rgb), 0.7)',
+                    bgcolor: filters.type === value ? 'rgba(var(--primary-rgb), 0.25)' : 'rgba(var(--panel-rgb), 0.7)',
                     color: 'var(--text-primary)',
                   },
                 }}
@@ -358,7 +358,7 @@ export default function SmartSearch({
                 gap: 1,
               }}
             >
-              <FilterAlt sx={{ fontSize: 20, color: 'var(--accent-gold)' }} />
+              <FilterAlt sx={{ fontSize: 20, color: 'var(--primary)' }} />
               Advanced Filters
             </Typography>
             {activeFiltersCount > 0 && (
@@ -367,9 +367,9 @@ export default function SmartSearch({
                 onClick={clearFilters}
                 sx={{
                   fontSize: '0.875rem',
-                  color: 'var(--accent-gold)',
+                  color: 'var(--primary)',
                   '&:hover': {
-                    color: 'var(--accent-gold)',
+                    color: 'var(--primary)',
                   },
                 }}
               >
@@ -393,7 +393,7 @@ export default function SmartSearch({
                       color: 'var(--text-secondary)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   }}
                 >
@@ -413,7 +413,7 @@ export default function SmartSearch({
                         borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                     '& .MuiSvgIcon-root': {
                         color: 'var(--text-secondary)',
@@ -437,7 +437,7 @@ export default function SmartSearch({
                     color: 'var(--text-secondary)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   }}
                 >
@@ -457,7 +457,7 @@ export default function SmartSearch({
                       borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                     '& .MuiSvgIcon-root': {
                       color: 'var(--text-secondary)',
@@ -478,7 +478,7 @@ export default function SmartSearch({
                     color: 'var(--text-secondary)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   }}
                 >
@@ -498,7 +498,7 @@ export default function SmartSearch({
                       borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                     '& .MuiSvgIcon-root': {
                       color: 'var(--text-secondary)',
@@ -524,14 +524,14 @@ export default function SmartSearch({
                       color: 'var(--text-secondary)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   },
                 }}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <CalendarMonth sx={{ fontSize: 16, color: 'var(--accent-gold)' }} />
+                      <CalendarMonth sx={{ fontSize: 16, color: 'var(--primary)' }} />
                     </InputAdornment>
                   ),
                   sx: {
@@ -544,7 +544,7 @@ export default function SmartSearch({
                         borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                   },
                 }}
@@ -564,14 +564,14 @@ export default function SmartSearch({
                     color: 'rgba(var(--text-secondary-rgb), 0.7)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   },
                 }}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <CalendarMonth sx={{ fontSize: 16, color: 'var(--accent-gold)' }} />
+                      <CalendarMonth sx={{ fontSize: 16, color: 'var(--primary)' }} />
                     </InputAdornment>
                   ),
                   sx: {
@@ -584,7 +584,7 @@ export default function SmartSearch({
                       borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                   },
                 }}
@@ -604,14 +604,14 @@ export default function SmartSearch({
                     color: 'rgba(var(--text-secondary-rgb), 0.7)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   },
                 }}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <AttachMoney sx={{ fontSize: 16, color: 'var(--accent-gold)' }} />
+                      <AttachMoney sx={{ fontSize: 16, color: 'var(--primary)' }} />
                     </InputAdornment>
                   ),
                   inputProps: { min: 0 },
@@ -625,7 +625,7 @@ export default function SmartSearch({
                       borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                     '& input::placeholder': {
                       color: 'rgba(var(--text-secondary-rgb), 0.4)',
@@ -649,14 +649,14 @@ export default function SmartSearch({
                     color: 'rgba(var(--text-secondary-rgb), 0.7)',
                     fontSize: '0.875rem',
                     '&.Mui-focused': {
-                      color: 'var(--accent-gold)',
+                      color: 'var(--primary)',
                     },
                   },
                 }}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <AttachMoney sx={{ fontSize: 16, color: 'var(--accent-gold)' }} />
+                      <AttachMoney sx={{ fontSize: 16, color: 'var(--primary)' }} />
                     </InputAdornment>
                   ),
                   inputProps: { min: 0 },
@@ -670,7 +670,7 @@ export default function SmartSearch({
                       borderColor: 'var(--border)',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                      borderColor: 'rgba(var(--accent-gold-rgb), 0.5)',
+                      borderColor: 'rgba(var(--primary-rgb), 0.5)',
                     },
                     '& input::placeholder': {
                       color: 'rgba(var(--text-secondary-rgb), 0.4)',
@@ -688,15 +688,15 @@ export default function SmartSearch({
                 sx={{
                   mt: 2,
                   p: 1.5,
-                  bgcolor: 'rgba(var(--accent-gold-rgb), 0.1)',
-                  border: '1px solid rgba(var(--accent-gold-rgb), 0.3)',
+                  bgcolor: 'rgba(var(--primary-rgb), 0.1)',
+                  border: '1px solid rgba(var(--primary-rgb), 0.3)',
                   borderRadius: 2,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'start', gap: 1 }}>
-                  <FilterAlt sx={{ fontSize: 16, color: 'var(--accent-gold)', mt: 0.25, flexShrink: 0 }} />
+                  <FilterAlt sx={{ fontSize: 16, color: 'var(--primary)', mt: 0.25, flexShrink: 0 }} />
                   <Box sx={{ flex: 1 }}>
-                    <Typography variant="body2" sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--accent-gold)', mb: 1 }}>
+                    <Typography variant="body2" sx={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--primary)', mb: 1 }}>
                       Active Filters:
                     </Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -705,8 +705,8 @@ export default function SmartSearch({
                           label={`Query: "${query}"`}
                           size="small"
                           sx={{
-                            bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
-                            color: 'var(--accent-gold)',
+                            bgcolor: 'rgba(var(--primary-rgb), 0.2)',
+                            color: 'var(--primary)',
                             fontSize: '0.75rem',
                           }}
                         />
@@ -716,8 +716,8 @@ export default function SmartSearch({
                           label={`Status: ${filters.status}`}
                           size="small"
                           sx={{
-                            bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
-                            color: 'var(--accent-gold)',
+                            bgcolor: 'rgba(var(--primary-rgb), 0.2)',
+                            color: 'var(--primary)',
                             fontSize: '0.75rem',
                           }}
                         />
@@ -727,8 +727,8 @@ export default function SmartSearch({
                           label={filters.delivery === 'delivered' ? 'Delivered' : 'Not Delivered'}
                           size="small"
                           sx={{
-                            bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
-                            color: 'var(--accent-gold)',
+                            bgcolor: 'rgba(var(--primary-rgb), 0.2)',
+                            color: 'var(--primary)',
                             fontSize: '0.75rem',
                           }}
                         />
@@ -738,8 +738,8 @@ export default function SmartSearch({
                           label="Date Range"
                           size="small"
                           sx={{
-                            bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
-                            color: 'var(--accent-gold)',
+                            bgcolor: 'rgba(var(--primary-rgb), 0.2)',
+                            color: 'var(--primary)',
                             fontSize: '0.75rem',
                           }}
                         />
@@ -749,8 +749,8 @@ export default function SmartSearch({
                           label="Price Range"
                           size="small"
                           sx={{
-                            bgcolor: 'rgba(var(--accent-gold-rgb), 0.2)',
-                            color: 'var(--accent-gold)',
+                            bgcolor: 'rgba(var(--primary-rgb), 0.2)',
+                            color: 'var(--primary)',
                             fontSize: '0.75rem',
                           }}
                         />

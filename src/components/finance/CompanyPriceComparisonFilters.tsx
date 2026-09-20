@@ -429,8 +429,8 @@ export default function CompanyPriceComparisonFilters({
                               display: 'inline-flex',
                               alignItems: 'center',
                               gap: 0.5,
-                              border: selected ? '1px solid rgba(var(--accent-gold-rgb), 0.55)' : '1px solid var(--border)',
-                              background: selected ? 'rgba(var(--accent-gold-rgb), 0.12)' : 'var(--background)',
+                              border: selected ? '1px solid rgba(var(--primary-rgb), 0.55)' : '1px solid var(--border)',
+                              background: selected ? 'rgba(var(--primary-rgb), 0.12)' : 'var(--background)',
                               color: disabled ? 'var(--text-secondary)' : 'var(--text-primary)',
                               borderRadius: 9999,
                               px: 1.25,
@@ -441,12 +441,12 @@ export default function CompanyPriceComparisonFilters({
                               opacity: disabled ? 0.55 : 1,
                               transition: 'all 0.15s ease',
                               '&:hover:not(:disabled)': {
-                                borderColor: 'rgba(var(--accent-gold-rgb), 0.45)',
+                                borderColor: 'rgba(var(--primary-rgb), 0.45)',
                                 transform: 'translateY(-1px)',
                               },
                             }}
                           >
-                            {selected && <Check className="w-3.5 h-3.5" style={{ color: 'var(--accent-gold)' }} />}
+                            {selected && <Check className="w-3.5 h-3.5" style={{ color: 'var(--primary)' }} />}
                             {company.name}
                             {!company.hasPriceList ? ' (no list)' : ''}
                           </Box>

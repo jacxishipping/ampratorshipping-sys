@@ -118,8 +118,8 @@ export default function PhotoGallery({
           className={cn(
             'relative flex h-24 w-full cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed transition-all duration-200',
             dragging
-              ? 'border-[var(--accent-gold)] bg-[var(--accent-gold)]/10 scale-[1.01]'
-              : 'border-[var(--border)] bg-[var(--background)] hover:border-[var(--accent-gold)]/70 hover:bg-[var(--accent-gold)]/5',
+              ? 'border-[var(--primary)] bg-[var(--primary)]/10 scale-[1.01]'
+              : 'border-[var(--border)] bg-[var(--background)] hover:border-[var(--primary)]/70 hover:bg-[var(--primary)]/5',
             uploading && 'pointer-events-none opacity-60'
           )}
         >
@@ -134,15 +134,15 @@ export default function PhotoGallery({
           />
           <div className="flex flex-col items-center gap-1">
             {uploading ? (
-              <div className="h-6 w-6 animate-spin rounded-full border-2 border-[var(--accent-gold)] border-t-transparent" />
+              <div className="h-6 w-6 animate-spin rounded-full border-2 border-[var(--primary)] border-t-transparent" />
             ) : (
               <div className="flex items-center gap-1.5">
-                <Plus className="h-4 w-4 text-[var(--accent-gold)]" />
-                <Upload className="h-4 w-4 text-[var(--accent-gold)]" />
+                <Plus className="h-4 w-4 text-[var(--primary)]" />
+                <Upload className="h-4 w-4 text-[var(--primary)]" />
               </div>
             )}
             <p className="text-xs text-[var(--text-secondary)]">
-              <span className="font-semibold text-[var(--accent-gold)]">{uploadLabel || 'Add Photos'}</span>
+              <span className="font-semibold text-[var(--primary)]">{uploadLabel || 'Add Photos'}</span>
               {' — drag & drop or click'}
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function PhotoGallery({
                 <p className="truncate text-xs font-medium text-[var(--text-primary)]">{item.name}</p>
                 {item.progress >= 0 ? (
                   <div className="mt-1 h-1 w-full rounded-full bg-[var(--border)]">
-                    <div className="h-1 rounded-full bg-[var(--accent-gold)] transition-all duration-300" style={{ width: `${item.progress}%` }} />
+                    <div className="h-1 rounded-full bg-[var(--primary)] transition-all duration-300" style={{ width: `${item.progress}%` }} />
                   </div>
                 ) : (
                   <p className="text-xs text-[var(--error)]">Upload failed</p>
@@ -227,7 +227,7 @@ export default function PhotoGallery({
                       type="button"
                       onClick={(e) => void handleDownloadSingleClick(e, photo.url, i)}
                       disabled={downloadingIndex !== null}
-                      className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--accent-gold)]/90 text-white shadow transition-colors hover:bg-[var(--accent-gold)] disabled:opacity-50"
+                      className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--primary)]/90 text-white shadow transition-colors hover:bg-[var(--primary)] disabled:opacity-50"
                       aria-label={`Download photo ${i + 1}`}
                     >
                       {downloadingIndex === i ? (
@@ -249,7 +249,7 @@ export default function PhotoGallery({
                 type="button"
                 onClick={() => void handleDownloadAllClick()}
                 disabled={downloadingAll}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--accent-gold)] px-3 py-1.5 text-xs font-bold text-white transition-all hover:brightness-110 disabled:opacity-60"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--primary)] px-3 py-1.5 text-xs font-bold text-white transition-all hover:brightness-110 disabled:opacity-60"
               >
                 {downloadingAll ? (
                   <div className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white border-t-transparent" />

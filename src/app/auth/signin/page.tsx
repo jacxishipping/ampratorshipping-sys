@@ -30,13 +30,13 @@ const textFieldStyles = {
 			transition: 'all 200ms ease',
 		},
 		'&:hover fieldset': {
-			borderColor: 'rgba(var(--accent-gold-rgb), 0.22)',
+			borderColor: 'rgba(var(--primary-rgb), 0.22)',
 		},
 		'&.Mui-focused': {
-			boxShadow: '0 0 0 3px rgba(var(--accent-gold-rgb), 0.12)',
+			boxShadow: '0 0 0 3px rgba(var(--primary-rgb), 0.12)',
 		},
 		'&.Mui-focused fieldset': {
-			borderColor: 'var(--accent-gold)',
+			borderColor: 'var(--primary)',
 			borderWidth: 2,
 		},
 		'& input': {
@@ -131,14 +131,14 @@ export default function SignInPage() {
 					sx={{
 						position: 'absolute',
 						inset: 0,
-						background: 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(var(--accent-gold-rgb), 0.08) 0%, transparent 60%)',
+						background: 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(var(--primary-rgb), 0.08) 0%, transparent 60%)',
 					}}
 				/>
 				<Box
 					sx={{
 						position: 'absolute',
 						inset: 0,
-						background: 'radial-gradient(ellipse 55% 45% at 100% 100%, rgba(var(--accent-gold-rgb), 0.04) 0%, transparent 70%)',
+						background: 'radial-gradient(ellipse 55% 45% at 100% 100%, rgba(var(--primary-rgb), 0.04) 0%, transparent 70%)',
 					}}
 				/>
 			</motion.div>
@@ -159,8 +159,8 @@ export default function SignInPage() {
 						borderRadius: 4,
 						backdropFilter: 'blur(20px)',
 						background: 'rgba(var(--panel-rgb), 0.92)',
-						border: '1px solid rgba(var(--accent-gold-rgb), 0.15)',
-						boxShadow: '0 32px 80px rgba(var(--text-primary-rgb), 0.16), 0 0 0 1px rgba(var(--accent-gold-rgb), 0.08)',
+						border: '1px solid rgba(var(--primary-rgb), 0.15)',
+						boxShadow: '0 32px 80px rgba(var(--text-primary-rgb), 0.16), 0 0 0 1px rgba(var(--primary-rgb), 0.08)',
 						p: { xs: 4, sm: 5 },
 						overflow: 'hidden',
 					}}
@@ -176,7 +176,7 @@ export default function SignInPage() {
 								sx={{
 									fontSize: { xs: '1.875rem', sm: '2.25rem' },
 									fontWeight: 700,
-									background: 'linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%)',
+									background: 'linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%)',
 									WebkitBackgroundClip: 'text',
 									WebkitTextFillColor: 'transparent',
 									mb: 1,
@@ -285,9 +285,9 @@ export default function SignInPage() {
 													onClick={() => setShowPassword(!showPassword)}
 													edge="end"
 													sx={{
-														color: 'var(--accent-gold)',
+														color: 'var(--primary)',
 														'&:hover': {
-															color: 'var(--accent-gold)',
+															color: 'var(--primary)',
 														},
 													}}
 												>
@@ -313,18 +313,18 @@ export default function SignInPage() {
 								endIcon={!isLoading && <ArrowForward />}
 								sx={{
 									width: '100%',
-									background: 'linear-gradient(135deg, var(--accent-gold) 0%, #B8960C 100%)',
+									background: 'linear-gradient(135deg, var(--primary) 0%, #B8960C 100%)',
 									color: 'var(--text-primary)',
 									fontWeight: 600,
 									py: 1.5,
 									fontSize: '1rem',
-									boxShadow: '0 4px 14px rgba(var(--accent-gold-rgb), 0.25)',
+									boxShadow: '0 4px 14px rgba(var(--primary-rgb), 0.25)',
 									'&:hover': {
-										background: 'linear-gradient(135deg, var(--accent-gold) 0%, #B8960C 100%)',
-										boxShadow: '0 4px 14px rgba(var(--accent-gold-rgb), 0.35)',
+										background: 'linear-gradient(135deg, var(--primary) 0%, #B8960C 100%)',
+										boxShadow: '0 4px 14px rgba(var(--primary-rgb), 0.35)',
 									},
 									'&:disabled': {
-										background: 'linear-gradient(135deg, rgba(var(--accent-gold-rgb), 0.55) 0%, rgba(184, 150, 12, 0.55) 100%)',
+										background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.55) 0%, rgba(184, 150, 12, 0.55) 100%)',
 										color: 'rgba(var(--text-primary-rgb), 0.7)',
 									},
 								}}
@@ -375,11 +375,11 @@ export default function SignInPage() {
 								size="sm"
 								onClick={() => router.push(simpleLoginHref)}
 								sx={{
-									borderColor: 'rgba(var(--accent-gold-rgb), 0.22)',
+									borderColor: 'rgba(var(--primary-rgb), 0.22)',
 									color: 'var(--text-primary)',
 									'&:hover': {
-										borderColor: 'var(--accent-gold)',
-										bgcolor: 'rgba(var(--accent-gold-rgb), 0.06)',
+										borderColor: 'var(--primary)',
+										bgcolor: 'rgba(var(--primary-rgb), 0.06)',
 									},
 								}}
 							>

@@ -260,7 +260,7 @@ export default function EditUserPage({ params }: { params: Promise<{ id: string 
             <Typography variant="subtitle2" sx={{ mb: 1, fontWeight: 600 }}>Role</Typography>
             <select
               {...register('role')}
-              className="w-full p-2.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] focus:ring-2 focus:ring-[var(--accent-gold)] focus:border-transparent outline-none transition-all"
+              className="w-full p-2.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none transition-all"
             >
               <option value="user">User</option>
               <option value="admin">Admin</option>
@@ -295,12 +295,12 @@ export default function EditUserPage({ params }: { params: Promise<{ id: string 
                       alignItems: 'center',
                       gap: 1,
                       bgcolor: 'var(--background)',
-                      border: '2px solid var(--accent-gold)',
+                      border: '2px solid var(--primary)',
                       borderRadius: 2,
                       p: 2,
                     }}
                   >
-                    <Key className="w-5 h-5" style={{ color: 'var(--accent-gold)' }} />
+                    <Key className="w-5 h-5" style={{ color: 'var(--primary)' }} />
                     <Box 
                       sx={{ 
                         fontSize: '1.5rem', 
@@ -349,7 +349,7 @@ export default function EditUserPage({ params }: { params: Promise<{ id: string 
                 </Box>
 
                 <Typography variant="caption" sx={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.5 }}>
-                  This user can login using this code at <Box component="span" sx={{ color: 'var(--accent-gold)', fontWeight: 500 }}>/auth/simple-login</Box>
+                  This user can login using this code at <Box component="span" sx={{ color: 'var(--primary)', fontWeight: 500 }}>/auth/simple-login</Box>
                 </Typography>
 
                 <Alert

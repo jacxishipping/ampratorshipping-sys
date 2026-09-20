@@ -416,7 +416,7 @@ export default function RecordPaymentPage() {
                           justifyContent: 'space-between',
                           p: 2,
                           borderRadius: 2,
-                          border: '2px solid var(--accent-gold)',
+                          border: '2px solid var(--primary)',
                           bgcolor: 'rgba(201,155,47,0.08)',
                         }}
                       >
@@ -598,7 +598,7 @@ export default function RecordPaymentPage() {
                         p: 2.5,
                         border: '2px solid',
                         borderColor: selectedShipmentIds.includes(shipment.id) 
-                          ? 'var(--accent-gold)' 
+                          ? 'var(--primary)' 
                           : 'var(--border)',
                         borderRadius: 2,
                         bgcolor: selectedShipmentIds.includes(shipment.id) 
@@ -607,7 +607,7 @@ export default function RecordPaymentPage() {
                         cursor: 'pointer',
                         transition: 'all 0.2s',
                         '&:hover': {
-                          borderColor: 'var(--accent-gold)',
+                          borderColor: 'var(--primary)',
                           bgcolor: 'rgba(201, 155, 47, 0.05)',
                         },
                       }}
@@ -618,8 +618,8 @@ export default function RecordPaymentPage() {
                           checked={selectedShipmentIds.includes(shipment.id)}
                           onChange={() => handleShipmentToggle(shipment.id)}
                           sx={{ 
-                            color: 'var(--accent-gold)',
-                            '&.Mui-checked': { color: 'var(--accent-gold)' },
+                            color: 'var(--primary)',
+                            '&.Mui-checked': { color: 'var(--primary)' },
                           }}
                         />
                         <Box sx={{ flex: 1 }}>
@@ -653,14 +653,14 @@ export default function RecordPaymentPage() {
                             <Box sx={{ fontSize: '0.75rem', color: 'var(--text-secondary)', mb: 0.5 }}>
                               {paymentCategoryLabels[paymentCategory]} Due
                             </Box>
-                            <Box sx={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+                            <Box sx={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--primary)' }}>
                               {formatCurrency(getShipmentDueForCategory(shipment))}
                             </Box>
                             <Box sx={{ mt: 0.75, display: 'flex', flexDirection: 'column', gap: 0.35 }}>
-                              <Box sx={{ fontSize: '0.72rem', color: paymentCategory === 'PURCHASE_PRICE' ? 'var(--accent-gold)' : 'var(--text-secondary)', fontWeight: paymentCategory === 'PURCHASE_PRICE' ? 700 : 500 }}>
+                              <Box sx={{ fontSize: '0.72rem', color: paymentCategory === 'PURCHASE_PRICE' ? 'var(--primary)' : 'var(--text-secondary)', fontWeight: paymentCategory === 'PURCHASE_PRICE' ? 700 : 500 }}>
                                 Purchase due: {formatCurrency(shipment.purchaseAmountDue || 0)}
                               </Box>
-                              <Box sx={{ fontSize: '0.72rem', color: paymentCategory === 'EXPENSES' ? 'var(--accent-gold)' : 'var(--text-secondary)', fontWeight: paymentCategory === 'EXPENSES' ? 700 : 500 }}>
+                              <Box sx={{ fontSize: '0.72rem', color: paymentCategory === 'EXPENSES' ? 'var(--primary)' : 'var(--text-secondary)', fontWeight: paymentCategory === 'EXPENSES' ? 700 : 500 }}>
                                 Expense due: {formatCurrency(shipment.expenseAmountDue || 0)}
                               </Box>
                               <Box sx={{ fontSize: '0.72rem', color: 'var(--text-secondary)' }}>
@@ -684,7 +684,7 @@ export default function RecordPaymentPage() {
                           p: 3,
                           borderRadius: 2,
                           bgcolor: 'rgba(201, 155, 47, 0.12)',
-                          border: '2px solid var(--accent-gold)',
+                          border: '2px solid var(--primary)',
                         }}
                       >
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -696,7 +696,7 @@ export default function RecordPaymentPage() {
                               {selectedShipmentIds.length} shipment{selectedShipmentIds.length !== 1 ? 's' : ''} selected
                             </Box>
                           </Box>
-                          <Box sx={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+                          <Box sx={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--primary)' }}>
                             {formatCurrency(totalSelectedAmount)}
                           </Box>
                         </Box>
@@ -738,7 +738,7 @@ export default function RecordPaymentPage() {
                     p: 2.5,
                     borderRadius: 2,
                     bgcolor: 'rgba(201, 155, 47, 0.08)',
-                    border: '1px solid var(--accent-gold)',
+                    border: '1px solid var(--primary)',
                   }}
                 >
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
@@ -753,7 +753,7 @@ export default function RecordPaymentPage() {
                     <Box sx={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
                       {paymentCategoryLabels[paymentCategory]} Outstanding:
                     </Box>
-                    <Box sx={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+                    <Box sx={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary)' }}>
                       {formatCurrency(totalSelectedAmount)}
                     </Box>
                   </Box>
@@ -913,7 +913,7 @@ export default function RecordPaymentPage() {
                       <Box sx={{ fontSize: '0.75rem', color: 'var(--text-secondary)', mb: 0.5 }}>
                         Payment Amount
                       </Box>
-                      <Box sx={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+                      <Box sx={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--primary)' }}>
                         {formatCurrency(paymentAmount)}
                       </Box>
                     </Box>
@@ -929,7 +929,7 @@ export default function RecordPaymentPage() {
                       <Box sx={{ fontSize: '0.75rem', color: 'var(--text-secondary)', mb: 0.5 }}>
                         Payment Category
                       </Box>
-                      <Box sx={{ fontSize: '1rem', fontWeight: 600, color: 'var(--accent-gold)' }}>
+                      <Box sx={{ fontSize: '1rem', fontWeight: 600, color: 'var(--primary)' }}>
                         {paymentCategoryLabels[paymentCategory]}
                       </Box>
                     </Box>
@@ -961,7 +961,7 @@ export default function RecordPaymentPage() {
                             <TableCell>{allocation.trackingNumber}</TableCell>
                             <TableCell>{allocation.vehicleInfo}</TableCell>
                             <TableCell align="right">{formatCurrency(allocation.amountDue)}</TableCell>
-                            <TableCell align="right" sx={{ fontWeight: 600, color: 'var(--accent-gold)' }}>
+                            <TableCell align="right" sx={{ fontWeight: 600, color: 'var(--primary)' }}>
                               {formatCurrency(allocation.amountToPay)}
                             </TableCell>
                             <TableCell align="right">
@@ -982,7 +982,7 @@ export default function RecordPaymentPage() {
                   <Box sx={{ mt: 2, p: 2, bgcolor: 'rgba(201, 155, 47, 0.08)', borderRadius: 1 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <Box sx={{ fontSize: '0.9rem', fontWeight: 600 }}>Total Payment:</Box>
-                      <Box sx={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--accent-gold)' }}>
+                      <Box sx={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--primary)' }}>
                         {formatCurrency(paymentAmount)}
                       </Box>
                     </Box>

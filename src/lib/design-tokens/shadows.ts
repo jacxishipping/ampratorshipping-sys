@@ -53,10 +53,10 @@ export const designSystemShadows = {
   sidebar: '4px 0 12px rgba(var(--text-primary-rgb), 0.08)',
 
   // Focus state
-  focus: '0 0 0 3px rgba(var(--accent-gold-rgb), 0.2)',
+  focus: '0 0 0 3px rgba(var(--primary-rgb), 0.2)',
 
   // Colored shadows for semantic actions
-  primary: '0 8px 24px rgba(var(--accent-gold-rgb), 0.25)',
+  primary: '0 8px 24px rgba(var(--primary-rgb), 0.25)',
   success: '0 8px 24px rgba(16, 185, 129, 0.25)',
   warning: '0 8px 24px rgba(245, 158, 11, 0.25)',
   error: '0 8px 24px rgba(239, 68, 68, 0.25)',

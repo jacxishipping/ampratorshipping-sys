@@ -146,8 +146,8 @@ export default function Vehicle360Viewer({
               'relative shrink-0 overflow-hidden border transition',
               buttonClassName,
               isActive
-                ? 'border-[var(--accent-gold)] ring-2 ring-[var(--accent-gold)]/25'
-                : 'border-[var(--border)] hover:border-[var(--accent-gold)]/50',
+                ? 'border-[var(--primary)] ring-2 ring-[var(--primary)]/25'
+                : 'border-[var(--border)] hover:border-[var(--primary)]/50',
             )}
             aria-label={`Go to frame ${index + 1}`}
           >
@@ -249,7 +249,7 @@ export default function Vehicle360Viewer({
                 type="button"
                 onClick={() => stepFrame(-1)}
                 disabled={!canSpin}
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] transition hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)] disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
                 aria-label="Previous frame"
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -258,7 +258,7 @@ export default function Vehicle360Viewer({
                 type="button"
                 onClick={() => setIsPlaying((current) => !current)}
                 disabled={!canSpin}
-                className="inline-flex min-w-0 items-center justify-center gap-2 rounded-full bg-[var(--accent-gold)] px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
+                className="inline-flex min-w-0 items-center justify-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
                 <span className="truncate">{isPlaying ? 'Pause' : 'Auto Spin'}</span>
@@ -267,7 +267,7 @@ export default function Vehicle360Viewer({
                 type="button"
                 onClick={() => stepFrame(1)}
                 disabled={!canSpin}
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] transition hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)] disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--text-primary)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
                 aria-label="Next frame"
               >
                 <ChevronRight className="h-4 w-4" />
@@ -285,7 +285,7 @@ export default function Vehicle360Viewer({
                 step={1}
                 value={activeIndex}
                 onChange={handleSliderChange}
-                className="h-3 w-full cursor-pointer accent-[var(--accent-gold)] sm:h-2"
+                className="h-3 w-full cursor-pointer accent-[var(--primary)] sm:h-2"
                 aria-label="Vehicle 360 frame slider"
               />
             )}
@@ -320,7 +320,7 @@ export default function Vehicle360Viewer({
                   setIsPlaying(false);
                   setActiveIndex(0);
                 }}
-                className="inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] transition hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)]"
+                className="inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
               >
                 <RotateCw className="h-3.5 w-3.5" />
                 Reset
@@ -376,7 +376,7 @@ export default function Vehicle360Viewer({
                   setIsPlaying(false);
                   setActiveIndex(0);
                 }}
-                className="inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] transition hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)]"
+                className="inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-semibold text-[var(--text-primary)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
               >
                 <RotateCw className="h-3.5 w-3.5" />
                 Reset
