@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   // Modern header with gold accent bar
   goldBar: {
-    backgroundColor: '#D4AF37',
+    backgroundColor: '#C9A24C',
     height: 8,
     width: '100%',
     marginLeft: -30,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#D4AF37',
+    color: '#C9A24C',
     marginBottom: 4,
   },
   invoiceNumber: {
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
   shippingTitle: {
     fontSize: 9,
     fontWeight: 'bold',
-    color: '#D4AF37',
+    color: '#C9A24C',
     marginBottom: 6,
   },
   shippingText: {
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   },
   tableDivider: {
     borderBottomWidth: 1,
-    borderBottomColor: '#D4AF37',
+    borderBottomColor: '#C9A24C',
     marginBottom: 10,
   },
   table: {
@@ -232,7 +232,7 @@ const styles = StyleSheet.create({
   grandTotal: {
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#D4AF37',
+    color: '#C9A24C',
   },
   paymentBox: {
     backgroundColor: '#D1FAE5',
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
   notesTitle: {
     fontSize: 9,
     fontWeight: 'bold',
-    color: '#D4AF37',
+    color: '#C9A24C',
     marginBottom: 4,
   },
   notesText: {
@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
   },
   footerLine: {
     borderTopWidth: 0.5,
-    borderTopColor: '#D4AF37',
+    borderTopColor: '#C9A24C',
     marginBottom: 8,
   },
   footerText: {

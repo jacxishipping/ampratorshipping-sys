@@ -7,8 +7,10 @@
 
 export const darkModeColors = {
   // Main colors
-  'accent-gold': '#D4AF37',  // Keep same accent
-  'accent-gold-rgb': '212, 175, 55',
+  'brand-navy': '#0E1F45',
+  'brand-navy-rgb': '14, 31, 69',
+  'accent-gold': '#C9A24C',  // Keep same accent
+  'accent-gold-rgb': '201, 162, 76',
   
   // Backgrounds & Surfaces
   'background': '#0A0A0A',

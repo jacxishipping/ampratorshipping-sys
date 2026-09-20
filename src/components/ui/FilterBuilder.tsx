@@ -284,7 +284,7 @@ export function FilterBuilder({ fields, onApply, onClear, className }: FilterBui
                 </button>
                 <button
                   onClick={handleApply}
-                  className="px-4 py-2 text-sm font-medium text-white bg-[var(--accent-gold)] hover:bg-[#C99B2F] rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[var(--accent-gold)] hover:bg-[#C9A24C] rounded-lg transition-colors"
                 >
                   Apply Filters
                 </button>

@@ -50,7 +50,7 @@ interface ShipmentInvoiceData {
 // Design system colors
 const COLORS = {
   dark: [25, 28, 31] as [number, number, number],       // #191C1F
-  gold: [218, 165, 32] as [number, number, number],      // #DAA520
+  gold: [201, 162, 76] as [number, number, number],      // #C9A24C
   success: [34, 197, 94] as [number, number, number],    // #22C55E
   text: [100, 116, 139] as [number, number, number],     // #64748B
   background: [248, 250, 252] as [number, number, number], // #F8FAFC

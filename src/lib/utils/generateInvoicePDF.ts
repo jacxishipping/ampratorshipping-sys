@@ -61,7 +61,7 @@ interface Invoice {
 // Design system colors - matching app's design tokens
 const COLORS = {
   // Primary brand colors
-  accentGold: [212, 175, 55] as [number, number, number],  // #D4AF37
+  accentGold: [201, 162, 76] as [number, number, number],  // #C9A24C
   textPrimary: [28, 28, 30] as [number, number, number],   // #1C1C1E
   textSecondary: [95, 99, 104] as [number, number, number], // #5F6368
   background: [249, 250, 251] as [number, number, number],  // #F9FAFB

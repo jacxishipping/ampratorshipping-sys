@@ -164,8 +164,10 @@ html {
 	   =================================== */
 	
 	/* Primary Colors */
-	--accent-gold: #D4AF37;
-	--accent-gold-rgb: 212, 175, 55;
+	--brand-navy: #0E1F45;
+	--brand-navy-rgb: 14, 31, 69;
+	--accent-gold: #C9A24C;
+	--accent-gold-rgb: 201, 162, 76;
 	
 	/* Backgrounds & Surfaces */
 	--background: #F9FAFB;
@@ -428,23 +430,23 @@ body {
 
 :root {
   /* Premium Light Theme - Amprator Shipping */
-  --amprator-blue: var(--accent-gold-rgb);
+  --amprator-blue: var(--brand-navy-rgb);
   --uae-gold: var(--accent-gold-rgb);
   --soft-white: var(--background-rgb);
   --frosted-glass: var(--panel-rgb);
-  --royal-navy: 240 4% 11%;
+  --royal-navy: 222 47% 16%;
   --platinum-white: var(--background-rgb);
   --platinum-gray: var(--panel-rgb);
   --subtle-gold: var(--accent-gold-rgb);
-  --charcoal: 240 4% 11%;
+  --charcoal: 222 47% 16%;
   --light-gray: var(--panel-rgb);
 
   /* Accent Families */
-  --cyber-blue: 45 63% 52%;
-  --neon-purple: 45 63% 52%;
-  --electric-green: 45 63% 52%;
+  --cyber-blue: 222 47% 16%;
+  --neon-purple: 222 47% 16%;
+  --electric-green: 222 47% 16%;
   --metallic-silver: 0 0% 88%;
-  --glow-gold: 45 63% 52%;
+  --glow-gold: 40 51% 54%;
 
   /* System Colors - Amprator Palette */
 }
@@ -454,8 +456,10 @@ body {
    =================================== */
 .dark-mode {
   /* Main colors */
-  --accent-gold: #D4AF37;
-  --accent-gold-rgb: 212, 175, 55;
+  --brand-navy: #0E1F45;
+  --brand-navy-rgb: 14, 31, 69;
+  --accent-gold: #C9A24C;
+  --accent-gold-rgb: 201, 162, 76;
   
   /* Backgrounds & Surfaces */
   --background: #0A0A0A;
@@ -500,8 +504,10 @@ body {
 
 .dark {
   /* Fallback for legacy .dark class */
-  --accent-gold: #D4AF37;
-  --accent-gold-rgb: 212, 175, 55;
+  --brand-navy: #0E1F45;
+  --brand-navy-rgb: 14, 31, 69;
+  --accent-gold: #C9A24C;
+  --accent-gold-rgb: 201, 162, 76;
   
   --background: #0A0A0A;
   --background-rgb: 10, 10, 10;
@@ -1371,7 +1377,7 @@ html {
 }
 
 .driver-popover-next-btn:hover {
-	background: #C99B2F !important;
+	background: #B08A3E !important;
 }
 
 .driver-popover-close-btn:hover,

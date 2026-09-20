@@ -6,19 +6,34 @@
  */
 
 export const colors = {
-  // Primary - Gold Accent
+  // Primary - Navy Brand
   // Used for: Primary actions, highlights, key CTAs
   primary: {
-    50: '#FEF7E0',
-    100: '#FCEEB3',
-    200: '#FAE380',
-    300: '#F7D84D',
-    400: '#F5CF26',
-    500: '#D4AF37',  // Main brand gold
-    600: '#C19F2F',
-    700: '#A78C27',
-    800: '#8D7A1F',
-    900: '#5F5215',
+    50: '#E9EDF6',
+    100: '#C7D2E8',
+    200: '#9FB2D4',
+    300: '#6E86B8',
+    400: '#3D5488',
+    500: '#0E1F45',  // Main brand navy
+    600: '#0C1B3D',
+    700: '#0A1734',
+    800: '#08122B',
+    900: '#050D1D',
+  },
+
+  // Secondary - Gold Accent
+  // Used for: Secondary accents, highlights, badges
+  secondary: {
+    50: '#FBF6EA',
+    100: '#F5EAD0',
+    200: '#EBD9A6',
+    300: '#E0C77D',
+    400: '#D4B364',
+    500: '#C9A24C',  // Main brand gold
+    600: '#A8863D',
+    700: '#866A2E',
+    800: '#644E22',
+    900: '#423216',
   },
 
   // Neutral - Grays

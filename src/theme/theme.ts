@@ -3,7 +3,8 @@
 import { createTheme } from '@mui/material/styles';
 
 const palette = {
-	accentGold: '#D4AF37',
+	brandNavy: '#0E1F45',
+	accentGold: '#C9A24C',
 	background: '#F9FAFB',
   panel: '#FFFFFF',  // Active panel surface color
 	textPrimary: '#1C1C1E',
@@ -20,16 +21,16 @@ export const theme = createTheme({
     palette: {
       mode: 'light',
       primary: {
-        main: palette.accentGold,
-        light: palette.accentGold,
-        dark: '#BD9430',
-        // Dark text on gold for WCAG AA contrast (light text on #D4AF37 is only ~2.1:1)
-        contrastText: palette.textPrimary,
+        main: palette.brandNavy,
+        light: '#1D3567',
+        dark: '#081224',
+        // Gold contrast text on navy for strong WCAG contrast
+        contrastText: palette.accentGold,
       },
       secondary: {
         main: palette.accentGold,
-        light: palette.accentGold,
-        dark: '#BD9430',
+        light: '#D9B76F',
+        dark: '#9A7B33',
         contrastText: palette.textPrimary,
       },
       success: {

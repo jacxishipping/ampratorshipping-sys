@@ -2,7 +2,7 @@ import { sendConfiguredEmail } from '@/lib/communication-settings';
 import { siteBrandAssets } from '@/lib/site-branding';
 
 const EMAIL_THEME = {
-  accent: '#D4AF37',
+  accent: '#C9A24C',
   background: '#F9FAFB',
   panel: '#FFFFFF',
   border: '#E5E7EB',

@@ -23,7 +23,7 @@ export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'size'> {
 const variantStyles = {
   primary: {
     bgcolor: 'var(--accent-gold)',
-    // Dark text on gold for WCAG AA contrast (light text on #D4AF37 is only ~2.1:1)
+    // Dark text on gold for WCAG AA contrast (light text on #C9A24C is only ~2.1:1)
     color: 'var(--text-primary)',
     border: 'none',
     '&:hover': {

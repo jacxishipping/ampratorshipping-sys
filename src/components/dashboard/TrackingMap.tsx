@@ -199,7 +199,7 @@ export function TrackingMap({ origin, destination, currentLocation, currentCoord
 
   const originIcon = useMemo(() => createIcon(<Anchor size={18} />, '#64748b'), [createIcon]);
   const destinationIcon = useMemo(() => createIcon(<MapPin size={18} />, '#ef4444'), [createIcon]);
-  const shipIcon = useMemo(() => createIcon(<Ship size={20} />, '#c99b2f', 28), [createIcon]);
+  const shipIcon = useMemo(() => createIcon(<Ship size={20} />, '#C9A24C', 28), [createIcon]);
 
   if (loading) {
     return (

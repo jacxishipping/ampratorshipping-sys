@@ -1,11 +1,19 @@
 const fs = require('fs');
+const path = require('path');
 
-for (const line of fs.readFileSync('.env', 'utf8').split(/\r?\n/)) {
+for (const line of fs.readFileSync(path.join(__dirname, '..', '.env'), 'utf8').split(/\r?\n/)) {
   if (!line || line.startsWith('#')) continue;
   const idx = line.indexOf('=');
   if (idx === -1) continue;
   const key = line.slice(0, idx).trim();
-  const value = line.slice(idx + 1).trim();
+  let value = line.slice(idx + 1).trim();
+  // Strip surrounding quotes so values like URLs parse correctly
+  if (
+    (value.startsWith('"') && value.endsWith('"')) ||
+    (value.startsWith("'") && value.endsWith("'"))
+  ) {
+    value = value.slice(1, -1);
+  }
   process.env[key] = value;
 }
 
@@ -26,13 +34,13 @@ const bcrypt = require('bcryptjs');
  * deleteMany here.
  */
 async function main() {
-  const prisma = new PrismaClient({
-    datasourceUrl:
-      process.env.amprator_DATABASE_URL ||
-      process.env.DATABASE_URL ||
-      process.env.amprator_POSTGRES_URL ||
-      process.env.amprator_PRISMA_DATABASE_URL,
-  });
+  const datasourceUrl =
+    process.env.amprator_DATABASE_URL ||
+    process.env.DATABASE_URL ||
+    process.env.amprator_POSTGRES_URL ||
+    process.env.amprator_PRISMA_DATABASE_URL;
+  console.log('Using DB URL:', String(datasourceUrl).slice(0, 25) + '...');
+  const prisma = new PrismaClient({ datasourceUrl: String(datasourceUrl).trim() });
 
   try {
     // Diagnostic output so it's obvious which DB is being targeted.

@@ -36,7 +36,7 @@ interface Container {
 
 const COLORS = {
   primary: '#0EA5E9', // Cyan
-  gold: '#C99B2F', // Gold accent
+  gold: '#C9A24C', // Gold accent
   dark: '#1E293B',
   medium: '#475569',
   light: '#94A3B8',

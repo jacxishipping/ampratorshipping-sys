@@ -102,7 +102,7 @@ export function FloatingActionButton() {
             width: 56,
             height: 56,
             '&:hover': {
-              bgcolor: open ? '#EF4444' : '#C99B2F',
+              bgcolor: open ? '#EF4444' : '#C9A24C',
               transform: 'scale(1.05)',
             },
             transition: 'all 0.2s ease',
