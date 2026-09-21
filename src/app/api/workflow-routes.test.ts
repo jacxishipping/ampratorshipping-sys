@@ -144,6 +144,7 @@ const originalRouteDepFns = {
   shipmentChargeCreate: routeDeps.prisma.shipmentCharge.create,
   shipmentChargeUpdate: routeDeps.prisma.shipmentCharge.update,
   shipmentChargeAuditCreate: routeDeps.prisma.shipmentChargeAuditLog.create,
+  userInvoiceFindFirst: routeDeps.prisma.userInvoice.findFirst,
 };
 
 function createState(): WorkflowState {
@@ -616,6 +617,10 @@ function installRouteMocks(state: WorkflowState) {
     state.shipmentChargeAuditLogs.push(audit);
     return audit;
   }) as unknown as typeof routeDeps.prisma.shipmentChargeAuditLog.create;
+  // Expense posting checks for an existing invoice before adding a line item.
+  // This route fixture has no invoice state, so model that lookup explicitly
+  // instead of allowing the real Prisma delegate to require DATABASE_URL.
+  routeDeps.prisma.userInvoice.findFirst = (async () => null) as unknown as typeof routeDeps.prisma.userInvoice.findFirst;
 }
 
 function request(url: string, method: string, body?: Record<string, unknown>) {
@@ -671,6 +676,7 @@ describe('workflow route integration', () => {
     routeDeps.prisma.shipmentCharge.create = originalRouteDepFns.shipmentChargeCreate;
     routeDeps.prisma.shipmentCharge.update = originalRouteDepFns.shipmentChargeUpdate;
     routeDeps.prisma.shipmentChargeAuditLog.create = originalRouteDepFns.shipmentChargeAuditCreate;
+    routeDeps.prisma.userInvoice.findFirst = originalRouteDepFns.userInvoiceFindFirst;
     mock.restoreAll();
   });
 
