@@ -169,7 +169,7 @@ export default function SignInPage() {
 						{/* Header */}
 						<Box sx={{ textAlign: 'center', mb: 3 }}>
 							<Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
-								<SiteLogo variant="dashboard" className="w-[120px]" priority />
+								<SiteLogo variant="dashboard" className="w-[140px]" priority />
 							</Box>
 							<Typography
 								variant="h3"

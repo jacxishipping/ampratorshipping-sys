@@ -24,8 +24,8 @@ type SiteMarkProps = {
 const logoConfig: Record<SiteLogoVariant, { src: string; width: number; height: number; labelClassName: string; caption?: string }> = {
   header: {
     src: siteBrandAssets.headerLogo,
-    width: 186,
-    height: 56,
+    width: 160,
+    height: 141,
     labelClassName: 'text-sm font-bold uppercase tracking-[0.22em] sm:text-base',
   },
   main: {
@@ -37,8 +37,8 @@ const logoConfig: Record<SiteLogoVariant, { src: string; width: number; height: 
   },
   dashboard: {
     src: siteBrandAssets.headerLogo,
-    width: 132,
-    height: 40,
+    width: 114,
+    height: 100,
     labelClassName: 'text-lg font-bold tracking-tight',
   },
 };

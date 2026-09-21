@@ -171,7 +171,7 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 				{/* Logo/Title */}
 				<Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
 					<Link href="/dashboard" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', padding: '2px 6px' }}>
-						<SiteLogo variant="dashboard" className="w-[72px] sm:w-[88px]" priority />
+						<SiteLogo variant="dashboard" className="w-[44px] sm:w-[52px]" priority />
 					</Link>
 
 					{/* Page Title (if provided) */}

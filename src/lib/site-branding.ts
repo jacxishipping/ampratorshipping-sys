@@ -1,6 +1,6 @@
 export const siteBrandAssets = {
   favicon: '/favicon.png',
-  headerLogo: '/higher-logo.png',
+  headerLogo: '/amprator-logo.png',
   mainLogo: '/main-logo.png',
 } as const;
 
