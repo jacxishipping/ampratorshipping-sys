@@ -10,10 +10,10 @@ const navItems = [
   { icon: Ship, label: 'Shipments', href: '/dashboard/shipments' },
   { icon: Package, label: 'Containers', href: '/dashboard/containers' },
   { icon: FileText, label: 'Invoices', href: '/dashboard/invoices' },
-  { icon: Menu, label: 'More', href: '/dashboard/settings' },
+  { icon: Menu, label: 'More' },
 ];
 
-export function BottomNavigation() {
+export function BottomNavigation({ onMoreClick }: { onMoreClick: () => void }) {
   const pathname = usePathname();
 
   return (
@@ -28,21 +28,18 @@ export function BottomNavigation() {
     >
       <div className="flex items-center justify-around h-[68px] px-2">
         {navItems.map((item) => {
-          const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
+          const isMore = item.label === 'More';
+          const isActive = !isMore && !!item.href && (pathname === item.href || pathname.startsWith(item.href + '/'));
           const Icon = item.icon;
-
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                'relative flex flex-1 items-center justify-center h-full min-w-0 px-2 transition-all duration-200',
-                'min-w-0 px-2',
-                isActive
-                  ? 'text-[var(--primary)]'
-                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-              )}
-            >
+          const className = cn(
+            'relative flex flex-1 items-center justify-center h-full min-w-0 px-2 transition-all duration-200',
+            'min-w-0 px-2',
+            isActive
+              ? 'text-[var(--primary)]'
+              : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          );
+          const content = (
+            <>
               {isActive && (
                 <div
                   className="absolute left-1/2 top-2 h-1 w-1 -translate-x-1/2 rounded-full"
@@ -75,9 +72,27 @@ export function BottomNavigation() {
                   {item.label}
                 </span>
               </div>
-              {isActive && (
-                <div className="sr-only">Current section</div>
-              )}
+              {isActive && <div className="sr-only">Current section</div>}
+            </>
+          );
+
+          return isMore ? (
+            <button
+              key={item.label}
+              type="button"
+              onClick={onMoreClick}
+              aria-label="Open more navigation options"
+              className={className}
+            >
+              {content}
+            </button>
+          ) : (
+            <Link
+              key={item.href}
+              href={item.href!}
+              className={className}
+            >
+              {content}
             </Link>
           );
         })}

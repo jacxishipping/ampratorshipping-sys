@@ -8,6 +8,7 @@ import {
 	Toolbar,
 	Box,
 	Typography,
+	Button,
 	IconButton,
 	Avatar,
 	Menu,
@@ -202,18 +203,23 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 
 				{/* Right Actions */}
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 0.25 }}>
-					{/* Global Search (⌘K) */}
-					<Box sx={{ display: { xs: 'none', sm: 'flex' }, mr: 0.5 }}>
+					{/* Global search remains available as an icon trigger on small screens. */}
+					<Box sx={{ display: 'flex', mr: { xs: 0.25, sm: 0.5 } }}>
 						<GlobalSearch />
 					</Box>
 					{quickActions.length > 0 && (
-						<Tooltip title="Quick Actions">
-							<IconButton
-								onClick={handleQuickActionOpen}
-								sx={{
+						<>
+							<Tooltip title="Create new">
+								<IconButton
+									onClick={handleQuickActionOpen}
+									aria-label="Create new"
+									aria-haspopup="menu"
+									aria-expanded={Boolean(quickActionEl)}
+									sx={{
 									color: 'var(--primary)',
 									p: 0.75,
 									mr: 0.25,
+									display: { xs: 'inline-flex', sm: 'none' },
 									'&:hover': {
 										bgcolor: 'rgba(var(--primary-rgb), 0.1)',
 										boxShadow: '0 0 0 1px rgba(var(--primary-rgb), 0.2)',
@@ -223,6 +229,30 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 								<AddIcon sx={{ fontSize: 22 }} />
 							</IconButton>
 						</Tooltip>
+							<Button
+								onClick={handleQuickActionOpen}
+								startIcon={<AddIcon sx={{ fontSize: 18 }} />}
+								aria-haspopup="menu"
+								aria-expanded={Boolean(quickActionEl)}
+								sx={{
+									display: { xs: 'none', sm: 'inline-flex' },
+									minWidth: 0,
+									mr: 0.5,
+									px: 1.25,
+									py: 0.65,
+									borderRadius: 1.5,
+									fontSize: '0.8125rem',
+									fontWeight: 700,
+									lineHeight: 1.2,
+									textTransform: 'none',
+									color: 'var(--background)',
+									bgcolor: 'var(--primary)',
+									'&:hover': { bgcolor: 'rgba(var(--primary-rgb), 0.9)' },
+								}}
+							>
+								Create
+							</Button>
+						</>
 					)}
 
           {/* Keyboard Shortcuts */}
@@ -244,7 +274,9 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
           </Tooltip>
 
 					{/* Theme Toggle */}
-					<ThemeToggle />
+					<Box sx={{ display: { xs: 'none', sm: 'contents' } }}>
+						<ThemeToggle />
+					</Box>
 					
 					{/* Notifications */}
 					<NotificationCenter />
@@ -256,6 +288,7 @@ export default function Header({ onMenuClick, pageTitle }: HeaderProps) {
 								sx={{
 									color: 'var(--text-secondary)',
 									p: 0.75,
+									display: { xs: 'none', sm: 'inline-flex' },
 									'&:hover': {
 										bgcolor: 'rgba(var(--border-rgb), 0.4)',
 										color: 'var(--text-primary)',

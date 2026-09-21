@@ -80,7 +80,7 @@ function DashboardLayoutInner({ children }: { children: React.ReactNode }) {
       </Box>
 
       {/* Mobile Bottom Navigation */}
-      <BottomNavigation />
+      <BottomNavigation onMoreClick={() => setMobileOpen(true)} />
 
       {/* Keyboard Shortcuts Help - Press ? key */}
       <KeyboardShortcutHelp />
